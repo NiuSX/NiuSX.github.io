@@ -16,3 +16,11 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+
+.author__avatar {
+  img {
+    border-radius: 50% !important;  // 正圆形
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
