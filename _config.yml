@@ -133,7 +133,7 @@ author:
   name             : "一只捡星星的熊"
   avatar           :  "/assets/images/wukong-photo.jpg"
   bio              : "一个懵懂的技术小白"
-  location         : "China"
+  location         : "中国"
   email            :
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
