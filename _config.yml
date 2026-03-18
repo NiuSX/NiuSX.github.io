@@ -153,7 +153,7 @@ footer:
     - label: "Bilibili"
       icon: "fab fa-fw fa-bilibili"
       url: "https://www.bilibili.com/"
-  since: "2026"
+  since: "2025-2026"
 
 # 文件处理设置
 # 指定哪些文件需要包含或排除
