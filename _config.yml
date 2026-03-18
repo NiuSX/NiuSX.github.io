@@ -312,7 +312,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: false
       related: true
+      toc: true
+      toc_label: "文章目录"
+      toc_icon: "file-alt"
+      toc_sticky: true
