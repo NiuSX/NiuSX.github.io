@@ -13,3 +13,14 @@ html {
         font-size: 18px; // change to whatever
     }
 }
+
+.page {
+    @include breakpoint($large) {
+        padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+        padding-right: 0;
+    }
+}
+
