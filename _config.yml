@@ -320,3 +320,12 @@ defaults:
       toc_label: "文章目录"
       toc_icon: "file-alt"
       toc_sticky: true
+
+# 全局字体大小设置
+type-size-1: 2.0rem    # 最大字号（H1等）
+type-size-2: 1.75rem   # H2
+type-size-3: 1.5rem    # H3
+type-size-4: 1.25rem   # 导语等
+type-size-5: 1.0rem    # 正文（默认）
+type-size-6: 0.875rem  # 小字号
+type-size-7: 0.75rem   # 最小字号
