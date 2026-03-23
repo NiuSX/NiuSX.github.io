@@ -1,0 +1,615 @@
+/* ==========================================================================
+   单页面/文章样式
+   ========================================================================== */
+
+// 主内容区域样式
+#main {
+  @include clearfix; // 清除浮动，包含内部浮动元素
+  margin-inline: auto; // 水平方向自动边距（实现居中），支持逻辑属性
+  padding-inline: 1em; // 水平方向内边距
+  -webkit-animation: $intro-transition; // 页面入场动画（WebKit 前缀）
+  animation: $intro-transition; // 标准动画属性
+  max-width: 100%; // 最大宽度为父容器100%
+  -webkit-animation-delay: 0.15s; // 动画延迟0.15秒
+  animation-delay: 0.15s;
+
+  // 超大屏幕断点（由变量 $x-large 定义）
+  @include breakpoint($x-large) {
+    max-width: $max-width; // 限制最大宽度，提升大屏阅读体验
+  }
+}
+
+// 全局 body 样式，使用 Flexbox 布局
+body {
+  display: -webkit-box; // 旧版 Flexbox 语法（WebKit）
+  display: -ms-flexbox; // IE10 语法
+  display: flex; // 标准 Flexbox
+  min-height: 100vh; // 最小高度为视口高度，确保页面撑满屏幕
+  -webkit-box-orient: vertical; // 垂直方向主轴（旧语法）
+  -webkit-box-direction: normal; // 主轴方向为正序
+  -ms-flex-direction: column; // 列方向（IE）
+          flex-direction: column; // 标准列布局
+}
+
+// 主要内容和搜索内容的弹性布局设置
+.initial-content,
+.search-content {
+  flex: 1 0 auto; // 允许内容扩展填充剩余空间，不收缩，自动分配基础尺寸
+}
+
+// 文章页面主体
+.page {
+  // 大屏幕布局（带右侧边栏）
+  @include breakpoint($large) {
+    float: inline-end; // 浮动到行末方向（逻辑属性，LTR 下为右浮动）
+    width: calc(100% - #{$right-sidebar-width-narrow}); // 减去较窄侧边栏宽度
+    padding-inline-end: $right-sidebar-width-narrow; // 右侧内边距，为侧边栏留出空间
+  }
+
+  // 超大屏幕，使用标准宽度的侧边栏
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-inline-end: $right-sidebar-width;
+  }
+
+  // 页面内部包装器
+  .page__inner-wrap {
+    float: inline-start; // 浮动到行首方向（LTR 下为左浮动）
+    margin-top: 1em;
+    margin-inline: 0; // 水平方向外边距为0
+    width: 100%; // 宽度100%
+    clear: both; // 清除两侧浮动，防止布局错位
+
+    // 文章内容、元数据、分享区域通用样式
+    .page__content,
+    .page__meta,
+    .page__share {
+      position: relative; // 相对定位，为内部绝对定位元素提供参考
+      float: inline-start;
+      margin-inline: 0;
+      width: 100%;
+      clear: both;
+    }
+  }
+}
+
+// 文章标题样式
+.page__title {
+  margin-top: 0;
+  line-height: 1; // 紧凑行高
+
+  a {
+    color: $text-color; // 主题文本颜色变量
+    text-decoration: none; // 移除下划线
+  }
+
+  // 如果标题后紧跟元数据，向上调整间距
+  & + .page__meta {
+    margin-top: -0.5em;
+  }
+}
+
+// 文章导语/引言样式
+.page__lead {
+  font-family: $global-font-family; // 全局字体
+  font-size: $type-size-4; // 字体大小变量（通常比正文稍大）
+}
+
+// 文章核心内容样式
+.page__content {
+  // 二级标题样式（带底部边框）
+  h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color; // 主题边框颜色
+  }
+
+  // 所有标题的锚点链接样式（悬停时显示）
+  h1, h2, h3, h4, h5, h6 {
+    .header-link {
+      position: relative;
+      inset-inline-start: 0.5em; // 逻辑属性：左侧偏移0.5em
+      opacity: 0; // 默认透明不可见
+      font-size: 0.8em;
+      // 过渡动画：透明度变化，缓动效果，延迟0.1秒
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
+
+    // 标题悬停时显示锚点链接
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
+
+  // 段落、列表项、定义列表基础字号
+  p,
+  li,
+  dl {
+    font-size: 1em;
+  }
+
+  /* 段落缩进功能（可选） */
+  p {
+    margin: 0 0 $indent-var; // 底部外边距为缩进变量值
+
+    /* 如果开启段落缩进，相邻段落首行缩进并向上重叠边距 */
+    @if $paragraph-indent == true {
+      & + p {
+        text-indent: $indent-var; // 首行缩进
+        margin-top: -($indent-var); // 负边距抵消上一个段落的底部边距
+      }
+    }
+  }
+
+  // 非按钮类链接悬停效果
+  a:not(.btn) {
+    &:hover {
+      text-decoration: underline;
+
+      // 链接内的图片悬停时增加阴影
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+
+  // 行内代码样式（非 pre 块内的代码）
+  :not(pre) > code {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.8em;
+    background: $code-background-color; // 代码背景色
+    border-radius: $border-radius; // 圆角变量
+
+    // 代码前后添加不可见的不间断空格，优化间距
+    &::before,
+    &::after {
+      letter-spacing: -0.2em;
+      content: "\00a0"; /* 不间断空格（Unicode U+00A0）*/
+    }
+  }
+
+  // 定义术语样式
+  dt {
+    margin-top: 1em;
+    font-family: $sans-serif; // 无衬线字体
+    font-weight: bold;
+  }
+
+  // 定义描述样式
+  dd {
+    margin-inline-start: 1em; // 逻辑属性：左侧外边距
+    font-family: $sans-serif;
+    font-size: $type-size-6; // 较小字号
+  }
+
+  // 小字号文本
+  .small {
+    font-size: $type-size-6;
+  }
+
+  /* 引用块后的署名样式调整 */
+  blockquote + .small {
+    margin-top: -1.5em;
+    padding-inline-start: 1.25rem;
+  }
+
+  /* 第一个子元素或紧跟 aside 的元素，顶部边距归零 */
+  :first-child,
+  aside + :nth-child(2) {
+    margin-top: 0em;
+  }
+}
+
+// 文章顶部大图区域
+.page__hero {
+  position: relative;
+  margin-bottom: 2em;
+  @include clearfix;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+
+  // 带覆盖层的 Hero 区域（背景图 + 文字覆盖层）
+  &--overlay {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 3em 0;
+    @include clearfix;
+    background-size: cover; // 背景图覆盖整个区域
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+
+    // 覆盖层内的链接为白色
+    a {
+      color: #fff;
+    }
+
+    // 内部包装器，用于内容居中和响应式限制
+    .wrapper {
+      padding-inline: 1em;
+
+      @include breakpoint($x-large) {
+        max-width: $x-large; // 超大屏幕限制内容最大宽度
+      }
+    }
+
+    // 标题、元数据、导语、按钮样式（白色文字 + 阴影）
+    .page__title,
+    .page__meta,
+    .page__lead,
+    .btn {
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(#000, 0.5); // 文字阴影增强可读性
+    }
+
+    .page__lead {
+      max-width: $medium; // 限制导语宽度，提升阅读体验
+    }
+
+    .page__title {
+      font-size: $type-size-2; // 较大标题
+
+      @include breakpoint($small) {
+        font-size: $type-size-1; // 小屏幕更大标题
+      }
+    }
+  }
+}
+
+// Hero 区域图片样式
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic; // IE 图片缩放算法：双立方
+}
+
+// Hero 区域图片说明（右下角半透明黑色条）
+.page__hero-caption {
+  position: absolute;
+  bottom: 0;
+  inset-inline-end: 0; // 逻辑属性：右侧定位（LTR 下为右下角）
+  margin: 0 auto;
+  padding: 2px 5px;
+  color: #fff;
+  font-family: $caption-font-family; // 说明文字专用字体
+  font-size: $type-size-7; // 最小字号
+  background: #000;
+  text-align: end; // 逻辑属性：右对齐
+  z-index: 5;
+  opacity: 0.5; // 半透明
+  border-radius: $border-radius 0 0 0; // 左上角圆角，其余无
+
+  @include breakpoint($large) {
+    padding: 5px 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*
+   社交分享区域
+   ========================================================================== */
+
+.page__share {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+
+  // 小屏幕下，分享按钮内的文字仅用于屏幕阅读器（视觉隐藏）
+  @include breakpoint(max-width $small) {
+    .btn span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+}
+
+.page__share-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase; // 大写转换
+}
+
+/*
+   页面元数据（日期、作者、分类等）
+   ========================================================================== */
+
+.page__meta {
+  margin-top: 2em;
+  color: $muted-text-color; // 柔和文本颜色
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit; // 继承父级颜色
+  }
+}
+
+.page__meta-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+// 元数据之间的分隔符（圆点）
+.page__meta-sep::before {
+  content: "\2022"; // Unicode 圆点符号（•）
+  padding-inline: 0.5em;
+}
+
+/*
+   页面分类/标签
+   ========================================================================== */
+
+.page__taxonomy {
+  .sep {
+    display: none; // 隐藏原有的分隔符，使用其他样式替代
+  }
+
+  strong {
+    margin-inline-end: 10px;
+  }
+}
+
+// 分类/标签项样式（类似胶囊按钮）
+.page__taxonomy-item {
+  display: inline-block;
+  margin-inline-end: 5px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid mix(#000, $border-color, 25%); // 混合黑色，使边框稍深
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-color-hover; // 悬停链接颜色变量
+  }
+}
+
+// 分类索引区域（用于归档页面）
+.taxonomy__section {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+
+  // 除了最后一个，底部都有边框
+  &:not(:last-child) {
+    border-bottom: solid 1px $border-color;
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  .archive__subtitle {
+    clear: both;
+    border: 0;
+  }
+
+  // 相邻分类区域的上边距
+  + .taxonomy__section {
+    margin-top: 2em;
+  }
+}
+
+.taxonomy__title {
+  margin-bottom: 0.5em;
+  color: $muted-text-color;
+}
+
+.taxonomy__count {
+  color: $muted-text-color;
+}
+
+// 分类索引网格（按字母索引）
+.taxonomy__index {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr); // 默认2列
+  margin: 1.414em 0;
+  padding: 0;
+  font-size: 0.75em;
+  list-style: none;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, 1fr); // 大屏3列
+  }
+
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.25em 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; // 两端对齐（字母和计数）
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+// 返回顶部按钮
+.back-to-top {
+  display: block;
+  clear: both;
+  color: $muted-text-color;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  text-align: end; // 右对齐
+  text-decoration: none;
+}
+
+/*
+   评论区域
+   ========================================================================== */
+
+.page__comments {
+  float: inline-start;
+  margin-inline: 0;
+  width: 100%;
+  clear: both;
+}
+
+.page__comments-title {
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  font-size: $type-size-6;
+  border-top: 1px solid $border-color;
+  text-transform: uppercase;
+}
+
+.page__comments-form {
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+
+  // 禁用状态（如加载中），降低交互元素的透明度并禁用指针事件
+  &.disabled {
+    input,
+    button,
+    textarea,
+    label {
+      pointer-events: none;
+      cursor: not-allowed;
+      filter: alpha(opacity=65); // IE 透明度
+      box-shadow: none;
+      opacity: 0.65;
+    }
+  }
+}
+
+// 单条评论样式
+.comment {
+  @include clearfix();
+  margin: 1em 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+// 评论者头像包装器
+.comment__avatar-wrapper {
+  float: inline-start;
+  width: 60px;
+  height: 60px;
+
+  @include breakpoint($large) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+// 评论者头像
+.comment__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  @include breakpoint($large) {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid $border-color;
+  }
+}
+
+// 评论内容包装器
+.comment__content-wrapper {
+  float: inline-end;
+  width: calc(100% - 60px);
+
+  @include breakpoint($large) {
+    width: calc(100% - 100px);
+  }
+}
+
+.comment__author {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// 评论日期（继承 .page__meta 样式）
+.comment__date {
+  @extend .page__meta;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/*
+   相关文章区域
+   ========================================================================== */
+
+.page__related {
+  @include clearfix();
+  float: inline-start;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+
+  // 大屏幕下浮动到右侧，并为侧边栏留出空间
+  @include breakpoint($large) {
+    float: inline-end;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.page__related-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+/*
+   宽页面模式（无侧边栏）
+   ========================================================================== */
+
+.wide {
+  // 在宽页面模式下，页面和相关文章区域右侧内边距归零（全宽显示）
+  .page, .page__related {
+    @include breakpoint($large) {
+      padding-inline-end: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-inline-end: 0;
+    }
+  }
+}
