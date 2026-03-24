@@ -2,54 +2,8 @@
 ---
 @import "minimal-mistakes";
 
-// ==========================================================================
-// 响应式字体大小设置
-// ==========================================================================
-// 设置根元素（html）的字体大小，所有使用 rem 单位的元素都会基于此值缩放
-// 这样可以在不同屏幕尺寸下自动调整字体大小，提升阅读体验
-html {
-    font-size: 8px; // 默认字体大小（适用于手机等小屏幕设备）
 
-    // 中等屏幕断点（通常 ≥ 640px，如平板）
-    @include breakpoint($medium) {
-        font-size: 12px; // 平板设备字体稍大
-    }
-
-    // 大屏幕断点（通常 ≥ 1024px，如笔记本）
-    @include breakpoint($large) {
-        font-size: 14px; // 笔记本字体正常大小
-    }
-
-    // 超大屏幕断点（通常 ≥ 1280px，如台式机显示器）
-    @include breakpoint($x-large) {
-        font-size: 16px; // 大显示器字体更大，阅读更舒适
-    }
-}
-
-// ==========================================================================
-// 页面右侧边距调整
-// ==========================================================================
-// 调整文章主体内容（.page）在大屏幕上的右侧内边距
-// 默认情况下，主题会为侧边栏预留空间，如果不使用侧边栏，可以移除多余空白
-.page {
-    // 大屏幕时移除右侧内边距
-    @include breakpoint($large) {
-        padding-right: 0; // 右侧内边距归零
-    }
-
-    // 超大屏幕时也移除右侧内边距
-    @include breakpoint($x-large) {
-        padding-right: 0; // 确保超大屏幕也没有右侧空白
-    }
-}
-
-/* 让 about 页面内容居中 */
-.page--about .page__content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.page--about .page__content p {
-  text-align: left;
-}
+@import "custom/custom_about_page";
+@import "custom/custom_font";
+@import "custom/custom_right_slid";
+@import "custom/custom_author_slid";
