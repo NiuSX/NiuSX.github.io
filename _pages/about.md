@@ -1,11 +1,11 @@
 ---
 permalink: /about/
-title: "关于"
 layout: single
 classes: 
   - wide
   - landing
 ---
+
 
 🌱 关于我：一名一直在路上的学徒
 
