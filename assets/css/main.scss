@@ -38,3 +38,14 @@ html {
         padding-right: 0; // 确保超大屏幕也没有右侧空白
     }
 }
+
+/* 让 about 页面内容居中 */
+.page--about .page__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page--about .page__content p {
+  text-align: left;
+}
