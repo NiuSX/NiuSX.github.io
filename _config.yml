@@ -322,5 +322,5 @@ defaults:
       toc: true
       toc_label: "文章目录"
       toc_icon: "file-alt"
-      toc_sticky: true
+      toc_sticky: false
 
