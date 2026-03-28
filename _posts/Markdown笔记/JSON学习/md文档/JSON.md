@@ -1,0 +1,69 @@
+---
+title: "JSON"
+ddata: 2026-3-28
+categroies:  
+  - 标记语言
+excerpt: ""
+---
+
+# 简介
+
+- JSON: JavaScript Object Notation(JavaScript 对象表示法)   
+- JSON 是存储和交换文本信息的语法，是轻量级的文本交换格式。     
+- JSON 具有自我描述性，易于人阅读和编写。    
+- JSON 独立于语言：JSON 使用 Javascript语法来描述数据对象JSON 解析器和 JSON 库支持许多不同的编程语言。  C、Python、C++、Java、PHP、Go 等编程语言都支持 JSON
+
+
+JSON 文本格式在语法上与创建 JavaScript 对象的代码相同。
+由于这种相似性，无需解析器，JavaScript 程序能够使用内建的 eval() 函数，用 JSON 数据来生成原生的 JavaScript 对象。
+
+常用的JSON工具：
+- JSON 格式化工具：https://www.jyshare.com/front-end/53/
+- JSON 转义/去除转义：https://www.jyshare.com/front-end/7683/
+- JSON 在线解析工具：https://www.jyshare.com/front-end/7438/
+- JSON 差异对比工具：https://www.jyshare.com/front-end/9557/
+
+
+# JSON语法
+
+JSON 语法是 JavaScript 对象表示语法的子集。
+
+- 数据在名称/值对中
+- 数据由逗号 , 分隔
+- 使用斜杆 \ 来转义字符
+- 大括号 {} 保存对象
+- 中括号 [] 保存数组，数组可以包含多个对象
+
+JSON 的两种结构：
+
+- **对象**：大括号 {} 保存的对象是一个无序的名称/值对集合。一个对象以左括号 { 开始， 右括号 } 结束。每个"键"后跟一个冒号 :，名称/值对使用逗号 , 分隔。
+- **数组** 中括号 [] 保存的数组是值（value）的有序集合。一个数组以左中括号 [ 开始， 右中括号 ] 结束，值之间使用逗号 , 分隔。
+
+值（value）可以是双引号括起来的字符串（string）、数值(number)、true、false、 null、对象（object）或者数组（array），它们是可以嵌套。
+
+JSON 数据的**书写格式**是：`key : value`
+
+JSON 值：
+- 数字（整数或浮点数）
+- 字符串（在双引号中）
+- 逻辑值（true 或 false）
+- 数组（在中括号中）
+- 对象（在大括号中）
+- null
+
+# JSON   vs    XML
+
+- JSON 与 XML 的相同之处：
+	- JSON 和 XML 数据都是 "自我描述" ，都易于理解。
+	- JSON 和 XML 数据都是有层次的结构
+	- JSON 和 XML 数据可以被大多数编程语言使用
+- JSON 与 XML 的不同之处：
+	- JSON 不需要结束标签
+	- JSON 更加简短
+	- JSON 读写速度更快
+	- JSON 可以使用数组
+
+
+
+
+
