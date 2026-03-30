@@ -526,7 +526,9 @@ XML Schema 的作用是定义 XML 文档的合法构建模块，类似 DTD。
 - 可更容易地定义数据模型（或称数据格式）
 - 可更容易地在不同的数据类型间转换数据
 
-## XML schema元素（未完）
-https://www.runoob.com/schema/schema-schema.html
+## XML schema元素
 
+
+
+# 未完待续
 
