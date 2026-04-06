@@ -405,14 +405,14 @@ POST https://api.weixin.qq.com/sns/oauth2/access_token
    &code=AUTHORIZATION_CODE
    &grant_type=authorization_code
 ```
-   
+
 5. 用访问令牌获取用户信息
 ```http
 GET https://api.weixin.qq.com/sns/userinfo
    ?access_token=ACCESS_TOKEN
    &openid=OPENID
 ```
-  
+
 6. 创建本地会话:根据获取的用户信息（openid、昵称、头像）,在本地数据库中创建或查找用户,生成应用自己的Session或JWT Token
 
 
@@ -561,4 +561,4 @@ query {
 |学习曲线|	中等|	低|	中等|
 
 
-## 微服务，GraphQL gRPC 几种笔记未写
+## 

@@ -453,6 +453,10 @@ print(f"最后的结果是:{result}")
 
 以上的写法虽然灵活但有一个致命缺陷，我们的State状态缺乏预定义的模式，节点可以在没有严格类型约束的情况下自由地读取和写入状态，这样的灵活性虽然有利于动态数据处理，但这也要求开发者在整个图的执行过程中保持对键和值的一致性管理（例如我们在加减法函数中返回的都是只包含键值对x的字典对象）。因为在任何节点中尝试访问State中不存在的键，会直接中断整个图的运行状态。
 
+
+
+**Pydantic** 是 Python 中最流行的**数据验证和设置管理库**，它的核心作用是：**用 Python 的类型注解来定义数据格式，然后自动帮你验证、解析、序列化数据**。
+
 ### Pydantic基本使用
 
 通过集成pydantic中的`BaseModel`抽象类来定义状态State, 定义后的状态可以对键值对属性进行自动校验，我们编写如下代码，对 a 和 b 键定义不同的类型，错误的类型会报错。
@@ -1039,7 +1043,7 @@ agent = create_react_agent(model=llm, tools=tools, checkpointer=checkpointer)
 # 多轮对话配置，同一 thread_id 即同一会话
 config = {"configurable": {"thread_id": "user-001"}}
 
-msg1 = agent.invoke({"messages": [("user", "你好，我叫崔亮，喜欢学习。")]}, config)
+msg1 = agent.invoke({"messages": [("user", "你好，我叫小明，喜欢学习。")]}, config)
 msg1["messages"][-1].pretty_print()
 
 # 6. 第二轮（继续同一 thread）
@@ -1106,7 +1110,7 @@ graph.get_graph().draw_png('./graph.png')
 config = {"configurable": {"thread_id": "chat-1"}}
 
 # 第一次对话：发送初始消息
-msg1 = graph.invoke({"messages": ["你好，我叫崔亮，喜欢学习。"]}, config=config)
+msg1 = graph.invoke({"messages": ["你好，我叫小明，喜欢学习。"]}, config=config)
 msg1["messages"][-1].pretty_print()
 
 # 第二次对话：基于上下文询问用户信息
@@ -1240,7 +1244,7 @@ msg2["messages"][-1].pretty_print()
    
    # 第一次交互测试：记录用户基本信息
    config1 = {"configurable": {"thread_id": "1", "user_id": "1"}}
-   msg1 = graph.invoke({"messages": [{"role": "user", "content": "我叫崔亮，喜欢学习。"}]}, config1)
+   msg1 = graph.invoke({"messages": [{"role": "user", "content": "我叫小明，喜欢学习。"}]}, config1)
    print("第一次回复：")
    msg1["messages"][-1].pretty_print()
    
@@ -1314,7 +1318,7 @@ agent = create_react_agent(
     checkpointer=checkpointer,
 )
 config = {"configurable": {"thread_id": "user-001"}}
-msg1 = agent.invoke({"messages": [("user", "你好，我叫崔亮")]}, config)
+msg1 = agent.invoke({"messages": [("user", "你好，我叫小明")]}, config)
 msg1["messages"][-1].pretty_print()
 like_list = ['唱', '跳', 'rap', '篮球']
 for i in like_list:
@@ -1388,7 +1392,7 @@ agent = create_react_agent(
 config = {"configurable": {"thread_id": "user-001"}}
 
 # 启动对话，发送用户自我介绍消息并获取模型响应
-msg1 = agent.invoke({"messages": [("user", "你好，我叫崔亮")]}, config)
+msg1 = agent.invoke({"messages": [("user", "你好，我叫小明")]}, config)
 msg1["messages"][-1].pretty_print()
 
 # 定义用户兴趣列表
