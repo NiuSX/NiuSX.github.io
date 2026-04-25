@@ -1,7 +1,7 @@
 //整个侧边栏设置背景色
 .sidebar {
   background-color: #8dbeee !important; // 浅蓝色背景
-  padding: 10em; // ，添加一些内边距让内容不贴边
+  //padding: 10em; // ，添加一些内边距让内容不贴边
   border-radius: 4px; // 添加一点圆角
 }
 
@@ -9,11 +9,15 @@
 /*
    作者头像和个人信息
    ========================================================================== */
-.author__avatar {
-   img {
+.author__avatar img {
     width: 110px;
     height: 110px;
     border-radius: 50%;
     object-fit: cover;  /* 图片裁剪填充，保持比例 */
-   }
+}
+
+/*作者侧边栏*/
+.author__avatar {
+
+
 }
