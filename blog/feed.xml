@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2026-05-27T15:10:05+08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Spec-kit使用教程</title><link href="http://localhost:4000/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="alternate" type="text/html" title="Spec-kit使用教程" /><published>2026-05-13T00:00:00+08:00</published><updated>2026-05-13T00:00:00+08:00</updated><id>http://localhost:4000/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B</id><content type="html" xml:base="http://localhost:4000/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><![CDATA[<h1 id="spec--kit">Spec- Kit</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-05-27T15:30:49+08:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Spec-kit使用教程</title><link href="https://niusx.github.io/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="alternate" type="text/html" title="Spec-kit使用教程" /><published>2026-05-13T00:00:00+08:00</published><updated>2026-05-13T00:00:00+08:00</updated><id>https://niusx.github.io/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B</id><content type="html" xml:base="https://niusx.github.io/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><![CDATA[<h1 id="spec--kit">Spec- Kit</h1>
 <p><a href="https://github.com/github/spec-kit">spec-kit</a> github 官方开发维护的一个 <a href="https://github.com/github/spec-kit/blob/main/spec-driven.md">SDD</a> 工具</p>
 
 <h2 id="1-安装">1. 安装</h2>
@@ -200,7 +200,7 @@
 
 <p><a href="https://github.com/github/spec-kit/blob/main/spec-driven.md">完整的规格驱动开发(SDD)方法论</a></p>
 
-<p><a href="https://github.github.io/spec-kit/reference/integrations.html">Supported AI Coding Agent Integrations</a></p>]]></content><author><name>一只捡星星的熊</name></author><category term="AI" /><category term="SDD" /></entry><entry><title type="html">AI编程范式浅了解</title><link href="http://localhost:4000/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3/" rel="alternate" type="text/html" title="AI编程范式浅了解" /><published>2026-05-08T00:00:00+08:00</published><updated>2026-05-08T00:00:00+08:00</updated><id>http://localhost:4000/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3</id><content type="html" xml:base="http://localhost:4000/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3/"><![CDATA[<h1 id="介绍">介绍</h1>
+<p><a href="https://github.github.io/spec-kit/reference/integrations.html">Supported AI Coding Agent Integrations</a></p>]]></content><author><name>一只捡星星的熊</name></author><category term="AI" /><category term="SDD" /></entry><entry><title type="html">AI编程范式浅了解</title><link href="https://niusx.github.io/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3/" rel="alternate" type="text/html" title="AI编程范式浅了解" /><published>2026-05-08T00:00:00+08:00</published><updated>2026-05-08T00:00:00+08:00</updated><id>https://niusx.github.io/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3</id><content type="html" xml:base="https://niusx.github.io/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3/"><![CDATA[<h1 id="介绍">介绍</h1>
 
 <p>编程语言的发展从最早的机器语言到汇编语言，再到众多高级语言，随着AI的发展，迎来了新的革命。2025年2月Andrej Karpathy 提出了vibe coding 的概念，但是由于上下文缺失，迭代混乱等局限性引发了编程社区的反思，在之后提出了spec coding 的新范式，将AI编程发展到规范化，工程化的轨道上。</p>
 
@@ -397,7 +397,7 @@
   <li><a href="https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w">2026 年 AI 编码的“渐进式 Spec”实战指南</a></li>
   <li><a href="https://mp.weixin.qq.com/s/nClVag8tyw7wuG-V1rhmfQ">打造高可靠 AI 助手：Skill 编排、Workflow 设计与 Spec Coding 的深度实践</a></li>
   <li><a href="https://mp.weixin.qq.com/s/1NqfWn_kH5y-mBXAAu62aA">告别“伪智能”代码：用 Spec + RAG 打造真正懂你的AI程序员</a></li>
-</ul>]]></content><author><name>一只捡星星的熊</name></author><category term="AI" /></entry><entry><title type="html">AI学习(五）- HarnessEngineering(未完待续)</title><link href="http://localhost:4000/blog/AI%E5%AD%A6%E4%B9%A05-Harness/" rel="alternate" type="text/html" title="AI学习(五）- HarnessEngineering(未完待续)" /><published>2026-04-25T00:00:00+08:00</published><updated>2026-04-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/AI%E5%AD%A6%E4%B9%A05-Harness</id><content type="html" xml:base="http://localhost:4000/blog/AI%E5%AD%A6%E4%B9%A05-Harness/"><![CDATA[<h1 id="介绍">介绍</h1>
+</ul>]]></content><author><name>一只捡星星的熊</name></author><category term="AI" /></entry><entry><title type="html">AI学习(五）- HarnessEngineering(未完待续)</title><link href="https://niusx.github.io/blog/AI%E5%AD%A6%E4%B9%A05-Harness/" rel="alternate" type="text/html" title="AI学习(五）- HarnessEngineering(未完待续)" /><published>2026-04-25T00:00:00+08:00</published><updated>2026-04-25T00:00:00+08:00</updated><id>https://niusx.github.io/blog/AI%E5%AD%A6%E4%B9%A05-Harness</id><content type="html" xml:base="https://niusx.github.io/blog/AI%E5%AD%A6%E4%B9%A05-Harness/"><![CDATA[<h1 id="介绍">介绍</h1>
 
 <p>一个Agent = Model + Harness，所有Harness Engineering 指的是模型之外的一切，包含系统提示词，工具调用，文件系统，编排逻辑，钩子中间件、反馈回路、约束机制等等。model是Agent的能力来源，而 Harness 则把状态、工具、反馈和约束串起来。</p>
 
@@ -468,7 +468,7 @@
   <li><a href="https://mp.weixin.qq.com/s/rlIyIIZOXFObNIXbPI7gDg">Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的</a></li>
   <li><a href="https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww">深度解析 Hermes Agent 如何实现“自进化”及其 Prompt / Context / Harness 的设计实践</a></li>
   <li><a href="https://mp.weixin.qq.com/s/xLdQ9Z3n3SNwaQtmrM28FA">从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering</a></li>
-</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="AI" /></entry><entry><title type="html">AI 编程工具使用</title><link href="http://localhost:4000/blog/AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" rel="alternate" type="text/html" title="AI 编程工具使用" /><published>2026-04-25T00:00:00+08:00</published><updated>2026-04-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8</id><content type="html" xml:base="http://localhost:4000/blog/AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"><![CDATA[<h1 id="gemin-使用">Gemin 使用</h1>
+</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="AI" /></entry><entry><title type="html">AI 编程工具使用</title><link href="https://niusx.github.io/blog/AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" rel="alternate" type="text/html" title="AI 编程工具使用" /><published>2026-04-25T00:00:00+08:00</published><updated>2026-04-25T00:00:00+08:00</updated><id>https://niusx.github.io/blog/AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8</id><content type="html" xml:base="https://niusx.github.io/blog/AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"><![CDATA[<h1 id="gemin-使用">Gemin 使用</h1>
 
 <h2 id="1-androidstudio-和-idea-使用最简单">1. AndroidStudio 和 IDEA 使用（最简单）</h2>
 
@@ -767,7 +767,7 @@ cc switch 和 CC GUI 插件配置也和 codex 类似</p>
     <li>供应商卷钱跑路</li>
     <li>供应商模型注水</li>
   </ol>
-</blockquote>]]></content><author><name>一只捡星星的熊</name></author><category term="AI 工具" /></entry><entry><title type="html">KMP 多平台项目配置(未完待续）</title><link href="http://localhost:4000/blog/KMP%E5%A4%9A%E5%B9%B3%E5%8F%B0%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/" rel="alternate" type="text/html" title="KMP 多平台项目配置(未完待续）" /><published>2026-04-23T00:00:00+08:00</published><updated>2026-04-23T00:00:00+08:00</updated><id>http://localhost:4000/blog/KMP%E5%A4%9A%E5%B9%B3%E5%8F%B0%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE</id><content type="html" xml:base="http://localhost:4000/blog/KMP%E5%A4%9A%E5%B9%B3%E5%8F%B0%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"><![CDATA[<h1 id="介绍">介绍</h1>
+</blockquote>]]></content><author><name>一只捡星星的熊</name></author><category term="AI 工具" /></entry><entry><title type="html">KMP 多平台项目配置(未完待续）</title><link href="https://niusx.github.io/blog/KMP%E5%A4%9A%E5%B9%B3%E5%8F%B0%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/" rel="alternate" type="text/html" title="KMP 多平台项目配置(未完待续）" /><published>2026-04-23T00:00:00+08:00</published><updated>2026-04-23T00:00:00+08:00</updated><id>https://niusx.github.io/blog/KMP%E5%A4%9A%E5%B9%B3%E5%8F%B0%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE</id><content type="html" xml:base="https://niusx.github.io/blog/KMP%E5%A4%9A%E5%B9%B3%E5%8F%B0%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"><![CDATA[<h1 id="介绍">介绍</h1>
 <p>Kotlin 多平台（KMP，Kotlin Multiplatform）是 JetBrains 的一项开源技术，采用”共享代码、原生实现”的架构理念，能够在 Android、iOS、桌面、网页和服务器之间共享代码，同时保留原生开发的优势。与传统的”一次编写，到处运行”虚拟机方案不同，Kotlin Multiplatform通过LLVM编译器直接将共享代码分别编译为目标平台的原生代码，确保了与平台SDK的深度集成和最优性能，实现了<strong>代码复用性</strong>与<strong>原生性能</strong>的完美平衡</p>
 
 <p>同时你还可以通过 Compose Multiplatform，在多个平台共享 UI 代码，最大化代码的重复使用。</p>
@@ -1325,7 +1325,7 @@ Kotlin 编译器接收源代码作为输入，并生成一组平台特定的二�
 
 <p>预期声明和实际声明允许你访问Kotlin多平台模块中的平台特定API。你可以在通用代码中提供平台无关的API</p>
 
-<h1 id="未完待续">未完待续</h1>]]></content><author><name>一只捡星星的熊</name></author><category term="Kotlin" /></entry><entry><title type="html">Shell语言</title><link href="http://localhost:4000/blog/Shell/" rel="alternate" type="text/html" title="Shell语言" /><published>2026-04-11T00:00:00+08:00</published><updated>2026-04-11T00:00:00+08:00</updated><id>http://localhost:4000/blog/Shell</id><content type="html" xml:base="http://localhost:4000/blog/Shell/"><![CDATA[<h1 id="介绍">介绍</h1>
+<h1 id="未完待续">未完待续</h1>]]></content><author><name>一只捡星星的熊</name></author><category term="Kotlin" /></entry><entry><title type="html">Shell语言</title><link href="https://niusx.github.io/blog/Shell/" rel="alternate" type="text/html" title="Shell语言" /><published>2026-04-11T00:00:00+08:00</published><updated>2026-04-11T00:00:00+08:00</updated><id>https://niusx.github.io/blog/Shell</id><content type="html" xml:base="https://niusx.github.io/blog/Shell/"><![CDATA[<h1 id="介绍">介绍</h1>
 <p>Shell 是一个用 C 语言编写的程序，它是用户使用 Linux 的桥梁。Shell 既是一种命令语言，又是一种程序设计语言。</p>
 
 <p>Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。</p>
@@ -2320,7 +2320,7 @@ return 语句只能返回一个介于 0 到 255 之间的整数</p>
 <h1 id="文件包含">文件包含</h1>
 
 <p>Shell 文件包含的语法格式如下：
-<code class="language-plaintext highlighter-rouge">. filename</code> # 注意点号(.)和文件名中间有一空格 或者 <code class="language-plaintext highlighter-rouge">source filename</code></p>]]></content><author><name>一只捡星星的熊</name></author><category term="命令语言" /><category term="编程语言" /></entry><entry><title type="html">RestFulAPI</title><link href="http://localhost:4000/blog/RestFulAPI/" rel="alternate" type="text/html" title="RestFulAPI" /><published>2026-03-18T00:00:00+08:00</published><updated>2026-03-18T00:00:00+08:00</updated><id>http://localhost:4000/blog/RestFulAPI</id><content type="html" xml:base="http://localhost:4000/blog/RestFulAPI/"><![CDATA[<h1 id="介绍">介绍</h1>
+<code class="language-plaintext highlighter-rouge">. filename</code> # 注意点号(.)和文件名中间有一空格 或者 <code class="language-plaintext highlighter-rouge">source filename</code></p>]]></content><author><name>一只捡星星的熊</name></author><category term="命令语言" /><category term="编程语言" /></entry><entry><title type="html">RestFulAPI</title><link href="https://niusx.github.io/blog/RestFulAPI/" rel="alternate" type="text/html" title="RestFulAPI" /><published>2026-03-18T00:00:00+08:00</published><updated>2026-03-18T00:00:00+08:00</updated><id>https://niusx.github.io/blog/RestFulAPI</id><content type="html" xml:base="https://niusx.github.io/blog/RestFulAPI/"><![CDATA[<h1 id="介绍">介绍</h1>
 
 <h2 id="rest架构风格">Rest架构风格</h2>
 <p>REST（Representational State Transfer，表述性状态转移）是一种软件架构风格，由 Roy Fielding 博士在 2000 年提出，REST 定义了一组约束条件和原则，用于创建可扩展、松耦合的 Web 服务。
@@ -3396,7 +3396,7 @@ query {
   </tbody>
 </table>
 
-<p>##</p>]]></content><author><name>一只捡星星的熊</name></author><category term="架构" /></entry><entry><title type="html">Android 学习</title><link href="http://localhost:4000/blog/Android%E5%AD%A6%E4%B9%A0/" rel="alternate" type="text/html" title="Android 学习" /><published>2026-03-15T00:00:00+08:00</published><updated>2026-03-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/Android%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="http://localhost:4000/blog/Android%E5%AD%A6%E4%B9%A0/"><![CDATA[<h1 id="简介">简介</h1>
+<p>##</p>]]></content><author><name>一只捡星星的熊</name></author><category term="架构" /></entry><entry><title type="html">Android 学习</title><link href="https://niusx.github.io/blog/Android%E5%AD%A6%E4%B9%A0/" rel="alternate" type="text/html" title="Android 学习" /><published>2026-03-15T00:00:00+08:00</published><updated>2026-03-15T00:00:00+08:00</updated><id>https://niusx.github.io/blog/Android%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="https://niusx.github.io/blog/Android%E5%AD%A6%E4%B9%A0/"><![CDATA[<h1 id="简介">简介</h1>
 
 <p>Android是一个开源的，基于Linux的移动设备操作系统，主要使用于移动设备，如智能手机和平板电脑。Android是由谷歌及其他公司带领的开放手机联盟开发的。</p>
 
@@ -4337,7 +4337,7 @@ addCategory() 方法为意图对象添加类别，removeCategory() 方法删除�
   <li>代码或者数据共享： Android提供了基于签名的权限机制，那么一个应用程序就可以为另一个以相同证书签名的应用程序公开自己的功能。
 以同一个证书对多个应用程序进行签名，利用基于签名的权限检查，你就可以在应用程序间以安全的方式共享代码和数据了。 
 不同的应用程序之间，想共享数据，或者共享代码，那么要让他们运行在同一个进程中，而且要让他们用相同的证书签名。</li>
-</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="-Android" /></entry><entry><title type="html">Gradle构建工具</title><link href="http://localhost:4000/blog/gradle%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/" rel="alternate" type="text/html" title="Gradle构建工具" /><published>2026-03-15T00:00:00+08:00</published><updated>2026-03-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/gradle%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7</id><content type="html" xml:base="http://localhost:4000/blog/gradle%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"><![CDATA[<h1 id="gradle基础">gradle基础</h1>
+</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="-Android" /></entry><entry><title type="html">Gradle构建工具</title><link href="https://niusx.github.io/blog/gradle%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/" rel="alternate" type="text/html" title="Gradle构建工具" /><published>2026-03-15T00:00:00+08:00</published><updated>2026-03-15T00:00:00+08:00</updated><id>https://niusx.github.io/blog/gradle%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7</id><content type="html" xml:base="https://niusx.github.io/blog/gradle%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"><![CDATA[<h1 id="gradle基础">gradle基础</h1>
 
 <h2 id="介绍">介绍</h2>
 
@@ -4847,7 +4847,7 @@ buildEnvironment：显示构建脚本的依赖和环境信息</p>
   <li>接手遗留项目，想逐步修复问题</li>
   <li>暂时接受现有问题，只关注新增问题</li>
   <li>团队约定代码质量改进计划</li>
-</ul>]]></content><author><name>一只捡星星的熊</name></author><category term="构建工具" /></entry><entry><title type="html">AI学习(四）- Skills</title><link href="http://localhost:4000/blog/AI%E5%AD%A6%E4%B9%A04-Skills/" rel="alternate" type="text/html" title="AI学习(四）- Skills" /><published>2026-03-10T00:00:00+08:00</published><updated>2026-03-10T00:00:00+08:00</updated><id>http://localhost:4000/blog/AI%E5%AD%A6%E4%B9%A04-Skills</id><content type="html" xml:base="http://localhost:4000/blog/AI%E5%AD%A6%E4%B9%A04-Skills/"><![CDATA[<h1 id="简介">简介</h1>
+</ul>]]></content><author><name>一只捡星星的熊</name></author><category term="构建工具" /></entry><entry><title type="html">AI学习(四）- Skills</title><link href="https://niusx.github.io/blog/AI%E5%AD%A6%E4%B9%A04-Skills/" rel="alternate" type="text/html" title="AI学习(四）- Skills" /><published>2026-03-10T00:00:00+08:00</published><updated>2026-03-10T00:00:00+08:00</updated><id>https://niusx.github.io/blog/AI%E5%AD%A6%E4%B9%A04-Skills</id><content type="html" xml:base="https://niusx.github.io/blog/AI%E5%AD%A6%E4%B9%A04-Skills/"><![CDATA[<h1 id="简介">简介</h1>
 
 <h2 id="介绍">介绍</h2>
 
