@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-05-28T13:49:45+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Pandoc 文档转换工具</title><link href="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/" rel="alternate" type="text/html" title="Pandoc 文档转换工具" /><published>2026-05-18T00:00:00+00:00</published><updated>2026-05-18T00:00:00+00:00</updated><id>https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7</id><content type="html" xml:base="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/"><![CDATA[<h1 id="pandoc-介绍">pandoc 介绍</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-05-28T14:07:56+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Pandoc 文档转换工具</title><link href="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/" rel="alternate" type="text/html" title="Pandoc 文档转换工具" /><published>2026-05-18T00:00:00+00:00</published><updated>2026-05-18T00:00:00+00:00</updated><id>https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7</id><content type="html" xml:base="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/"><![CDATA[<h1 id="pandoc-介绍">pandoc 介绍</h1>
 
 <p><a href="https://pandoc.org/">Pandoc</a> 是一个“万能文档转换器”，支持在 Markdown、Word (.docx)、PDF、LaTeX、HTML、EPUB 等数十种格式之间互相转换</p>
 
 <h1 id="安装">安装</h1>
 
-<p><a href="https://pandoc.org/">Pandoc</a> 官网进行下载安装
-typora markdown处理器也支持内置Pandoc</p>
+<p><a href="https://pandoc.org/">Pandoc</a> 官网进行下载安装</p>
+
+<p><strong>Typora内使用：</strong></p>
+<ol>
+  <li>按照前面官网安装完成Pandoc</li>
+  <li>在 Typora 里点击导出会提示给定 Pandoc 安装位置，填入上一步里的安装位置</li>
+  <li>确定之后就可以在 Typora 里进行导出了。</li>
+</ol>
 
 <h1 id="使用">使用</h1>
 
