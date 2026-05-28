@@ -174,7 +174,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Pandoc 文档转换工具",
-        "excerpt":"pandoc 介绍 Pandoc 是一个“万能文档转换器”，支持在 Markdown、Word (.docx)、PDF、LaTeX、HTML、EPUB 等数十种格式之间互相转换 安装 Pandoc 官网进行下载安装 Typora内使用： 按照前面官网安装完成Pandoc 在 Typora 里点击导出会提示给定 Pandoc 安装位置，填入上一步里的安装位置 确定之后就可以在 Typora 里进行导出了。 使用 查看支持的格式转换 1 2 3 4 5 # 查看所有支持的输入格式 pandoc --list-input-formats # 查看所有支持的输出格式 pandoc --list-output-formats 格式转换 1 pandoc \"原文档名字.源格式\" -o \"目标文档名字.目标格式\" 提取图片到指定文件夹 1 2 # 提取图片到 images 文件夹 pandoc \"测试文档.docx\"...","categories": ["工具"],
+        "excerpt":"pandoc 介绍 Pandoc 是一个“万能文档转换器”，支持在 Markdown、Word (.docx)、PDF、LaTeX、HTML、EPUB 等数十种格式之间互相转换 安装 Pandoc 官网进行下载安装 Typora内使用： 按照前面官网安装完成 Pandoc 在 Typora 里点击导出会提示给定 Pandoc 安装位置，填入上一步里的安装位置 确定之后就可以在 Typora 里进行导出了。 使用 查看支持的格式转换 1 2 3 4 5 # 查看所有支持的输入格式 pandoc --list-input-formats # 查看所有支持的输出格式 pandoc --list-output-formats 格式转换 1 pandoc \"原文档名字.源格式\" -o \"目标文档名字.目标格式\" 提取图片到指定文件夹 1 2 # 提取图片到 images 文件夹 pandoc...","categories": ["工具"],
         "tags": [],
         "url": "/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/",
         "teaser": null
