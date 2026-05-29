@@ -178,4 +178,10 @@ var store = [{
         "tags": [],
         "url": "/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/",
         "teaser": null
+      },{
+        "title": "Langchain学习",
+        "excerpt":"1.介绍 参考文档 LangChain 模型接口可参考官方文档：https://reference.langchain.com/python/langchain_core/language_models/ LangChain 提示词官方文档参考：https://reference.langchain.com/python/langchain_core/prompts/ LangChain 输出解析器可参考文档：https://reference.langchain.com/python/langchain_core/output_parsers/ langChain 链式调用可参考文档：https://reference.langchain.com/python/langchain_core/runnables/ langchain 记忆存储相关内容，可参考文档：https://docs.langchain.com/oss/python/langchain/short-term-memory LangChain内置工具列表：https://docs.langchain.com/oss/python/integrations/tools langchain 内置第三方搜索库:https://python.langchain.com/docs/integrations/tools/#search **Ollama Embedding **可参考文档：https://python.langchain.com/api_reference/community/embeddings/langchain_community.embeddings.ollama.OllamaEmbeddings.html 核心库 langchain-core:提供 LangChain 的核心抽象和基类，是其他模块的基础。 langchain:主包，包含核心功能模块，依赖 langchain-core,提供构建复杂应用的完整工具集，适合快速开发。 主要子模块： LLMs：与语言模型交互的接口（如 OpenAI、Hugging Face）。 Chat Models：专为对话场景优化的模型接口。 Memory：管理对话上下文的模块（如 ConversationBufferMemory）。 Chains：组合提示、模型和其他组件的工作流（如 LLMChain、RetrievalQA）。 Agents：动态决策和工具调用的模块。 Tools：外部工具接口（如搜索、计算器）。 langchain-community:社区贡献的扩展模块，包含大量第三方集成和工具,扩展 LangChain 的功能，适合需要特定集成或开源替代方案的场景。 语言模型集成库 LangChain 支持与多种语言模型和嵌入模型的集成，这些集成通常以单独的子包形式提供，需单独安装。以下是常见的模型集成库： langchain-openai:与 OpenAI 的 GPT 模型和嵌入模型（如 text-embedding-ada-002）交互。 langchain-huggingface:支持 Hugging...","categories": ["AI","Agent"],
+        "tags": [],
+        "url": "/blog/Langchain%E5%AD%A6%E4%B9%A0/",
+        "teaser": null
       }]
