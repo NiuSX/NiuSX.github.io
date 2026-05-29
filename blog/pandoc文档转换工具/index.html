@@ -354,6 +354,21 @@ pandoc <span class="nt">--list-output-formats</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <ol>
+  <li>设定模板</li>
+</ol>
+
+<p>生成默认的参考文档</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>pandoc <span class="nt">-o</span> template.docx <span class="nt">--print-default-data-file</span> reference.docx
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>修改参考文档样式后转换时使用参考文档</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>pandoc <span class="s2">"原文档名字.源格式"</span>  <span class="nt">-o</span> <span class="s2">"目标文档名字.目标格式"</span> <span class="nt">--reference-doc</span> <span class="s2">"template.docx"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<ol>
   <li>提取图片到指定文件夹</li>
 </ol>
 
