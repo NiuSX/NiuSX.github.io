@@ -184,4 +184,10 @@ var store = [{
         "tags": [],
         "url": "/blog/Langchain%E5%AD%A6%E4%B9%A0/",
         "teaser": null
+      },{
+        "title": "UI设计了解",
+        "excerpt":"UI 设计 介绍 维度 网页设计 网页开发 核心任务 视觉呈现、用户体验、交互流程 代码实现、功能逻辑、数据交互 产出物 设计稿、原型图、UI规范、动效说明 可运行的网站/应用、API接口 关注点 美不美、好不好用、流不流畅 能不能跑、快不快、稳不稳定 关键角色 UI设计师、UX设计师、交互设计师 前端工程师、后端工程师、全栈工程师 工具/语言 Figma、Sketch、Photoshop、AI HTML、CSS、JavaScript、Python、Java、Go 网页设计方法 用户中心设计 (UCD - User-Centered Design) 核心理念：从用户需求出发，让用户参与整个设计过程 流程：调研用户 → 定义需求 → 设计原型 → 测试验证 → 迭代优化 场景：追求用户体验的产品（几乎所有现代网站） 响应式设计 (Responsive Design) 核心理念：一套代码适配所有屏幕尺寸 关键技术：流体网格、弹性图片、媒体查询 场景：需要同时在手机、平板、电脑上使用的网站 移动优先设计 (Mobile First Design) 核心理念：先设计手机版，再逐步增强到桌面版 原因：手机用户最多、屏幕限制最严、性能最宝贵...","categories": ["UI设计"],
+        "tags": [],
+        "url": "/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/",
+        "teaser": null
       }]

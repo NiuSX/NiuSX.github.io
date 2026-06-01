@@ -1,0 +1,1150 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-CN" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>UI设计了解 - 一只捡星星的熊</title>
+<meta name="description" content="记录一些自己的学习笔记">
+
+
+  <meta name="author" content="一只捡星星的熊">
+  
+  <meta property="article:author" content="一只捡星星的熊">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="一只捡星星的熊">
+<meta property="og:title" content="UI设计了解">
+<meta property="og:url" content="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/">
+
+
+  <meta property="og:description" content="记录一些自己的学习笔记">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="一只捡星星的熊 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/blog/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">转到主导航栏</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">转到内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">转到底部</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/blog/">
+          一只捡星星的熊
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >首页</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/about/"
+                
+                
+              >关于</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/year-archive/"
+                
+                
+              >归档</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/about"
+                
+                
+              >相册</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">切换搜索</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切换菜单</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://niusx.github.io/blog/">
+        <img src="/blog/assets/images/wukong-photo.jpg" alt="一只捡星星的熊" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://niusx.github.io/blog/" itemprop="url">一只捡星星的熊</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>什么也没写</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">关注</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">中国</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/NiuSX/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://space.bilibili.com/347549684/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-bilibili" aria-hidden="true"></i><span class="label">Bilibili</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="UI设计了解">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2026-06-01T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/" itemprop="url">UI设计了解
+</a>
+          </h1>
+          
+
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <ul class="toc__menu"><li><a href="#ui-设计">UI 设计</a><ul><li><a href="#介绍">介绍</a></li><li><a href="#网页设计方法">网页设计方法</a></li><li><a href="#网页开发方法">网页开发方法</a></li><li><a href="#协作方法">协作方法</a></li><li><a href="#尺寸单位">尺寸单位</a><ul><li><a href="#一绝对单位-absolute-lengths">一、绝对单位 (Absolute Lengths)</a></li><li><a href="#二相对单位-relative-lengths">二、相对单位 (Relative Lengths)</a></li><li><a href="#三移动端跨平台专用单位">三、移动端/跨平台专用单位</a></li><li><a href="#四特殊功能单位-css-函数高级单位">四、特殊功能单位 (CSS 函数/高级单位)</a></li></ul></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="ui-设计">UI 设计</h1>
+
+<h2 id="介绍">介绍</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">维度</th>
+      <th style="text-align: left"><strong>网页设计</strong></th>
+      <th style="text-align: left"><strong>网页开发</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>核心任务</strong></td>
+      <td style="text-align: left">视觉呈现、用户体验、交互流程</td>
+      <td style="text-align: left">代码实现、功能逻辑、数据交互</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>产出物</strong></td>
+      <td style="text-align: left">设计稿、原型图、UI规范、动效说明</td>
+      <td style="text-align: left">可运行的网站/应用、API接口</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>关注点</strong></td>
+      <td style="text-align: left">美不美、好不好用、流不流畅</td>
+      <td style="text-align: left">能不能跑、快不快、稳不稳定</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>关键角色</strong></td>
+      <td style="text-align: left">UI设计师、UX设计师、交互设计师</td>
+      <td style="text-align: left">前端工程师、后端工程师、全栈工程师</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>工具/语言</strong></td>
+      <td style="text-align: left">Figma、Sketch、Photoshop、AI</td>
+      <td style="text-align: left">HTML、CSS、JavaScript、Python、Java、Go</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="网页设计方法">网页设计方法</h2>
+
+<ol>
+  <li>用户中心设计 (UCD - User-Centered Design)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：从用户需求出发，让用户参与整个设计过程</li>
+  <li><strong>流程</strong>：调研用户 → 定义需求 → 设计原型 → 测试验证 → 迭代优化</li>
+  <li><strong>场景</strong>：追求用户体验的产品（几乎所有现代网站）</li>
+</ul>
+
+<ol>
+  <li>响应式设计 (Responsive Design)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：一套代码适配所有屏幕尺寸</li>
+  <li><strong>关键技术</strong>：流体网格、弹性图片、媒体查询</li>
+  <li><strong>场景</strong>：需要同时在手机、平板、电脑上使用的网站</li>
+</ul>
+
+<ol>
+  <li>移动优先设计 (Mobile First Design)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：先设计手机版，再逐步增强到桌面版</li>
+  <li><strong>原因</strong>：手机用户最多、屏幕限制最严、性能最宝贵</li>
+  <li><strong>场景</strong>：移动端流量占比高的产品（电商、社交、资讯）</li>
+</ul>
+
+<ol>
+  <li>极简主义设计 (Minimalist Design)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：少即是多，去掉一切不必要的元素</li>
+  <li><strong>特征</strong>：大量留白、有限配色、简洁字体、扁平图标</li>
+  <li><strong>场景</strong>：品牌官网、作品集、Apple/Google类产品</li>
+</ul>
+
+<ol>
+  <li>材质设计 (Material Design) —— Google</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：模拟纸张和墨水的物理特性，用层级表达深度</li>
+  <li><strong>特征</strong>：卡片、阴影、动效、FAB按钮（悬浮操作按钮）</li>
+  <li><strong>场景</strong>：Android应用、Google系产品</li>
+</ul>
+
+<ol>
+  <li>人机界面指南 (HIG - Human Interface Guidelines) —— Apple</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：清晰、遵从、深度，强调内容本身</li>
+  <li><strong>特征</strong>：半透明毛玻璃效果、大标题、边缘滑动返回</li>
+  <li><strong>场景</strong>：iOS/macOS应用、Apple官网</li>
+</ul>
+
+<ol>
+  <li>原子设计 (Atomic Design)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：像化学元素一样，从最小单元组合成页面</li>
+  <li><strong>层级</strong>：原子（按钮）→ 分子（搜索框+按钮）→ 有机物（导航栏）→ 模板 → 页面</li>
+  <li><strong>场景</strong>：需要建立统一组件库的大型项目</li>
+</ul>
+
+<ol>
+  <li>以内容为中心的设计 (Content-First Design)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：先确定内容和信息架构，再设计视觉</li>
+  <li><strong>场景</strong>：博客、新闻网站、文档站、在线课程</li>
+</ul>
+
+<ol>
+  <li>无障碍设计 (Accessibility / A11y)</li>
+</ol>
+
+<ul>
+  <li><strong>核心理念</strong>：让残障人士（视障、听障、行动障碍）也能正常使用</li>
+  <li><strong>关键技术</strong>：语义化HTML、高对比度、键盘导航、屏幕阅读器支持</li>
+  <li><strong>场景</strong>：政府网站、公共服务、追求普适性的商业网站</li>
+</ul>
+
+<h2 id="网页开发方法">网页开发方法</h2>
+
+<ol>
+  <li>传统开发方法</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">方法</th>
+      <th style="text-align: left">核心特征</th>
+      <th style="text-align: left">优缺点</th>
+      <th style="text-align: left">现状</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>多页应用 (MPA)</strong></td>
+      <td style="text-align: left">每次跳转都重新加载整个页面</td>
+      <td style="text-align: left">SEO好、首屏快；但页面闪烁、体验割裂</td>
+      <td style="text-align: left">博客、官网仍用</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>渐进增强</strong></td>
+      <td style="text-align: left">先保证基础功能在所有浏览器运行，再叠加高级特性</td>
+      <td style="text-align: left">兼容性极好；开发成本高</td>
+      <td style="text-align: left">政府、银行网站</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>优雅降级</strong></td>
+      <td style="text-align: left">先为现代浏览器开发全功能版，再为旧浏览器减配</td>
+      <td style="text-align: left">开发快；旧浏览器体验差</td>
+      <td style="text-align: left">渐被淘汰</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>现代前端开发方法</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">方法</th>
+      <th style="text-align: left">核心特征</th>
+      <th style="text-align: left">代表技术</th>
+      <th style="text-align: left">场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>单页应用 (SPA)</strong></td>
+      <td style="text-align: left">一次加载，局部刷新，前端控制路由</td>
+      <td style="text-align: left">React、Vue、Angular</td>
+      <td style="text-align: left">Gmail、Figma、Spotify Web</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>服务端渲染 (SSR)</strong></td>
+      <td style="text-align: left">在服务器生成完整HTML再发送</td>
+      <td style="text-align: left">Next.js、Nuxt.js、Remix</td>
+      <td style="text-align: left">电商、新闻、需要SEO的SPA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>静态站点生成 (SSG)</strong></td>
+      <td style="text-align: left">构建时生成静态HTML，部署到CDN</td>
+      <td style="text-align: left">Hugo、Hexo、Astro、Jekyll</td>
+      <td style="text-align: left">博客、文档站、作品集</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>微前端</strong></td>
+      <td style="text-align: left">将前端应用拆分成独立子应用，组合成一个整体</td>
+      <td style="text-align: left">qiankun、Module Federation</td>
+      <td style="text-align: left">大型企业级应用（多个团队协作）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>岛屿架构</strong></td>
+      <td style="text-align: left">页面大部分是静态HTML，只有少数交互区域是动态的</td>
+      <td style="text-align: left">Astro、Qwik</td>
+      <td style="text-align: left">内容型网站（博客、营销页）</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>开发模式/方法论</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">方法</th>
+      <th style="text-align: left">核心流程</th>
+      <th style="text-align: left">适用场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>敏捷开发</strong></td>
+      <td style="text-align: left">迭代推进、快速交付、持续反馈</td>
+      <td style="text-align: left">大多数互联网产品</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Scrum</strong></td>
+      <td style="text-align: left">固定周期（1-4周）冲刺，每日站会，Sprint评审</td>
+      <td style="text-align: left">产品快速迭代</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>看板</strong></td>
+      <td style="text-align: left">可视化任务流，限制并行任务数</td>
+      <td style="text-align: left">运维、维护类项目</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>极限编程 (XP)</strong></td>
+      <td style="text-align: left">测试驱动开发、结对编程、持续集成</td>
+      <td style="text-align: left">需求变化频繁、质量要求高的项目</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>工程化方法</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">方法</th>
+      <th style="text-align: left">核心内容</th>
+      <th style="text-align: left">工具示例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>模块化</strong></td>
+      <td style="text-align: left">将代码拆分成独立模块</td>
+      <td style="text-align: left">ES Modules、CommonJS、AMD</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>组件化</strong></td>
+      <td style="text-align: left">封装UI和逻辑为可复用的组件</td>
+      <td style="text-align: left">React/Vue组件、Web Components</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>构建自动化</strong></td>
+      <td style="text-align: left">自动编译、打包、压缩、热更新</td>
+      <td style="text-align: left">Webpack、Vite、Parcel、Rollup</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>版本控制</strong></td>
+      <td style="text-align: left">协作开发、代码追溯</td>
+      <td style="text-align: left">Git、SVN</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>持续集成/持续部署</strong></td>
+      <td style="text-align: left">自动测试、自动部署</td>
+      <td style="text-align: left">GitHub Actions、GitLab CI、Jenkins</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>响应式编程</strong></td>
+      <td style="text-align: left">用数据流处理异步事件</td>
+      <td style="text-align: left">RxJS、Signals（Vue/Solid）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="协作方法">协作方法</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">方法</th>
+      <th style="text-align: left">作用</th>
+      <th style="text-align: left">工具/实践</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>设计系统</strong></td>
+      <td style="text-align: left">统一设计和开发的组件库，保证一致性</td>
+      <td style="text-align: left">Ant Design、Material UI、Arco Design</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>设计稿交付</strong></td>
+      <td style="text-align: left">设计师产出 → 开发者实现</td>
+      <td style="text-align: left">Figma Dev Mode、Zeplin、蓝湖</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>设计令牌 (Design Tokens)</strong></td>
+      <td style="text-align: left">将设计变量（颜色、字体、间距）转为代码变量</td>
+      <td style="text-align: left">Style Dictionary、CSS变量</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Storybook</strong></td>
+      <td style="text-align: left">在开发环境中独立开发和测试UI组件</td>
+      <td style="text-align: left">React/Vue/Angular组件库</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Figma to Code</strong></td>
+      <td style="text-align: left">自动将设计稿生成代码</td>
+      <td style="text-align: left">Figma插件（Anima、Locofy）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>AB测试</strong></td>
+      <td style="text-align: left">同时上线多个版本，用数据决定哪个好</td>
+      <td style="text-align: left">Google Optimize、VWO</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="尺寸单位">尺寸单位</h2>
+
+<h3 id="一绝对单位-absolute-lengths">一、绝对单位 (Absolute Lengths)</h3>
+
+<p>这类单位是<strong>固定值</strong>，不会因为屏幕或父元素的变化而改变。通常用于<strong>打印样式</strong>或需要精确控制物理尺寸的场景。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">单位</th>
+      <th style="text-align: left">英文全称</th>
+      <th style="text-align: left">含义/来源</th>
+      <th style="text-align: left">换算关系</th>
+      <th style="text-align: left">使用场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">px</code></strong></td>
+      <td style="text-align: left">Pixel</td>
+      <td style="text-align: left">图像显示的基本单位，源自”picture element”</td>
+      <td style="text-align: left">屏幕最小单位，CSS绝对长度基准</td>
+      <td style="text-align: left">屏幕显示（边框、阴影、小图标）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">pt</code></strong></td>
+      <td style="text-align: left">Point</td>
+      <td style="text-align: left">印刷业传统单位</td>
+      <td style="text-align: left">1/72 英寸</td>
+      <td style="text-align: left">传统印刷、Word排版；网页中一般不用</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">pc</code></strong></td>
+      <td style="text-align: left">Pica</td>
+      <td style="text-align: left">印刷业传统单位</td>
+      <td style="text-align: left">1/6 英寸 (12pt)</td>
+      <td style="text-align: left">印刷排版，Web基本不用</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">cm</code></strong></td>
+      <td style="text-align: left">Centimeter</td>
+      <td style="text-align: left">厘米，公制长度单位</td>
+      <td style="text-align: left">1in = 2.54cm</td>
+      <td style="text-align: left">屏幕显示不准，偶尔用于打印样式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">mm</code></strong></td>
+      <td style="text-align: left">Millimeter</td>
+      <td style="text-align: left">毫米，公制长度单位</td>
+      <td style="text-align: left">10mm = 1cm</td>
+      <td style="text-align: left">屏幕显示不准，偶尔用于打印样式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">in</code></strong></td>
+      <td style="text-align: left">Inch</td>
+      <td style="text-align: left">英寸，英制长度单位</td>
+      <td style="text-align: left">1in = 2.54cm</td>
+      <td style="text-align: left">屏幕显示不准，偶尔用于打印样式</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="二相对单位-relative-lengths">二、相对单位 (Relative Lengths)</h3>
+
+<p>这类单位是<strong>相对的</strong>，会根据某个基准值（父元素、视口、根元素）动态变化，是实现<strong>响应式设计</strong>和<strong>无障碍访问</strong>的核心。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">单位</th>
+      <th style="text-align: left">英文全称</th>
+      <th style="text-align: left">含义/来源</th>
+      <th style="text-align: left">换算关系</th>
+      <th style="text-align: left">使用场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">rem</code></strong></td>
+      <td style="text-align: left">Root EM</td>
+      <td style="text-align: left">相对于根元素字体大小（EM指字母M宽度）</td>
+      <td style="text-align: left">根元素(<code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>)的字体大小</td>
+      <td style="text-align: left">全局字体、间距、宽度；支持浏览器字号缩放</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">em</code></strong></td>
+      <td style="text-align: left">EM（排版术语）</td>
+      <td style="text-align: left">相对于当前元素字体大小</td>
+      <td style="text-align: left">当前元素的字体大小</td>
+      <td style="text-align: left">相对于自身字体缩进的边距(margin/padding)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">%</code></strong></td>
+      <td style="text-align: left">Percent</td>
+      <td style="text-align: left">百分比</td>
+      <td style="text-align: left">父元素的同属性值</td>
+      <td style="text-align: left">流式布局、栅格系统、弹性图片</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">vw</code></strong></td>
+      <td style="text-align: left">Viewport Width</td>
+      <td style="text-align: left">视口宽度百分比</td>
+      <td style="text-align: left">视口宽度的1%</td>
+      <td style="text-align: left">全屏容器、大标题、视口适配</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">vh</code></strong></td>
+      <td style="text-align: left">Viewport Height</td>
+      <td style="text-align: left">视口高度百分比</td>
+      <td style="text-align: left">视口高度的1%</td>
+      <td style="text-align: left">全屏滚动、首屏页脚、移动端全屏弹窗</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">vmin</code></strong></td>
+      <td style="text-align: left">Viewport Minimum</td>
+      <td style="text-align: left">视口宽度和高度中较小者的百分比</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">vw</code>和<code class="language-plaintext highlighter-rouge">vh</code>中较小者</td>
+      <td style="text-align: left">确保元素在横竖屏切换时都能完整显示</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">vmax</code></strong></td>
+      <td style="text-align: left">Viewport Maximum</td>
+      <td style="text-align: left">视口宽度和高度中较大者的百分比</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">vw</code>和<code class="language-plaintext highlighter-rouge">vh</code>中较大者</td>
+      <td style="text-align: left">超大背景装饰元素</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">ex</code></strong></td>
+      <td style="text-align: left">x-height</td>
+      <td style="text-align: left">当前字体中字母”x”的高度</td>
+      <td style="text-align: left">当前字体中字母x的高度</td>
+      <td style="text-align: left">特殊垂直对齐，使用较少</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">ch</code></strong></td>
+      <td style="text-align: left">Character width</td>
+      <td style="text-align: left">当前字体中数字”0”的宽度</td>
+      <td style="text-align: left">当前字体中数字0的宽度</td>
+      <td style="text-align: left">限制文本行宽（如<code class="language-plaintext highlighter-rouge">max-width: 60ch</code>）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="三移动端跨平台专用单位">三、移动端/跨平台专用单位</h3>
+
+<p>这类单位更多出现在<strong>移动端开发</strong>、<strong>React Native</strong>、<strong>Flutter</strong> 或 <strong>微信小程序</strong>中。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">单位</th>
+      <th style="text-align: left">英文全称</th>
+      <th style="text-align: left">含义/原理</th>
+      <th style="text-align: left">所属框架/平台</th>
+      <th style="text-align: left">使用场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">dp</code> / <code class="language-plaintext highlighter-rouge">dip</code></strong></td>
+      <td style="text-align: left">Density-Independent Pixel</td>
+      <td style="text-align: left">密度无关像素。160dpi屏幕上1dp=1px，高密度屏幕自动放大</td>
+      <td style="text-align: left">Android 原生 / React Native</td>
+      <td style="text-align: left">所有尺寸（宽高、边距、圆角）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">sp</code></strong></td>
+      <td style="text-align: left">Scale-independent Pixel</td>
+      <td style="text-align: left">缩放无关像素。类似dp，但额外缩放用户字体偏好</td>
+      <td style="text-align: left">Android 原生</td>
+      <td style="text-align: left">文字大小（保证视障用户可读）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">rpx</code></strong></td>
+      <td style="text-align: left">Responsive Pixel</td>
+      <td style="text-align: left">响应式像素。屏幕宽固定为750rpx，自动换算</td>
+      <td style="text-align: left">微信小程序</td>
+      <td style="text-align: left">所有尺寸（手机端完美适配）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">pt</code></strong> (iOS)</td>
+      <td style="text-align: left">Point</td>
+      <td style="text-align: left">逻辑点单位。1pt = 1/72英寸（非Retina屏1pt=1px）</td>
+      <td style="text-align: left">iOS (UIKit/SwiftUI)</td>
+      <td style="text-align: left">iOS界面设计稿标注和开发</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="四特殊功能单位-css-函数高级单位">四、特殊功能单位 (CSS 函数/高级单位)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">单位/函数</th>
+      <th style="text-align: left">英文全称</th>
+      <th style="text-align: left">含义</th>
+      <th style="text-align: left">作用</th>
+      <th style="text-align: left">使用场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">fr</code></strong></td>
+      <td style="text-align: left">Fraction</td>
+      <td style="text-align: left">分数单位</td>
+      <td style="text-align: left">CSS Grid中的剩余空间分数</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">grid-template-columns: 1fr 2fr</code>（比例分配宽度）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">min()</code></strong></td>
+      <td style="text-align: left">Minimum function</td>
+      <td style="text-align: left">取最小值函数</td>
+      <td style="text-align: left">取两个值中的较小值</td>
+      <td style="text-align: left">让容器响应式缩小但有上限：<code class="language-plaintext highlighter-rouge">width: min(100%, 600px)</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">max()</code></strong></td>
+      <td style="text-align: left">Maximum function</td>
+      <td style="text-align: left">取最大值函数</td>
+      <td style="text-align: left">取两个值中的较大值</td>
+      <td style="text-align: left">让容器响应式放大但有下限：<code class="language-plaintext highlighter-rouge">width: max(50%, 300px)</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">clamp()</code></strong></td>
+      <td style="text-align: left">Clamp function</td>
+      <td style="text-align: left">钳位函数</td>
+      <td style="text-align: left">限制在一个区间内</td>
+      <td style="text-align: left">响应式字体：<code class="language-plaintext highlighter-rouge">font-size: clamp(12px, 4vw, 24px)</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><code class="language-plaintext highlighter-rouge">calc()</code></strong></td>
+      <td style="text-align: left">Calculate function</td>
+      <td style="text-align: left">计算函数</td>
+      <td style="text-align: left">混合单位计算</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">width: calc(100% - 20px)</code>（混合百分比和绝对单位）</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>记忆口诀：</p>
+
+  <p><strong>屏幕边框用 <code class="language-plaintext highlighter-rouge">px</code>，全局字体找 <code class="language-plaintext highlighter-rouge">rem</code>，父级参照用 <code class="language-plaintext highlighter-rouge">%</code>，视口比例 <code class="language-plaintext highlighter-rouge">vw</code>/<code class="language-plaintext highlighter-rouge">vh</code>，安卓尺寸用 <code class="language-plaintext highlighter-rouge">dp</code>，iOS 布局靠 <code class="language-plaintext highlighter-rouge">pt</code>，比例布局上 <code class="language-plaintext highlighter-rouge">fr</code>。</strong></p>
+
+</blockquote>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/blog/categories/#ui%E8%AE%BE%E8%AE%A1" class="page__taxonomy-item p-category" rel="tag">UI设计</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time class="dt-published" datetime="2026-06-01T00:00:00+00:00">June 1, 2026</time></p>
+
+
+      </footer>
+
+      
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/Langchain%E5%AD%A6%E4%B9%A0/" class="pagination--pager" title="Langchain学习">上一页</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">下一页</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您还喜欢</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/Langchain%E5%AD%A6%E4%B9%A0/" rel="permalink">Langchain学习
+</a>
+      
+    </h2>
+    
+
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/" rel="permalink">Pandoc 文档转换工具
+</a>
+      
+    </h2>
+    
+
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="permalink">Spec-kit使用教程
+</a>
+      
+    </h2>
+    
+
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/AI%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E4%BA%86%E8%A7%A3/" rel="permalink">AI编程范式浅了解
+</a>
+      
+    </h2>
+    
+
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      输入您要搜索的关键词...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="输入您要搜索的关键词..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>关注:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.bilibili.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-bilibili" aria-hidden="true"></i> Bilibili</a></li>
+        
+      
+    
+
+    
+      <li><a href="/blog/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025-2026 - 2026 <a href="https://NiuSX.github.io">一只捡星星的熊</a>. 技术来自于 <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/blog/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/blog/assets/js/lunr/lunr.min.js"></script>
+<script src="/blog/assets/js/lunr/lunr-store.js"></script>
+<script src="/blog/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
