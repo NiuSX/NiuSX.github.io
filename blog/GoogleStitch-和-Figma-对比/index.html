@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 
 
-<!-- begin _includes/seo.html --><title>Pandoc 文档转换工具 - 一只捡星星的熊</title>
+<!-- begin _includes/seo.html --><title>Google Stitch 和 Figma 对比 - 一只捡星星的熊</title>
 <meta name="description" content="记录一些自己的学习笔记">
 
 
@@ -28,8 +28,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="一只捡星星的熊">
-<meta property="og:title" content="Pandoc 文档转换工具">
-<meta property="og:url" content="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/">
+<meta property="og:title" content="Google Stitch 和 Figma 对比">
+<meta property="og:url" content="https://niusx.github.io/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/">
 
 
   <meta property="og:description" content="记录一些自己的学习笔记">
@@ -42,7 +42,7 @@
 
 
 
-  <meta property="article:published_time" content="2026-05-18T00:00:00+00:00">
+  <meta property="article:published_time" content="2026-06-05T00:00:00+00:00">
 
 
 
@@ -53,7 +53,7 @@
   
 
 
-<link rel="canonical" href="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/">
+<link rel="canonical" href="https://niusx.github.io/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/">
 
 
 
@@ -283,16 +283,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Pandoc 文档转换工具">
+    <meta itemprop="headline" content="Google Stitch 和 Figma 对比">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2026-05-18T00:00:00+00:00">
+    <meta itemprop="datePublished" content="2026-06-05T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://niusx.github.io/blog/pandoc%E6%96%87%E6%A1%A3%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/" itemprop="url">Pandoc 文档转换工具
+            <a href="https://niusx.github.io/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/" itemprop="url">Google Stitch 和 Figma 对比
 </a>
           </h1>
           
@@ -307,137 +307,143 @@
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
-              <ul class="toc__menu"><li><a href="#pandoc-介绍">pandoc 介绍</a></li><li><a href="#安装">安装</a></li><li><a href="#使用">使用</a></li></ul>
+              <ul class="toc__menu"><li><a href="#google-stitch-和-figma-对比">Google Stitch 和 Figma 对比</a></li><li><a href="#混合工作流">混合工作流</a></li></ul>
             </nav>
           </aside>
         
-        <h1 id="pandoc-介绍">pandoc 介绍</h1>
-
-<p><a href="https://pandoc.org/">Pandoc</a> 是一个“万能文档转换器”，支持在 Markdown、Word (.docx)、PDF、LaTeX、HTML、EPUB 等数十种格式之间互相转换</p>
-
-<h1 id="安装">安装</h1>
-
-<p><a href="https://pandoc.org/">Pandoc</a> 官网进行下载安装</p>
-
-<p><strong>Typora内使用：</strong></p>
-<ol>
-  <li>按照前面官网安装完成 Pandoc</li>
-  <li>在 Typora 里点击 “导出-&gt;导出设置-&gt;通用” 里配置 Pandoc 安装位置</li>
-  <li>确定之后就可以在 Typora 里进行导出了。</li>
-  <li>额外设置，在 “导出-&gt;导出设置” 里可以配置各种格式文件的自定义样式模板</li>
-</ol>
-
-<h1 id="使用">使用</h1>
-
-<p>查看支持的格式转换</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="c"># 查看所有支持的输入格式</span>
-pandoc <span class="nt">--list-input-formats</span>
-
-<span class="c"># 查看所有支持的输出格式</span>
-pandoc <span class="nt">--list-output-formats</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>格式转换</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>pandoc <span class="s2">"原文档名字.源格式"</span> <span class="nt">-o</span> <span class="s2">"目标文档名字.目标格式"</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p><strong>设定模板</strong></p>
-
-<p>生成默认的参考文档</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>pandoc <span class="nt">-o</span> template.docx <span class="nt">--print-default-data-file</span> reference.docx
-</pre></td></tr></tbody></table></code></pre></div></div>
-<p>修改参考文档样式后转换时使用参考文档</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>pandoc <span class="s2">"原文档名字.源格式"</span>  <span class="nt">-o</span> <span class="s2">"目标文档名字.目标格式"</span> <span class="nt">--reference-doc</span> <span class="s2">"template.docx"</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>提取图片到指定文件夹</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre><span class="c"># 提取图片到 images 文件夹</span>
-pandoc <span class="s2">"测试文档.docx"</span> <span class="nt">-o</span> 测试文档.md <span class="nt">--extract-media</span><span class="o">=</span>images
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>格式转换速查表</p>
+        <h1 id="google-stitch-和-figma-对比">Google Stitch 和 Figma 对比</h1>
 
 <table>
   <thead>
     <tr>
-      <th>输入格式</th>
-      <th>输出格式</th>
-      <th>命令示例</th>
+      <th style="text-align: left">功能</th>
+      <th style="text-align: left">Google Stitch</th>
+      <th style="text-align: left">Figma</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>.docx</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.docx" -o "文档.md"</code></td>
+      <td style="text-align: left"><strong>主要输入方式</strong></td>
+      <td style="text-align: left">自然语言 / 语音 / 图片上传</td>
+      <td style="text-align: left">在画布上手动设计</td>
     </tr>
     <tr>
-      <td>.md</td>
-      <td>.docx</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.md" -o "文档.docx"</code></td>
+      <td style="text-align: left"><strong>AI 生成</strong></td>
+      <td style="text-align: left">从文字提示生成完整 UI（Gemini 2.5 Pro）</td>
+      <td style="text-align: left">Figma AI 辅助布局和内容</td>
     </tr>
     <tr>
-      <td>.md</td>
-      <td>.html</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.md" -o "文档.html"</code></td>
+      <td style="text-align: left"><strong>学习曲线</strong></td>
+      <td style="text-align: left">几分钟——描述你想要的即可</td>
+      <td style="text-align: left">需要数周到数月才能熟练</td>
     </tr>
     <tr>
-      <td>.html</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.html" -o "文档.md" -t gfm</code></td>
+      <td style="text-align: left"><strong>实时协作</strong></td>
+      <td style="text-align: left">有限（以单用户为中心）侧重于人与AI的协作</td>
+      <td style="text-align: left">拥有成熟的实时多人协作、评论、版本历史和权限管理</td>
     </tr>
     <tr>
-      <td>.md</td>
-      <td>.pdf</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.md" -o "文档.pdf" --pdf-engine=xelatex</code></td>
+      <td style="text-align: left"><strong>设计系统</strong></td>
+      <td style="text-align: left">通过 URL 或 DESIGN.md 导入</td>
+      <td style="text-align: left">完整的组件库、令牌、变量</td>
     </tr>
     <tr>
-      <td>.md</td>
-      <td>.epub</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.md" -o "文档.epub"</code></td>
+      <td style="text-align: left"><strong>原型制作</strong></td>
+      <td style="text-align: left">AI 生成的交互式原型</td>
+      <td style="text-align: left">手动原型连线，支持高级过渡效果</td>
     </tr>
     <tr>
-      <td>.epub</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.epub" -o "文档.md" -t gfm</code></td>
+      <td style="text-align: left"><strong>代码输出</strong></td>
+      <td style="text-align: left">可用于生产的 HTML + Tailwind CSS</td>
+      <td style="text-align: left">Dev Mode，带代码检查和片段</td>
     </tr>
     <tr>
-      <td>.tex</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.tex" -o "文档.md" -t gfm</code></td>
+      <td style="text-align: left"><strong>语音输入</strong></td>
+      <td style="text-align: left">支持——对画布说话，实时评价</td>
+      <td style="text-align: left">不支持</td>
     </tr>
     <tr>
-      <td>.rtf</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.rtf" -o "文档.md" -t gfm</code></td>
+      <td style="text-align: left"><strong>插件生态</strong></td>
+      <td style="text-align: left">无,处于早期阶段，生态尚不成熟</td>
+      <td style="text-align: left">2,000+ 社区插件</td>
     </tr>
     <tr>
-      <td>.odt</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "文档.odt" -o "文档.md" -t gfm</code></td>
+      <td style="text-align: left"><strong>版本控制</strong></td>
+      <td style="text-align: left">代理管理的项目历史</td>
+      <td style="text-align: left">原生版本历史 + 分支</td>
     </tr>
     <tr>
-      <td>.ipynb</td>
-      <td>.md</td>
-      <td><code class="language-plaintext highlighter-rouge">pandoc "notebook.ipynb" -o "notebook.md" -t gfm</code></td>
+      <td style="text-align: left"><strong>开发交付</strong></td>
+      <td style="text-align: left">直接导出代码</td>
+      <td style="text-align: left">Dev Mode、设计令牌、CSS/iOS/Android</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>响应式设计</strong></td>
+      <td style="text-align: left">AI 生成的响应式变体</td>
+      <td style="text-align: left">手动自动布局和约束</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>无障碍工具</strong></td>
+      <td style="text-align: left">基本的 AI 建议</td>
+      <td style="text-align: left">插件 + 原生对比度检查</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>文件格式</strong></td>
+      <td style="text-align: left">基于 Web，可导出到 Figma/代码</td>
+      <td style="text-align: left">.fig 文件，支持导入/导出 SVG、PNG、PDF</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>团队管理</strong></td>
+      <td style="text-align: left">Google 账号</td>
+      <td style="text-align: left">组织、团队、权限、SSO、SCIM</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>离线访问</strong></td>
+      <td style="text-align: left">不支持</td>
+      <td style="text-align: left">有限支持（桌面应用带同步）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>价格</strong></td>
+      <td style="text-align: left">免费</td>
+      <td style="text-align: left">$0 - $90/席位/月</td>
     </tr>
   </tbody>
 </table>
+
+<p>stitch优势：</p>
+
+<ul>
+  <li>构思速度</li>
+  <li>成本</li>
+  <li>对非设计师的可及性</li>
+  <li>语音交互</li>
+  <li>代码生成</li>
+</ul>
+
+<p>Figma 优势：</p>
+
+<ul>
+  <li>大规模协作</li>
+  <li>设计系统和一致性</li>
+  <li>像素级精确度</li>
+  <li>插件生态系统</li>
+  <li>开发交付</li>
+  <li>企业功能</li>
+</ul>
+
+<blockquote>
+  <p><strong>Stitch 主导从 0 到 1 的阶段，Figma 主导从 1 到 100 的阶段</strong></p>
+</blockquote>
+
+<h1 id="混合工作流">混合工作流</h1>
+
+<ol>
+  <li><strong>从 Stitch 开始。</strong> 花 10 分钟用文字描述生成十几个设计概念。大胆探索截然不同的方向。使用语音模式进行交互式头脑风暴。</li>
+  <li><strong>在 Stitch 中收窄。</strong> 选出 2-3 个最佳方向。通过后续提示进一步完善。通过 DESIGN.md 导入你的设计系统，使其更贴近品牌一致性。</li>
+  <li><strong>导出到 Figma。</strong> 使用 Stitch-to-Figma 插件将你选定的方向导入 Figma，保留图层和组件。</li>
+  <li><strong>在 Figma 中精炼。</strong> 应用你的实际设计系统。将间距、排版和颜色调整到像素级精确。构建组件变体。使用高级交互连接原型。</li>
+  <li><strong>从 Figma 交付。</strong> 使用 Dev Mode 为开发者提供所需的规格、令牌和资源。这个工作流将设计最早期阶段从数天压缩到数分钟，同时保持生产阶段的质量和严谨性。</li>
+</ol>
 
         
       </section>
@@ -459,7 +465,7 @@ pandoc <span class="s2">"测试文档.docx"</span> <span class="nt">-o</span> �
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分类: </strong>
     <span itemprop="keywords">
     
-      <a href="/blog/categories/#%E5%B7%A5%E5%85%B7" class="page__taxonomy-item p-category" rel="tag">工具</a>
+      <a href="/blog/categories/#ui%E8%AE%BE%E8%AE%A1" class="page__taxonomy-item p-category" rel="tag">UI设计</a>
     
     </span>
   </p>
@@ -471,7 +477,7 @@ pandoc <span class="s2">"测试文档.docx"</span> <span class="nt">-o</span> �
         
 
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time class="dt-published" datetime="2026-05-18T00:00:00+00:00">May 18, 2026</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新时间:</strong> <time class="dt-published" datetime="2026-06-05T00:00:00+00:00">June 5, 2026</time></p>
 
 
       </footer>
@@ -482,10 +488,10 @@ pandoc <span class="s2">"测试文档.docx"</span> <span class="nt">-o</span> �
 
   <nav class="pagination" aria-label="Post pagination">
     
-      <a href="/blog/Spec-Kit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="pagination--pager" title="Spec-kit使用教程">上一页</a>
+      <a href="/blog/Figma%E5%AD%A6%E4%B9%A0/" class="pagination--pager" title="Figma简单学习(AI总结)">上一页</a>
     
     
-      <a href="/blog/Langchain%E5%AD%A6%E4%B9%A0/" class="pagination--pager" title="Langchain学习">下一页</a>
+      <a href="#" class="pagination--pager disabled">下一页</a>
     
   </nav>
 
@@ -503,31 +509,6 @@ pandoc <span class="s2">"测试文档.docx"</span> <span class="nt">-o</span> �
   
   <h2 class="page__related-title">猜您还喜欢</h2>
   <div class="grid__wrapper">
-    
-      
-      
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      
-        <a class="u-url" href="/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/" rel="permalink">Google Stitch 和 Figma 对比
-</a>
-      
-    </h2>
-    
-
-
-
-    <p class="archive__item-excerpt p-summary" itemprop="description">
-</p>
-  </article>
-</div>
-
     
       
       
@@ -591,6 +572,31 @@ pandoc <span class="s2">"测试文档.docx"</span> <span class="nt">-o</span> �
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
         <a class="u-url" href="/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93/" rel="permalink">UI设计术语总结(AI总结)
+</a>
+      
+    </h2>
+    
+
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/Langchain%E5%AD%A6%E4%B9%A0/" rel="permalink">Langchain学习
 </a>
       
     </h2>

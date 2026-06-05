@@ -208,4 +208,10 @@ var store = [{
         "tags": [],
         "url": "/blog/Figma%E5%AD%A6%E4%B9%A0/",
         "teaser": null
+      },{
+        "title": "Google Stitch 和 Figma 对比",
+        "excerpt":"Google Stitch 和 Figma 对比 功能 Google Stitch Figma 主要输入方式 自然语言 / 语音 / 图片上传 在画布上手动设计 AI 生成 从文字提示生成完整 UI（Gemini 2.5 Pro） Figma AI 辅助布局和内容 学习曲线 几分钟——描述你想要的即可 需要数周到数月才能熟练 实时协作 有限（以单用户为中心）侧重于人与AI的协作 拥有成熟的实时多人协作、评论、版本历史和权限管理 设计系统 通过 URL 或 DESIGN.md 导入 完整的组件库、令牌、变量 原型制作 AI 生成的交互式原型 手动原型连线，支持高级过渡效果 代码输出 可用于生产的 HTML + Tailwind CSS Dev Mode，带代码检查和片段...","categories": ["UI设计"],
+        "tags": [],
+        "url": "/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/",
+        "teaser": null
       }]
