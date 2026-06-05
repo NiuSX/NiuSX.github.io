@@ -214,4 +214,10 @@ var store = [{
         "tags": [],
         "url": "/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/",
         "teaser": null
+      },{
+        "title": "非 UI 设计者利用 AI 快速完成 UI 设计",
+        "excerpt":"1. UI 设计 AI 工具对比   Claude Design Open Design Google Stitch 出品方 Anthropic 开源社区（nexu-io） Google Labs 本质 对话式设计工作台 Claude Design 的开源替代 AI 原生设计画布 费用 需要 Pro 订阅（$20/月） 完全免费 免费（beta） 运行方式 云端（Anthropic） 本地运行 云端（Google） AI 模型 锁定 Claude Opus 4.7 自由选择（Claude Code/Cursor/Codex 等） 锁定 Gemini 数据归属 Anthropic 服务器 自己的机器 Google...","categories": ["UI设计"],
+        "tags": [],
+        "url": "/blog/%E9%9D%9EUI%E8%AE%BE%E8%AE%A1%E8%80%85%E5%88%A9%E7%94%A8AI%E5%BF%AB%E9%80%9F%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/",
+        "teaser": null
       }]
