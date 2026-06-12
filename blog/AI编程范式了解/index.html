@@ -307,7 +307,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
-              <ul class="toc__menu"><li><a href="#介绍">介绍</a></li><li><a href="#vibe-coding">vibe coding</a></li><li><a href="#spec-coding">spec coding</a><ul><li><a href="#sdd">SDD</a></li><li><a href="#tdd">TDD</a></li><li><a href="#sdd-工具使用">SDD 工具使用</a></li></ul></li><li><a href="#参考">参考</a></li></ul>
+              <ul class="toc__menu"><li><a href="#介绍">介绍</a></li><li><a href="#vibe-coding">vibe coding</a></li><li><a href="#spec-coding">spec coding</a><ul><li><a href="#sdd">SDD</a></li><li><a href="#tdd">TDD</a></li><li><a href="#sdd-工具使用">SDD 工具使用</a></li></ul></li><li><a href="#参考">参考</a></li><li><a href="#2026-06-补充ai-编程范式的工程化理解">2026-06 补充：AI 编程范式的工程化理解</a><ul><li><a href="#vibe-coding-的适用边界">Vibe Coding 的适用边界</a></li><li><a href="#spec-coding-的核心制品">Spec Coding 的核心制品</a></li><li><a href="#sdd--tdd-的组合流程">SDD + TDD 的组合流程</a></li><li><a href="#rag上下文和工具调用">RAG、上下文和工具调用</a></li><li><a href="#工具对比补充">工具对比补充</a></li><li><a href="#实践建议">实践建议</a></li></ul></li><li><a href="#补充参考">补充参考</a></li></ul>
             </nav>
           </aside>
         
@@ -508,6 +508,186 @@
   <li><a href="https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w">2026 年 AI 编码的“渐进式 Spec”实战指南</a></li>
   <li><a href="https://mp.weixin.qq.com/s/nClVag8tyw7wuG-V1rhmfQ">打造高可靠 AI 助手：Skill 编排、Workflow 设计与 Spec Coding 的深度实践</a></li>
   <li><a href="https://mp.weixin.qq.com/s/1NqfWn_kH5y-mBXAAu62aA">告别“伪智能”代码：用 Spec + RAG 打造真正懂你的AI程序员</a></li>
+</ul>
+
+<h1 id="2026-06-补充ai-编程范式的工程化理解">2026-06 补充：AI 编程范式的工程化理解</h1>
+
+<p>AI 编程可以粗略分成三层：</p>
+
+<ol>
+  <li><strong>Vibe Coding</strong>：人用自然语言描述目标，AI 直接生成代码，适合原型和低风险任务。</li>
+  <li><strong>Spec Coding / SDD</strong>：先把需求、约束、验收标准写成结构化规范，再让 AI 实现。</li>
+  <li><strong>Agentic Engineering</strong>：AI 不只写代码，还会读仓库、拆任务、跑测试、修复问题、总结结果，但仍需要规范、工具权限和验证闭环约束。</li>
+</ol>
+
+<p>真正的变化不是“以后不用程序员”，而是工程师的工作重心从逐行编写，转向定义问题、约束边界、审查方案、验证结果和维护系统一致性。</p>
+
+<h2 id="vibe-coding-的适用边界">Vibe Coding 的适用边界</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>适合</th>
+      <th>不适合</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>一次性脚本</td>
+      <td>金融、医疗、权限、安全敏感代码</td>
+    </tr>
+    <tr>
+      <td>UI 原型</td>
+      <td>长期维护的大型系统</td>
+    </tr>
+    <tr>
+      <td>Demo 和概念验证</td>
+      <td>多团队协作项目</td>
+    </tr>
+    <tr>
+      <td>学习新 API</td>
+      <td>需要严格合规和审计的代码</td>
+    </tr>
+    <tr>
+      <td>低风险内部工具</td>
+      <td>复杂并发、分布式一致性、数据迁移</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Vibe Coding 最大的问题不是“AI 会不会写错”，而是没有足够的结构让错误暴露出来。需求不清、上下文不完整、没有测试、没有代码审查时，AI 生成越快，技术债可能累积越快。</p>
+
+<h2 id="spec-coding-的核心制品">Spec Coding 的核心制品</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>制品</th>
+      <th>解决的问题</th>
+      <th>应包含内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">spec.md</code></td>
+      <td>要做什么</td>
+      <td>背景、目标、非目标、用户故事、验收标准</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">plan.md</code></td>
+      <td>怎么做</td>
+      <td>架构、模块、接口、数据流、风险</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tasks.md</code></td>
+      <td>如何拆</td>
+      <td>可独立完成的任务、顺序、并行标记</td>
+    </tr>
+    <tr>
+      <td>tests</td>
+      <td>如何证明正确</td>
+      <td>单元测试、集成测试、端到端测试、回归用例</td>
+    </tr>
+    <tr>
+      <td>changelog / decision log</td>
+      <td>为什么这样做</td>
+      <td>关键决策、替代方案、取舍原因</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>好的 Spec 应该能让另一个人或另一个 AI 在不反复追问的情况下理解目标、边界和验收方式。</p>
+
+<h2 id="sdd--tdd-的组合流程">SDD + TDD 的组合流程</h2>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>需求想法
+  -&gt; spec.md 明确目标和验收
+    -&gt; plan.md 设计模块和接口
+      -&gt; tests 定义正确行为
+        -&gt; implement 编码实现
+          -&gt; validate 测试、审查、修正文档
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>TDD 在 AI 编程中的价值更明显：测试相当于给 AI 一个可执行的“正确性边界”。AI 可以生成实现，但测试负责持续判断实现是否偏离预期。</p>
+
+<h2 id="rag上下文和工具调用">RAG、上下文和工具调用</h2>
+
+<p>AI 编程质量很大程度取决于上下文质量。常见上下文来源包括：</p>
+
+<ul>
+  <li>仓库代码：现有架构、命名、封装、测试风格。</li>
+  <li>文档：需求、接口、设计规范、运行手册。</li>
+  <li>运行结果：测试日志、编译错误、lint 输出、性能数据。</li>
+  <li>外部知识：官方文档、版本说明、规范。</li>
+</ul>
+
+<p>RAG 的作用不是让 AI “知道更多”，而是让 AI 在当前项目中拿到更相关、更可信、更可引用的材料。没有检索和验证的 AI 编程，很容易把通用答案误套到具体项目。</p>
+
+<h2 id="工具对比补充">工具对比补充</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>工具/思路</th>
+      <th>重点</th>
+      <th>适合场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OpenSpec</td>
+      <td>轻量变更规范</td>
+      <td>小团队、渐进式规范</td>
+    </tr>
+    <tr>
+      <td>GitHub spec-kit</td>
+      <td>结构化 SDD 工作流</td>
+      <td>希望强约束 spec/plan/tasks 的项目</td>
+    </tr>
+    <tr>
+      <td>Superpowers</td>
+      <td>技能化工作流</td>
+      <td>需要把流程固化到 AI 行为中的个人或团队</td>
+    </tr>
+    <tr>
+      <td>Codex / Claude Code 类代理</td>
+      <td>读仓库、改代码、跑测试</td>
+      <td>已有代码库中的迭代开发</td>
+    </tr>
+    <tr>
+      <td>Cursor / IDE AI</td>
+      <td>贴近编辑器补全和局部修改</td>
+      <td>日常编码、局部重构</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="实践建议">实践建议</h2>
+
+<ul>
+  <li>低风险探索可以 vibe，高风险或长期项目必须写 spec。</li>
+  <li>AI 生成代码前，先让它读相关文件并说明现有模式。</li>
+  <li>复杂任务要拆成可验证的小任务，不要一次生成整套系统。</li>
+  <li>把测试、lint、类型检查、构建作为默认验证闭环。</li>
+  <li>代码和文档冲突时，先更新规范，再改实现。</li>
+  <li>不要把密钥、生产数据、不可公开业务细节随意放进 prompt。</li>
+</ul>
+
+<h1 id="补充参考">补充参考</h1>
+
+<ul>
+  <li>Andrej Karpathy 关于 vibe coding 的讨论：https://x.com/karpathy/status/1886192184808149383</li>
+  <li>Collins Dictionary - Vibe coding：https://www.collinsdictionary.com/submission/28028/vibe+coding</li>
+  <li>GitHub spec-kit：https://github.com/github/spec-kit</li>
+  <li>Fission AI OpenSpec：https://github.com/Fission-AI/OpenSpec</li>
+  <li>Superpowers：https://github.com/obra/superpowers</li>
+  <li>OpenAI Codex：https://openai.com/codex/</li>
 </ul>
 
 
