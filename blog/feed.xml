@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-06-14T04:12:12+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Mermaid笔记(AI整理）</title><link href="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Mermaid笔记(AI整理）" /><published>2026-06-08T00:00:00+00:00</published><updated>2026-06-08T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/"><![CDATA[<h1 id="1-mermaid-是什么">1. Mermaid 是什么</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-06-14T04:20:09+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Mermaid笔记(AI整理）</title><link href="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Mermaid笔记(AI整理）" /><published>2026-06-08T00:00:00+00:00</published><updated>2026-06-08T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/"><![CDATA[<h1 id="1-mermaid-是什么">1. Mermaid 是什么</h1>
 
 <p>Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。</p>
 
@@ -2210,30 +2210,30 @@ A ..&gt; B
 <h1 id="参考">参考</h1>
 
 <ul>
-  <li>Official: Mermaid Documentation, Introduction: <a href="https://mermaid.js.org/intro/">https://mermaid.js.org/intro/</a></li>
-  <li>Official: Mermaid Flowchart Syntax: <a href="https://mermaid.js.org/syntax/flowchart.html">https://mermaid.js.org/syntax/flowchart.html</a></li>
-  <li>Official: Mermaid Sequence Diagram Syntax: <a href="https://mermaid.js.org/syntax/sequenceDiagram.html">https://mermaid.js.org/syntax/sequenceDiagram.html</a></li>
-  <li>Official: Mermaid Class Diagram Syntax: <a href="https://mermaid.js.org/syntax/classDiagram.html">https://mermaid.js.org/syntax/classDiagram.html</a></li>
-  <li>Official: Mermaid State Diagram Syntax: <a href="https://mermaid.js.org/syntax/stateDiagram.html">https://mermaid.js.org/syntax/stateDiagram.html</a></li>
-  <li>Official: Mermaid Entity Relationship Diagram Syntax: <a href="https://mermaid.js.org/syntax/entityRelationshipDiagram.html">https://mermaid.js.org/syntax/entityRelationshipDiagram.html</a></li>
-  <li>Official: Mermaid Gantt Diagram Syntax: <a href="https://mermaid.js.org/syntax/gantt.html">https://mermaid.js.org/syntax/gantt.html</a></li>
-  <li>Official: Mermaid Pie Chart Syntax: <a href="https://mermaid.js.org/syntax/pie.html">https://mermaid.js.org/syntax/pie.html</a></li>
-  <li>Official: Mermaid User Journey Diagram Syntax: <a href="https://mermaid.js.org/syntax/userJourney.html">https://mermaid.js.org/syntax/userJourney.html</a></li>
-  <li>Official: Mermaid Gitgraph Syntax: <a href="https://mermaid.js.org/syntax/gitgraph.html">https://mermaid.js.org/syntax/gitgraph.html</a></li>
-  <li>Official: Mermaid Mindmap Syntax: <a href="https://mermaid.js.org/syntax/mindmap.html">https://mermaid.js.org/syntax/mindmap.html</a></li>
-  <li>Official: Mermaid Timeline Syntax: <a href="https://mermaid.js.org/syntax/timeline.html">https://mermaid.js.org/syntax/timeline.html</a></li>
-  <li>Official: Mermaid Quadrant Chart Syntax: <a href="https://mermaid.js.org/syntax/quadrantChart.html">https://mermaid.js.org/syntax/quadrantChart.html</a></li>
-  <li>Official: Mermaid Architecture Diagram Syntax: <a href="https://mermaid.js.org/syntax/architecture.html">https://mermaid.js.org/syntax/architecture.html</a></li>
-  <li>Official: Mermaid Configuration: <a href="https://mermaid.js.org/config/schema-docs/config.html">https://mermaid.js.org/config/schema-docs/config.html</a></li>
-  <li>Official: Mermaid Usage and API: <a href="https://mermaid.js.org/config/usage.html">https://mermaid.js.org/config/usage.html</a></li>
-  <li>Official: Mermaid CLI repository: <a href="https://github.com/mermaid-js/mermaid-cli">https://github.com/mermaid-js/mermaid-cli</a></li>
-  <li>Official: Mermaid Live Editor: <a href="https://mermaid.live/">https://mermaid.live/</a></li>
-  <li>Official: npm package <code class="language-plaintext highlighter-rouge">mermaid</code>: <a href="https://www.npmjs.com/package/mermaid">https://www.npmjs.com/package/mermaid</a></li>
-  <li>Official: npm package <code class="language-plaintext highlighter-rouge">@mermaid-js/mermaid-cli</code>: <a href="https://www.npmjs.com/package/@mermaid-js/mermaid-cli">https://www.npmjs.com/package/@mermaid-js/mermaid-cli</a></li>
-  <li>Official: GitHub Docs, Creating diagrams: <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams">https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams</a></li>
-  <li>Community: 博客园 Mermaid 入门文章: <a href="https://www.cnblogs.com/summerday152/p/13645102.html">https://www.cnblogs.com/summerday152/p/13645102.html</a></li>
-  <li>Community: Juejin Mermaid 相关文章搜索入口: <a href="https://juejin.cn/search?query=Mermaid">https://juejin.cn/search?query=Mermaid</a></li>
-  <li>Community: CSDN Mermaid 相关文章搜索入口: <a href="https://so.csdn.net/so/search?q=Mermaid">https://so.csdn.net/so/search?q=Mermaid</a></li>
+  <li><a href="https://mermaid.js.org/intro/">Official: Mermaid Documentation, Introduction</a></li>
+  <li><a href="https://mermaid.js.org/syntax/flowchart.html">Official: Mermaid Flowchart Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/sequenceDiagram.html">Official: Mermaid Sequence Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/classDiagram.html">Official: Mermaid Class Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/stateDiagram.html">Official: Mermaid State Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/entityRelationshipDiagram.html">Official: Mermaid Entity Relationship Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/gantt.html">Official: Mermaid Gantt Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/pie.html">Official: Mermaid Pie Chart Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/userJourney.html">Official: Mermaid User Journey Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/gitgraph.html">Official: Mermaid Gitgraph Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/mindmap.html">Official: Mermaid Mindmap Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/timeline.html">Official: Mermaid Timeline Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/quadrantChart.html">Official: Mermaid Quadrant Chart Syntax</a></li>
+  <li><a href="https://mermaid.js.org/syntax/architecture.html">Official: Mermaid Architecture Diagram Syntax</a></li>
+  <li><a href="https://mermaid.js.org/config/schema-docs/config.html">Official: Mermaid Configuration</a></li>
+  <li><a href="https://mermaid.js.org/config/usage.html">Official: Mermaid Usage and API</a></li>
+  <li><a href="https://github.com/mermaid-js/mermaid-cli">Official: Mermaid CLI repository</a></li>
+  <li><a href="https://mermaid.live/">Official: Mermaid Live Editor</a></li>
+  <li><a href="https://www.npmjs.com/package/mermaid">Official: npm package <code class="language-plaintext highlighter-rouge">mermaid</code></a></li>
+  <li><a href="https://www.npmjs.com/package/@mermaid-js/mermaid-cli">Official: npm package <code class="language-plaintext highlighter-rouge">@mermaid-js/mermaid-cli</code></a></li>
+  <li><a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams">Official: GitHub Docs, Creating diagrams</a></li>
+  <li><a href="https://www.cnblogs.com/summerday152/p/13645102.html">Community: 博客园 Mermaid 入门文章</a></li>
+  <li><a href="https://juejin.cn/search?query=Mermaid">Community: Juejin Mermaid 相关文章搜索入口</a></li>
+  <li><a href="https://so.csdn.net/so/search?q=Mermaid">Community: CSDN Mermaid 相关文章搜索入口</a></li>
 </ul>]]></content><author><name>一只捡星星的熊</name></author><category term="其他" /></entry><entry><title type="html">Figma简单学习(AI总结)</title><link href="https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0/" rel="alternate" type="text/html" title="Figma简单学习(AI总结)" /><published>2026-06-05T00:00:00+00:00</published><updated>2026-06-05T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0/"><![CDATA[<h2 id="1-figma-是什么">1. Figma 是什么</h2>
 
 <p>Figma 是一款基于云端的协作设计工具，主要用于 UI 设计、原型设计、设计系统、团队协作和开发交付。</p>
