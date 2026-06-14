@@ -222,7 +222,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Mermaid笔记(AI整理）",
-        "excerpt":"Mermaid 学习笔记 1. Mermaid 是什么 Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。 Mermaid 的核心价值不是做精细设计稿，而是把“结构、流程、关系、状态、依赖”用可版本管理的文本表达出来。 Mermaid = 用文本描述图表结构，然后自动布局和渲染。 适合场景： 场景 Mermaid 是否适合 原因 技术文档里的流程说明 适合 文本可维护，代码评审友好 README、Wiki、博客图解 适合 GitHub、很多 Markdown 平台支持 Mermaid 架构关系草图 适合 快速表达模块、服务、依赖、方向 产品原型、视觉设计稿 不适合 Mermaid 控制力有限，不适合像素级布局 大型复杂拓扑图 谨慎 节点过多后可读性下降，布局不可完全控制 需要交互的数据可视化 不适合 应使用 ECharts、D3、Vega-Lite 等工具 2....","categories": ["其他"],
+        "excerpt":"1. Mermaid 是什么 Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。 Mermaid 的核心价值不是做精细设计稿，而是把“结构、流程、关系、状态、依赖”用可版本管理的文本表达出来。 Mermaid = 用文本描述图表结构，然后自动布局和渲染。 适合场景： 场景 Mermaid 是否适合 原因 技术文档里的流程说明 适合 文本可维护，代码评审友好 README、Wiki、博客图解 适合 GitHub、很多 Markdown 平台支持 Mermaid 架构关系草图 适合 快速表达模块、服务、依赖、方向 产品原型、视觉设计稿 不适合 Mermaid 控制力有限，不适合像素级布局 大型复杂拓扑图 谨慎 节点过多后可读性下降，布局不可完全控制 需要交互的数据可视化 不适合 应使用 ECharts、D3、Vega-Lite 等工具 2. Mermaid 的工作原理...","categories": ["其他"],
         "tags": [],
         "url": "/blog/Mermaid%E7%AC%94%E8%AE%B0/",
         "teaser": null

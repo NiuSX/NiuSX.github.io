@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-06-14T03:54:10+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Mermaid笔记(AI整理）</title><link href="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Mermaid笔记(AI整理）" /><published>2026-06-08T00:00:00+00:00</published><updated>2026-06-08T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/"><![CDATA[<h1 id="mermaid-学习笔记">Mermaid 学习笔记</h1>
-
-<h2 id="1-mermaid-是什么">1. Mermaid 是什么</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-06-14T03:57:56+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Mermaid笔记(AI整理）</title><link href="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Mermaid笔记(AI整理）" /><published>2026-06-08T00:00:00+00:00</published><updated>2026-06-08T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/"><![CDATA[<h1 id="1-mermaid-是什么">1. Mermaid 是什么</h1>
 
 <p>Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。</p>
 
@@ -51,7 +49,7 @@ Mermaid = 用文本描述图表结构，然后自动布局和渲染。</p>
   </tbody>
 </table>
 
-<h2 id="2-mermaid-的工作原理">2. Mermaid 的工作原理</h2>
+<h1 id="2-mermaid-的工作原理">2. Mermaid 的工作原理</h1>
 
 <p>Mermaid 的基本渲染流程如下：</p>
 
@@ -98,9 +96,9 @@ Mermaid = 用文本描述图表结构，然后自动布局和渲染。</p>
 
 <p>Mermaid 默认输出 SVG。SVG 优点是清晰、可缩放、适合文档；缺点是复杂图表可能渲染较慢，且在某些平台会受到安全策略限制。</p>
 
-<h2 id="3-基本使用方式">3. 基本使用方式</h2>
+<h1 id="3-基本使用方式">3. 基本使用方式</h1>
 
-<h3 id="31-markdown-中直接写">3.1 Markdown 中直接写</h3>
+<h2 id="31-markdown-中直接写">3.1 Markdown 中直接写</h2>
 
 <p>最常见写法是在 Markdown 代码块中使用 <code class="language-plaintext highlighter-rouge">mermaid</code> 语言标识：</p>
 
@@ -122,7 +120,7 @@ Mermaid = 用文本描述图表结构，然后自动布局和渲染。</p>
 
 <p>如果平台支持 Mermaid，这段代码会被渲染成图。如果平台不支持，只会显示为普通代码块。</p>
 
-<h3 id="32-html-页面中使用">3.2 HTML 页面中使用</h3>
+<h2 id="32-html-页面中使用">3.2 HTML 页面中使用</h2>
 
 <p>浏览器中可以通过 Mermaid 包或 CDN 初始化：</p>
 
@@ -171,7 +169,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="33-mermaid-live-editor">3.3 Mermaid Live Editor</h3>
+<h2 id="33-mermaid-live-editor">3.3 Mermaid Live Editor</h2>
 
 <p>官方提供 Mermaid Live Editor，可用于：</p>
 
@@ -184,7 +182,7 @@ flowchart TD
 
 <p>适合先在 Live Editor 中调通，再放入文档或博客。</p>
 
-<h3 id="34-mermaid-cli">3.4 Mermaid CLI</h3>
+<h2 id="34-mermaid-cli">3.4 Mermaid CLI</h2>
 
 <p>Mermaid CLI 包名是 <code class="language-plaintext highlighter-rouge">@mermaid-js/mermaid-cli</code>，命令常见为 <code class="language-plaintext highlighter-rouge">mmdc</code>。</p>
 
@@ -241,7 +239,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h2 id="4-mermaid-文件与代码块习惯">4. Mermaid 文件与代码块习惯</h2>
+<h1 id="4-mermaid-文件与代码块习惯">4. Mermaid 文件与代码块习惯</h1>
 
 <p>常见文件类型：</p>
 
@@ -281,7 +279,7 @@ flowchart TD
   <li>需要跨平台稳定展示：同时保留 <code class="language-plaintext highlighter-rouge">.mmd</code> 和导出的 <code class="language-plaintext highlighter-rouge">.svg</code>。</li>
 </ul>
 
-<h2 id="5-mermaid-语法总览">5. Mermaid 语法总览</h2>
+<h1 id="5-mermaid-语法总览">5. Mermaid 语法总览</h1>
 
 <p>Mermaid 的语法通常由两部分组成：</p>
 
@@ -384,11 +382,11 @@ flowchart TD
   </tbody>
 </table>
 
-<h2 id="6-流程图-flowchart">6. 流程图 Flowchart</h2>
+<h1 id="6-流程图-flowchart">6. 流程图 Flowchart</h1>
 
 <p>流程图是 Mermaid 最常用的图类型，适合表达流程、判断、依赖、模块关系。</p>
 
-<h3 id="61-基本方向">6.1 基本方向</h3>
+<h2 id="61-基本方向">6.1 基本方向</h2>
 
 <pre><code class="language-mermaid">flowchart TD
   A[开始] --&gt; B[处理]
@@ -433,7 +431,7 @@ flowchart TD
   <li>输入到输出的管线：优先 <code class="language-plaintext highlighter-rouge">LR</code>。</li>
 </ul>
 
-<h3 id="62-节点形状">6.2 节点形状</h3>
+<h2 id="62-节点形状">6.2 节点形状</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   A[矩形节点]
@@ -494,7 +492,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="63-连线">6.3 连线</h3>
+<h2 id="63-连线">6.3 连线</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   A[开始] --&gt; B[普通箭头]
@@ -537,7 +535,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="64-子图-subgraph">6.4 子图 Subgraph</h3>
+<h2 id="64-子图-subgraph">6.4 子图 Subgraph</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   subgraph Client[客户端]
@@ -565,7 +563,7 @@ flowchart TD
   <li>流程阶段。</li>
 </ul>
 
-<h3 id="65-流程图实战登录流程">6.5 流程图实战：登录流程</h3>
+<h2 id="65-流程图实战登录流程">6.5 流程图实战：登录流程</h2>
 
 <pre><code class="language-mermaid">flowchart TD
   Start([打开登录页]) --&gt; Input[/输入账号和密码/]
@@ -588,11 +586,11 @@ flowchart TD
   <li>每个节点只表达一个动作。</li>
 </ul>
 
-<h2 id="7-时序图-sequence-diagram">7. 时序图 Sequence Diagram</h2>
+<h1 id="7-时序图-sequence-diagram">7. 时序图 Sequence Diagram</h1>
 
 <p>时序图用于描述多个参与者之间随时间推进的交互。它非常适合 API 调用、登录认证、支付流程、异步消息、微服务调用链。</p>
 
-<h3 id="71-基本语法">7.1 基本语法</h3>
+<h2 id="71-基本语法">7.1 基本语法</h2>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant U as 用户
@@ -641,7 +639,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="72-激活条">7.2 激活条</h3>
+<h2 id="72-激活条">7.2 激活条</h2>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant FE as 前端
@@ -655,7 +653,7 @@ flowchart TD
 
 <p>激活条表示某个参与者正在处理任务。复杂调用链中建议使用，但不要滥用。</p>
 
-<h3 id="73-条件循环和并行">7.3 条件、循环和并行</h3>
+<h2 id="73-条件循环和并行">7.3 条件、循环和并行</h2>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant U as 用户
@@ -714,7 +712,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="74-时序图实战token-刷新">7.4 时序图实战：Token 刷新</h3>
+<h2 id="74-时序图实战token-刷新">7.4 时序图实战：Token 刷新</h2>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant App as 客户端
@@ -735,11 +733,11 @@ flowchart TD
   end
 </code></pre>
 
-<h2 id="8-类图-class-diagram">8. 类图 Class Diagram</h2>
+<h1 id="8-类图-class-diagram">8. 类图 Class Diagram</h1>
 
 <p>类图适合表达面向对象模型、接口和实现关系、领域模型。</p>
 
-<h3 id="81-基本类定义">8.1 基本类定义</h3>
+<h2 id="81-基本类定义">8.1 基本类定义</h2>
 
 <pre><code class="language-mermaid">classDiagram
   class User {
@@ -780,7 +778,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="82-类之间关系">8.2 类之间关系</h3>
+<h2 id="82-类之间关系">8.2 类之间关系</h2>
 
 <pre><code class="language-mermaid">classDiagram
   User "1" --&gt; "*" Order : places
@@ -833,7 +831,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h3 id="83-使用建议">8.3 使用建议</h3>
+<h2 id="83-使用建议">8.3 使用建议</h2>
 
 <ul>
   <li>Mermaid 类图适合文档说明，不适合替代 UML 专业建模工具。</li>
@@ -842,11 +840,11 @@ flowchart TD
   <li>对代码结构，重点表达接口、实现类、依赖方向。</li>
 </ul>
 
-<h2 id="9-状态图-state-diagram">9. 状态图 State Diagram</h2>
+<h1 id="9-状态图-state-diagram">9. 状态图 State Diagram</h1>
 
 <p>状态图用于描述对象或系统在不同状态之间的迁移。典型场景包括订单状态、任务状态、连接状态、页面生命周期。</p>
 
-<h3 id="91-基本语法">9.1 基本语法</h3>
+<h2 id="91-基本语法">9.1 基本语法</h2>
 
 <pre><code class="language-mermaid">stateDiagram-v2
   [*] --&gt; 待支付
@@ -858,7 +856,7 @@ flowchart TD
   已取消 --&gt; [*]
 </code></pre>
 
-<h3 id="92-复合状态">9.2 复合状态</h3>
+<h2 id="92-复合状态">9.2 复合状态</h2>
 
 <pre><code class="language-mermaid">stateDiagram-v2
   [*] --&gt; Connected
@@ -875,7 +873,7 @@ flowchart TD
   Disconnected --&gt; Connected: 重连成功
 </code></pre>
 
-<h3 id="93-状态图使用建议">9.3 状态图使用建议</h3>
+<h2 id="93-状态图使用建议">9.3 状态图使用建议</h2>
 
 <ul>
   <li>状态名用名词或形容词，如“待支付”“运行中”“已完成”。</li>
@@ -884,7 +882,7 @@ flowchart TD
   <li>不要把流程图和状态图混用：流程图关注步骤，状态图关注状态迁移。</li>
 </ul>
 
-<h2 id="10-er-图-entity-relationship-diagram">10. ER 图 Entity Relationship Diagram</h2>
+<h1 id="10-er-图-entity-relationship-diagram">10. ER 图 Entity Relationship Diagram</h1>
 
 <p>ER 图适合表达数据库实体、字段和关系。</p>
 
@@ -970,7 +968,7 @@ flowchart TD
   </tbody>
 </table>
 
-<h2 id="11-甘特图-gantt">11. 甘特图 Gantt</h2>
+<h1 id="11-甘特图-gantt">11. 甘特图 Gantt</h1>
 
 <p>甘特图适合项目计划、任务排期、里程碑。</p>
 
@@ -1053,7 +1051,7 @@ flowchart TD
   正式发布 :milestone, release, after test1, 0d
 </code></pre>
 
-<h2 id="12-饼图-pie">12. 饼图 Pie</h2>
+<h1 id="12-饼图-pie">12. 饼图 Pie</h1>
 
 <p>饼图适合表达简单占比。</p>
 
@@ -1072,7 +1070,7 @@ flowchart TD
   <li>不适合表达趋势，应使用折线图或柱状图工具。</li>
 </ul>
 
-<h2 id="13-用户旅程图-journey">13. 用户旅程图 Journey</h2>
+<h1 id="13-用户旅程图-journey">13. 用户旅程图 Journey</h1>
 
 <p>用户旅程图用于表达用户在流程中的体验阶段和满意度。</p>
 
@@ -1091,7 +1089,7 @@ flowchart TD
 
 <p>适合产品分析，不适合严谨技术流程。评分通常用于主观体验记录，不应当作精确指标。</p>
 
-<h2 id="14-git-图-gitgraph">14. Git 图 GitGraph</h2>
+<h1 id="14-git-图-gitgraph">14. Git 图 GitGraph</h1>
 
 <p>Git 图适合解释分支、提交、合并、发布流程。</p>
 
@@ -1121,7 +1119,7 @@ flowchart TD
 
 <p>不适合展示真实仓库的完整历史。真实历史应使用 <code class="language-plaintext highlighter-rouge">git log --graph</code> 或 Git 图形工具。</p>
 
-<h2 id="15-思维导图-mindmap">15. 思维导图 Mindmap</h2>
+<h1 id="15-思维导图-mindmap">15. 思维导图 Mindmap</h1>
 
 <p>思维导图适合学习笔记、知识分类、主题拆解。</p>
 
@@ -1149,7 +1147,7 @@ flowchart TD
   <li>对复杂知识体系，思维导图适合作为索引，不适合承载全部细节。</li>
 </ul>
 
-<h2 id="16-时间线-timeline">16. 时间线 Timeline</h2>
+<h1 id="16-时间线-timeline">16. 时间线 Timeline</h1>
 
 <p>时间线适合展示事件演进。</p>
 
@@ -1165,7 +1163,7 @@ flowchart TD
 
 <p>时间线重点是“顺序”和“阶段”，不是精确排期。如果需要任务持续时间，应使用甘特图。</p>
 
-<h2 id="17-象限图-quadrant-chart">17. 象限图 Quadrant Chart</h2>
+<h1 id="17-象限图-quadrant-chart">17. 象限图 Quadrant Chart</h1>
 
 <p>象限图适合优先级、价值成本、风险收益分析。</p>
 
@@ -1184,7 +1182,7 @@ flowchart TD
   C4 图: [0.5, 0.8]
 </code></pre>
 
-<h2 id="18-架构图-architecture-diagram">18. 架构图 Architecture Diagram</h2>
+<h1 id="18-架构图-architecture-diagram">18. 架构图 Architecture Diagram</h1>
 
 <p>Mermaid 新版本中提供 <code class="language-plaintext highlighter-rouge">architecture-beta</code> 用于表达系统架构组件。因为名称中仍带 <code class="language-plaintext highlighter-rouge">beta</code>，长期稳定性要以官方文档为准。</p>
 
@@ -1207,7 +1205,7 @@ flowchart TD
   <li>对云资源拓扑、网络、安全边界要求高的图，建议使用专业架构图工具。</li>
 </ul>
 
-<h2 id="19-c4-图">19. C4 图</h2>
+<h1 id="19-c4-图">19. C4 图</h1>
 
 <p>C4 模型用于从不同层级描述软件架构，通常包括 Context、Container、Component、Code 四层。Mermaid 支持 C4 风格图，但不同版本能力可能有差异。</p>
 
@@ -1239,9 +1237,9 @@ flowchart TD
   <li>Context 图不要塞进数据库和类细节。</li>
 </ul>
 
-<h2 id="20-mermaid-配置与主题">20. Mermaid 配置与主题</h2>
+<h1 id="20-mermaid-配置与主题">20. Mermaid 配置与主题</h1>
 
-<h3 id="201-代码块内初始化配置">20.1 代码块内初始化配置</h3>
+<h2 id="201-代码块内初始化配置">20.1 代码块内初始化配置</h2>
 
 <p>Mermaid 支持在图表前通过 <code class="language-plaintext highlighter-rouge">init</code> 指令配置主题等参数：</p>
 
@@ -1290,7 +1288,7 @@ flowchart LR
   </tbody>
 </table>
 
-<h3 id="202-自定义主题变量">20.2 自定义主题变量</h3>
+<h2 id="202-自定义主题变量">20.2 自定义主题变量</h2>
 
 <pre><code class="language-mermaid">%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#e8f3ff", "primaryTextColor": "#111827", "primaryBorderColor": "#2563eb", "lineColor": "#4b5563", "fontFamily": "Inter, Microsoft YaHei, sans-serif"}}}%%
 flowchart LR
@@ -1334,7 +1332,7 @@ flowchart LR
   </tbody>
 </table>
 
-<h3 id="203-安全等级-securitylevel">20.3 安全等级 securityLevel</h3>
+<h2 id="203-安全等级-securitylevel">20.3 安全等级 securityLevel</h2>
 
 <p><code class="language-plaintext highlighter-rouge">securityLevel</code> 会影响 HTML 标签、链接、点击事件等能力。文档平台通常会采用较严格的安全策略，防止脚本注入。</p>
 
@@ -1363,9 +1361,9 @@ flowchart LR
   </tbody>
 </table>
 
-<h2 id="21-markdown-平台集成">21. Markdown 平台集成</h2>
+<h1 id="21-markdown-平台集成">21. Markdown 平台集成</h1>
 
-<h3 id="211-github">21.1 GitHub</h3>
+<h2 id="211-github">21.1 GitHub</h2>
 
 <p>GitHub Markdown 支持在 fenced code block 中渲染 Mermaid 图表。写法如下：</p>
 
@@ -1389,7 +1387,7 @@ flowchart LR
   <li>若图表对博客展示非常重要，建议导出 SVG 作为兜底。</li>
 </ul>
 
-<h3 id="212-jekyll--github-pages">21.2 Jekyll / GitHub Pages</h3>
+<h2 id="212-jekyll--github-pages">21.2 Jekyll / GitHub Pages</h2>
 
 <p>Jekyll 默认不会自动渲染 Mermaid。常见方案：</p>
 
@@ -1421,7 +1419,7 @@ flowchart LR
 
 <p>但这要求页面上的 Mermaid 代码块能被正确保留为 Mermaid 可识别的 DOM 结构。不同主题和 Markdown 渲染器可能需要额外适配。</p>
 
-<h3 id="213-vs-code">21.3 VS Code</h3>
+<h2 id="213-vs-code">21.3 VS Code</h2>
 
 <p>常见方式：</p>
 
@@ -1433,7 +1431,7 @@ flowchart LR
 
 <p>VS Code 预览和最终博客渲染不一定完全一致。关键文档建议在目标平台验证。</p>
 
-<h2 id="22-mermaid-图表选型">22. Mermaid 图表选型</h2>
+<h1 id="22-mermaid-图表选型">22. Mermaid 图表选型</h1>
 
 <table>
   <thead>
@@ -1518,9 +1516,9 @@ flowchart LR
   <li>不确定时，先用流程图；如果箭头越来越像调用链，再改成时序图。</li>
 </ul>
 
-<h2 id="23-完整实战用-mermaid-描述一个博客发布流程">23. 完整实战：用 Mermaid 描述一个博客发布流程</h2>
+<h1 id="23-完整实战用-mermaid-描述一个博客发布流程">23. 完整实战：用 Mermaid 描述一个博客发布流程</h1>
 
-<h3 id="231-流程图">23.1 流程图</h3>
+<h2 id="231-流程图">23.1 流程图</h2>
 
 <pre><code class="language-mermaid">flowchart TD
   A[编写 Markdown] --&gt; B{本地预览通过?}
@@ -1535,7 +1533,7 @@ flowchart LR
   G -- 是 --&gt; I[站点发布]
 </code></pre>
 
-<h3 id="232-时序图">23.2 时序图</h3>
+<h2 id="232-时序图">23.2 时序图</h2>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant Author as 作者
@@ -1555,7 +1553,7 @@ flowchart LR
   end
 </code></pre>
 
-<h3 id="233-架构图">23.3 架构图</h3>
+<h2 id="233-架构图">23.3 架构图</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   subgraph Local[本地环境]
@@ -1578,9 +1576,9 @@ flowchart LR
   Pages --&gt; Web
 </code></pre>
 
-<h2 id="24-mermaid-编写规范">24. Mermaid 编写规范</h2>
+<h1 id="24-mermaid-编写规范">24. Mermaid 编写规范</h1>
 
-<h3 id="241-命名规范">24.1 命名规范</h3>
+<h2 id="241-命名规范">24.1 命名规范</h2>
 
 <p>推荐：</p>
 
@@ -1609,7 +1607,7 @@ flowchart LR
   <li>节点 ID 尽量使用英文、数字、下划线，节点显示文本可以用中文。</li>
 </ul>
 
-<h3 id="242-文案规范">24.2 文案规范</h3>
+<h2 id="242-文案规范">24.2 文案规范</h2>
 
 <p>建议：</p>
 
@@ -1621,7 +1619,7 @@ flowchart LR
   <li>节点超过 15 个时考虑拆图。</li>
 </ul>
 
-<h3 id="243-结构规范">24.3 结构规范</h3>
+<h2 id="243-结构规范">24.3 结构规范</h2>
 
 <p>建议顺序：</p>
 
@@ -1641,9 +1639,9 @@ flowchart LR
 
 <p>复杂图可以先声明节点，再统一声明关系，这样更容易维护。</p>
 
-<h2 id="25-常见样式控制">25. 常见样式控制</h2>
+<h1 id="25-常见样式控制">25. 常见样式控制</h1>
 
-<h3 id="251-classdef-和-class">25.1 classDef 和 class</h3>
+<h2 id="251-classdef-和-class">25.1 classDef 和 class</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   A[输入] --&gt; B[核心处理] --&gt; C[输出]
@@ -1655,7 +1653,7 @@ flowchart LR
   class C success;
 </code></pre>
 
-<h3 id="252-style-单独设置节点">25.2 style 单独设置节点</h3>
+<h2 id="252-style-单独设置节点">25.2 style 单独设置节点</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   A[普通节点] --&gt; B[重点节点]
@@ -1670,9 +1668,9 @@ flowchart LR
   <li>样式用于辅助理解，不要依赖颜色传递唯一信息。</li>
 </ul>
 
-<h2 id="26-常见错误与踩坑">26. 常见错误与踩坑</h2>
+<h1 id="26-常见错误与踩坑">26. 常见错误与踩坑</h1>
 
-<h3 id="261-平台不渲染-mermaid">26.1 平台不渲染 Mermaid</h3>
+<h2 id="261-平台不渲染-mermaid">26.1 平台不渲染 Mermaid</h2>
 
 <p>现象：</p>
 
@@ -1698,7 +1696,7 @@ flowchart LR
   <li>对 Jekyll 检查布局是否引入 Mermaid JS。</li>
 </ul>
 
-<h3 id="262-中文空格特殊字符导致解析失败">26.2 中文、空格、特殊字符导致解析失败</h3>
+<h2 id="262-中文空格特殊字符导致解析失败">26.2 中文、空格、特殊字符导致解析失败</h2>
 
 <p>建议：</p>
 
@@ -1715,7 +1713,7 @@ flowchart LR
   LoginPage["登录页 /login"] --&gt; AuthApi["认证接口 POST /api/login"]
 </code></pre>
 
-<h3 id="263-节点文本太长">26.3 节点文本太长</h3>
+<h2 id="263-节点文本太长">26.3 节点文本太长</h2>
 
 <p>问题：</p>
 
@@ -1733,7 +1731,7 @@ flowchart LR
   <li>复杂图拆为多张图。</li>
 </ul>
 
-<h3 id="264-图太复杂">26.4 图太复杂</h3>
+<h2 id="264-图太复杂">26.4 图太复杂</h2>
 
 <p>判断标准：</p>
 
@@ -1752,7 +1750,7 @@ flowchart LR
   <li>先画总览，再画局部细节。</li>
 </ul>
 
-<h3 id="265-github-能显示博客不能显示">26.5 GitHub 能显示，博客不能显示</h3>
+<h2 id="265-github-能显示博客不能显示">26.5 GitHub 能显示，博客不能显示</h2>
 
 <p>这是常见误解。GitHub 仓库页面支持 Mermaid，不代表 GitHub Pages 或 Jekyll 主题自动支持 Mermaid。</p>
 
@@ -1766,7 +1764,7 @@ flowchart LR
 
 <p>如果你希望笔记长期稳定展示，方案 C 最可靠。</p>
 
-<h3 id="266-主题在不同平台不一致">26.6 主题在不同平台不一致</h3>
+<h2 id="266-主题在不同平台不一致">26.6 主题在不同平台不一致</h2>
 
 <p>原因：</p>
 
@@ -1784,7 +1782,7 @@ flowchart LR
   <li>重要文档在目标平台截图或预览确认。</li>
 </ul>
 
-<h3 id="267-安全策略导致链接或-html-不生效">26.7 安全策略导致链接或 HTML 不生效</h3>
+<h2 id="267-安全策略导致链接或-html-不生效">26.7 安全策略导致链接或 HTML 不生效</h2>
 
 <p>Mermaid 支持一定程度的链接、点击、HTML 标签，但平台可能禁用。</p>
 
@@ -1796,7 +1794,7 @@ flowchart LR
   <li>对用户可编辑内容使用严格安全等级。</li>
 </ul>
 
-<h2 id="27-调试方法">27. 调试方法</h2>
+<h1 id="27-调试方法">27. 调试方法</h1>
 
 <p>推荐排查顺序：</p>
 
@@ -1848,7 +1846,7 @@ flowchart LR
   </tbody>
 </table>
 
-<h2 id="28-学习路线">28. 学习路线</h2>
+<h1 id="28-学习路线">28. 学习路线</h1>
 
 <p>建议按这个顺序学：</p>
 
@@ -1894,9 +1892,9 @@ flowchart LR
   </tbody>
 </table>
 
-<h2 id="29-常用模板">29. 常用模板</h2>
+<h1 id="29-常用模板">29. 常用模板</h1>
 
-<h3 id="291-api-调用时序图模板">29.1 API 调用时序图模板</h3>
+<h2 id="291-api-调用时序图模板">29.1 API 调用时序图模板</h2>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant Client as 客户端
@@ -1912,7 +1910,7 @@ flowchart LR
   API--&gt;&gt;Client: HTTP 响应
 </code></pre>
 
-<h3 id="292-服务架构流程图模板">29.2 服务架构流程图模板</h3>
+<h2 id="292-服务架构流程图模板">29.2 服务架构流程图模板</h2>
 
 <pre><code class="language-mermaid">flowchart LR
   Client[客户端] --&gt; Gateway[API Gateway]
@@ -1924,7 +1922,7 @@ flowchart LR
   MQ --&gt; Worker[异步任务]
 </code></pre>
 
-<h3 id="293-状态机模板">29.3 状态机模板</h3>
+<h2 id="293-状态机模板">29.3 状态机模板</h2>
 
 <pre><code class="language-mermaid">stateDiagram-v2
   [*] --&gt; Created
@@ -1937,7 +1935,7 @@ flowchart LR
   Completed --&gt; [*]
 </code></pre>
 
-<h3 id="294-数据库-er-模板">29.4 数据库 ER 模板</h3>
+<h2 id="294-数据库-er-模板">29.4 数据库 ER 模板</h2>
 
 <pre><code class="language-mermaid">erDiagram
   ENTITY_A ||--o{ ENTITY_B : owns
@@ -1954,7 +1952,7 @@ flowchart LR
   }
 </code></pre>
 
-<h2 id="30-mermaid-与其他工具对比">30. Mermaid 与其他工具对比</h2>
+<h1 id="30-mermaid-与其他工具对比">30. Mermaid 与其他工具对比</h1>
 
 <table>
   <thead>
@@ -2015,9 +2013,9 @@ flowchart LR
   <li>真实数据分析：考虑 ECharts、D3、Vega-Lite。</li>
 </ul>
 
-<h2 id="31-团队落地建议">31. 团队落地建议</h2>
+<h1 id="31-团队落地建议">31. 团队落地建议</h1>
 
-<h3 id="311-建立图表规范">31.1 建立图表规范</h3>
+<h2 id="311-建立图表规范">31.1 建立图表规范</h2>
 
 <p>建议团队约定：</p>
 
@@ -2031,7 +2029,7 @@ flowchart LR
   <li>导出图片存放目录。</li>
 </ul>
 
-<h3 id="312-把-mermaid-放入文档流程">31.2 把 Mermaid 放入文档流程</h3>
+<h2 id="312-把-mermaid-放入文档流程">31.2 把 Mermaid 放入文档流程</h2>
 
 <p>推荐流程：</p>
 
@@ -2042,7 +2040,7 @@ flowchart LR
   D --&gt; E[发布文档]
 </code></pre>
 
-<h3 id="313-版本固定">31.3 版本固定</h3>
+<h2 id="313-版本固定">31.3 版本固定</h2>
 
 <p>如果使用 CLI 生成图片，建议在项目中固定版本：</p>
 
@@ -2072,9 +2070,9 @@ flowchart LR
   <li>便于回溯构建问题。</li>
 </ul>
 
-<h2 id="32-速查表">32. 速查表</h2>
+<h1 id="32-速查表">32. 速查表</h1>
 
-<h3 id="321-图类型速查">32.1 图类型速查</h3>
+<h2 id="321-图类型速查">32.1 图类型速查</h2>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -2106,7 +2104,7 @@ architecture-beta
 C4Context
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="322-flowchart-速查">32.2 Flowchart 速查</h3>
+<h2 id="322-flowchart-速查">32.2 Flowchart 速查</h2>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -2136,7 +2134,7 @@ subgraph Name
 end
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="323-sequence-速查">32.3 Sequence 速查</h3>
+<h2 id="323-sequence-速查">32.3 Sequence 速查</h2>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -2170,7 +2168,7 @@ and 另一路并行
 end
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="324-class-速查">32.4 Class 速查</h3>
+<h2 id="324-class-速查">32.4 Class 速查</h2>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -2196,7 +2194,7 @@ A --&gt; B
 A ..&gt; B
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h2 id="33-记忆重点">33. 记忆重点</h2>
+<h1 id="33-记忆重点">33. 记忆重点</h1>
 
 <ul>
   <li>Mermaid 最适合“文档中的结构化图表”，不是视觉设计工具。</li>
@@ -2209,7 +2207,7 @@ A ..&gt; B
   <li>关键文档建议导出 SVG，保证长期可展示。</li>
 </ul>
 
-<h2 id="references-and-further-reading">References and further reading</h2>
+<h1 id="references-and-further-reading">References and further reading</h1>
 
 <ul>
   <li>Official: Mermaid Documentation, Introduction: https://mermaid.js.org/intro/</li>
