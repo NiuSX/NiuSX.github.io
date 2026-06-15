@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-06-14T08:18:55+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Mermaid笔记(AI整理）</title><link href="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Mermaid笔记(AI整理）" /><published>2026-06-08T00:00:00+00:00</published><updated>2026-06-08T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/"><![CDATA[<h1 id="1-mermaid-是什么">1. Mermaid 是什么</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://niusx.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://niusx.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-06-15T15:24:25+00:00</updated><id>https://niusx.github.io/blog/feed.xml</id><title type="html">一只捡星星的熊</title><subtitle>记录一些自己的学习笔记</subtitle><author><name>一只捡星星的熊</name></author><entry><title type="html">Mermaid笔记(AI生成）</title><link href="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="Mermaid笔记(AI生成）" /><published>2026-06-08T00:00:00+00:00</published><updated>2026-06-08T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="https://niusx.github.io/blog/Mermaid%E7%AC%94%E8%AE%B0/"><![CDATA[<h1 id="1-mermaid-是什么">1. Mermaid 是什么</h1>
 
 <p>Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。</p>
 
@@ -2234,7 +2234,7 @@ A ..&gt; B
   <li><a href="https://www.cnblogs.com/summerday152/p/13645102.html">Community: 博客园 Mermaid 入门文章</a></li>
   <li><a href="https://juejin.cn/search?query=Mermaid">Community: Juejin Mermaid 相关文章搜索入口</a></li>
   <li><a href="https://so.csdn.net/so/search?q=Mermaid">Community: CSDN Mermaid 相关文章搜索入口</a></li>
-</ul>]]></content><author><name>一只捡星星的熊</name></author><category term="其他" /></entry><entry><title type="html">Figma简单学习(AI总结)</title><link href="https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0/" rel="alternate" type="text/html" title="Figma简单学习(AI总结)" /><published>2026-06-05T00:00:00+00:00</published><updated>2026-06-05T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0/"><![CDATA[<h2 id="1-figma-是什么">1. Figma 是什么</h2>
+</ul>]]></content><author><name>一只捡星星的熊</name></author><category term="其他" /></entry><entry><title type="html">Figma简单学习(AI生成)</title><link href="https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0/" rel="alternate" type="text/html" title="Figma简单学习(AI生成)" /><published>2026-06-05T00:00:00+00:00</published><updated>2026-06-05T00:00:00+00:00</updated><id>https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="https://niusx.github.io/blog/Figma%E5%AD%A6%E4%B9%A0/"><![CDATA[<h2 id="1-figma-是什么">1. Figma 是什么</h2>
 
 <p>Figma 是一款基于云端的协作设计工具，主要用于 UI 设计、原型设计、设计系统、团队协作和开发交付。</p>
 
@@ -6047,7 +6047,7 @@ Dev Mode 管交付
   <li><strong>导出到 Figma。</strong> 使用 Stitch-to-Figma 插件将你选定的方向导入 Figma，保留图层和组件。</li>
   <li><strong>在 Figma 中精炼。</strong> 应用你的实际设计系统。将间距、排版和颜色调整到像素级精确。构建组件变体。使用高级交互连接原型。</li>
   <li><strong>从 Figma 交付。</strong> 使用 Dev Mode 为开发者提供所需的规格、令牌和资源。这个工作流将设计最早期阶段从数天压缩到数分钟，同时保持生产阶段的质量和严谨性。</li>
-</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="UI设计" /></entry><entry><title type="html">非 UI 设计者利用 AI 快速完成 UI 设计</title><link href="https://niusx.github.io/blog/%E9%9D%9EUI%E8%AE%BE%E8%AE%A1%E8%80%85%E5%88%A9%E7%94%A8AI%E5%BF%AB%E9%80%9F%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/" rel="alternate" type="text/html" title="非 UI 设计者利用 AI 快速完成 UI 设计" /><published>2026-06-05T00:00:00+00:00</published><updated>2026-06-05T00:00:00+00:00</updated><id>https://niusx.github.io/blog/%E9%9D%9EUI%E8%AE%BE%E8%AE%A1%E8%80%85%E5%88%A9%E7%94%A8AI%E5%BF%AB%E9%80%9F%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1</id><content type="html" xml:base="https://niusx.github.io/blog/%E9%9D%9EUI%E8%AE%BE%E8%AE%A1%E8%80%85%E5%88%A9%E7%94%A8AI%E5%BF%AB%E9%80%9F%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/"><![CDATA[<h1 id="1-ui-设计-ai-工具对比">1. UI 设计 AI 工具对比</h1>
+</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="UI设计" /></entry><entry><title type="html">利用 AI 完成 UI 设计</title><link href="https://niusx.github.io/blog/%E5%88%A9%E7%94%A8AI%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/" rel="alternate" type="text/html" title="利用 AI 完成 UI 设计" /><published>2026-06-05T00:00:00+00:00</published><updated>2026-06-05T00:00:00+00:00</updated><id>https://niusx.github.io/blog/%E5%88%A9%E7%94%A8AI%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1</id><content type="html" xml:base="https://niusx.github.io/blog/%E5%88%A9%E7%94%A8AI%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/"><![CDATA[<h1 id="1-ui-设计-ai-工具对比">1. UI 设计 AI 工具对比</h1>
 
 <table>
   <thead>
@@ -6330,7 +6330,7 @@ Dev Mode 管交付
   <li>在StitchSetting里，使用CreatKey创建密钥之后，在下方的 MCP Setup里选择你的AI Agent，复制你的Configuratipon</li>
   <li>之后将配置文件写入你本地的 AI CLI 配置文件中</li>
   <li>在 AI Agent 里让AI调用MCP服务读取你的Stitch里的UI设计稿件</li>
-</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="UI设计" /></entry><entry><title type="html">UI设计了解(AI总结)</title><link href="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/" rel="alternate" type="text/html" title="UI设计了解(AI总结)" /><published>2026-06-04T00:00:00+00:00</published><updated>2026-06-04T00:00:00+00:00</updated><id>https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3</id><content type="html" xml:base="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/"><![CDATA[<h2 id="1-ui-设计是什么">1. UI 设计是什么</h2>
+</ol>]]></content><author><name>一只捡星星的熊</name></author><category term="UI设计" /></entry><entry><title type="html">UI设计了解(AI生成)</title><link href="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/" rel="alternate" type="text/html" title="UI设计了解(AI生成)" /><published>2026-06-04T00:00:00+00:00</published><updated>2026-06-04T00:00:00+00:00</updated><id>https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3</id><content type="html" xml:base="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/"><![CDATA[<h2 id="1-ui-设计是什么">1. UI 设计是什么</h2>
 
 <p>UI 是 User Interface 的缩写，意思是“用户界面”。只要用户需要通过一个界面和产品发生交互，这个界面就属于 UI 的范畴。</p>
 
@@ -8465,7 +8465,7 @@ Dev Mode 管交付
   <li>蓝湖</li>
 </ul>
 
-<p>这些工具适合中文团队协作和设计交付。</p>]]></content><author><name>一只捡星星的熊</name></author><category term="UI设计" /></entry><entry><title type="html">UI设计术语总结(AI总结)</title><link href="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93/" rel="alternate" type="text/html" title="UI设计术语总结(AI总结)" /><published>2026-06-01T00:00:00+00:00</published><updated>2026-06-01T00:00:00+00:00</updated><id>https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93</id><content type="html" xml:base="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93/"><![CDATA[<p>UI 设计术语主要归为几类：</p>
+<p>这些工具适合中文团队协作和设计交付。</p>]]></content><author><name>一只捡星星的熊</name></author><category term="UI设计" /></entry><entry><title type="html">UI设计术语总结(AI生成)</title><link href="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93/" rel="alternate" type="text/html" title="UI设计术语总结(AI生成)" /><published>2026-06-01T00:00:00+00:00</published><updated>2026-06-01T00:00:00+00:00</updated><id>https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93</id><content type="html" xml:base="https://niusx.github.io/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93/"><![CDATA[<p>UI 设计术语主要归为几类：</p>
 
 <ul>
   <li>

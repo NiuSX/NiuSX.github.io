@@ -191,19 +191,19 @@ var store = [{
         "url": "/blog/Langchain%E5%AD%A6%E4%B9%A0/",
         "teaser": null
       },{
-        "title": "UI设计术语总结(AI总结)",
+        "title": "UI设计术语总结(AI生成)",
         "excerpt":"UI 设计术语主要归为几类： 设计对象：页面、组件、图标、表单、导航 视觉规则：颜色、字体、间距、对齐、层级 交互行为：点击、滑动、反馈、状态、动效 适配规则：响应式、断点、单位、安全区 协作规则：设计系统、Token、交付、标注、组件库 体验评估：可用性、转化率、留存、任务完成率 1. 基础概念术语 这一部分是 UI 学习最基础的词。先把这些分清楚，后面的组件、交互、视觉才容易理解。 术语 英文 含义 使用场景 新手注意 UI User Interface 用户界面，用户和产品发生交互的界面 App、网页、小程序、后台系统 UI 不是单纯美化，而是让用户能看懂、能操作 UX User Experience 用户体验，用户使用产品全过程的感受 注册、下单、搜索、支付等完整流程 UX 比 UI 范围更大，包含流程、心理、效率 GUI Graphical User Interface 图形用户界面 手机 App、桌面软件、网页 现在多数 UI 都是 GUI HCI Human-Computer Interaction 人机交互，研究人和计算机如何交互 交互设计、可用性研究...","categories": ["UI设计"],
         "tags": [],
         "url": "/blog/UI%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E6%80%BB%E7%BB%93/",
         "teaser": null
       },{
-        "title": "UI设计了解(AI总结)",
+        "title": "UI设计了解(AI生成)",
         "excerpt":"1. UI 设计是什么 UI 是 User Interface 的缩写，意思是“用户界面”。只要用户需要通过一个界面和产品发生交互，这个界面就属于 UI 的范畴。 常见 UI 包括： 手机 App 页面 网站页面 小程序页面 后台管理系统页面 桌面软件界面 智能手表界面 车机屏幕界面 游戏菜单界面 自助取票机、点餐机、ATM 等设备界面 UI 设计不是单纯“画一个漂亮页面”。它要解决的是：用户能不能看懂、能不能找到、能不能操作、操作之后能不能得到明确反馈。 一个 UI 页面通常包含： 内容：标题、正文、图片、数据、说明 控件：按钮、输入框、开关、下拉菜单、标签 导航：顶部栏、底部栏、侧边栏、面包屑 状态：加载、成功、失败、空数据、禁用 反馈：提示、弹窗、动效、错误信息 视觉：颜色、字体、图标、间距、圆角、阴影 UI 设计的核心目标： 目标 说明 例子 清晰 用户能快速理解页面内容 登录页一眼能看到账号、密码、登录按钮 高效 用户能用较少步骤完成任务 搜索框明显，筛选条件易用 一致 同类元素表现一致 所有主按钮颜色、圆角、高度统一...","categories": ["UI设计"],
         "tags": [],
         "url": "/blog/UI%E8%AE%BE%E8%AE%A1%E4%BA%86%E8%A7%A3/",
         "teaser": null
       },{
-        "title": "Figma简单学习(AI总结)",
+        "title": "Figma简单学习(AI生成)",
         "excerpt":"1. Figma 是什么 Figma 是一款基于云端的协作设计工具，主要用于 UI 设计、原型设计、设计系统、团队协作和开发交付。 你可以把 Figma 理解成： 用来画 App、网页、小程序、后台系统界面的设计工具 用来制作可点击原型的交互工具 用来建立组件库和设计规范的设计系统工具 用来让设计师、产品、开发、运营一起协作的在线工作台 Figma 常见使用场景： 设计移动 App 页面 设计 Web 网站页面 设计后台管理系统 设计小程序页面 设计产品原型 做低保真线框图 做高保真视觉稿 建立组件库 标注给前端开发 团队评审和评论 Figma 的核心优势： 优势 说明 在线协作 多个人可以同时打开同一个文件编辑或评论 跨平台 Windows、macOS、浏览器都能用 组件能力强 适合做按钮、输入框、卡片、导航等复用组件 Auto Layout 强 可以像前端布局一样做自适应设计 原型方便 可以在设计稿里直接连交互 交付方便 开发可以查看尺寸、颜色、CSS、资源 社区资源多...","categories": ["UI设计"],
         "tags": [],
         "url": "/blog/Figma%E5%AD%A6%E4%B9%A0/",
@@ -215,13 +215,13 @@ var store = [{
         "url": "/blog/GoogleStitch-%E5%92%8C-Figma-%E5%AF%B9%E6%AF%94/",
         "teaser": null
       },{
-        "title": "非 UI 设计者利用 AI 快速完成 UI 设计",
+        "title": "利用 AI 完成 UI 设计",
         "excerpt":"1. UI 设计 AI 工具对比   Claude Design Open Design Google Stitch 出品方 Anthropic 开源社区（nexu-io） Google Labs 本质 对话式设计工作台 Claude Design 的开源替代 AI 原生设计画布 费用 需要 Pro 订阅（$20/月） 完全免费 免费（beta） 运行方式 云端（Anthropic） 本地运行 云端（Google） AI 模型 锁定 Claude Opus 4.7 自由选择（Claude Code/Cursor/Codex 等） 锁定 Gemini 数据归属 Anthropic 服务器 自己的机器 Google...","categories": ["UI设计"],
         "tags": [],
-        "url": "/blog/%E9%9D%9EUI%E8%AE%BE%E8%AE%A1%E8%80%85%E5%88%A9%E7%94%A8AI%E5%BF%AB%E9%80%9F%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/",
+        "url": "/blog/%E5%88%A9%E7%94%A8AI%E5%AE%8C%E6%88%90UI%E8%AE%BE%E8%AE%A1/",
         "teaser": null
       },{
-        "title": "Mermaid笔记(AI整理）",
+        "title": "Mermaid笔记(AI生成）",
         "excerpt":"1. Mermaid 是什么 Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。 Mermaid 的核心价值不是做精细设计稿，而是把“结构、流程、关系、状态、依赖”用可版本管理的文本表达出来。 Mermaid = 用文本描述图表结构，然后自动布局和渲染。 适合场景： 场景 Mermaid 是否适合 原因 技术文档里的流程说明 适合 文本可维护，代码评审友好 README、Wiki、博客图解 适合 GitHub、很多 Markdown 平台支持 Mermaid 架构关系草图 适合 快速表达模块、服务、依赖、方向 产品原型、视觉设计稿 不适合 Mermaid 控制力有限，不适合像素级布局 大型复杂拓扑图 谨慎 节点过多后可读性下降，布局不可完全控制 需要交互的数据可视化 不适合 应使用 ECharts、D3、Vega-Lite 等工具 2. Mermaid 的工作原理...","categories": ["其他"],
         "tags": [],
         "url": "/blog/Mermaid%E7%AC%94%E8%AE%B0/",
