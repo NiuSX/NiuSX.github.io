@@ -120,7 +120,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Android 学习",
-        "excerpt":"简介 Android是一个开源的，基于Linux的移动设备操作系统，主要使用于移动设备，如智能手机和平板电脑。Android是由谷歌及其他公司带领的开放手机联盟开发的。 架构 Android 操作系统是一个软件组件的栈，在架构图中它大致可以分为五个部分和四个主要层。 分别为应用层、应用框架层、系统运行层（原生库和 Android 运行时）、Linux内核层 应用层： 核心作用：面向用户的最终产品。 组成： 系统应用：电话、联系人、短信、设置、浏览器等。 第三方应用：开发者利用框架层 API 开发的各类 App。 应用框架层：为开发者直接提供服务的基础框架。 核心作用：提供开发 Android 应用所需的各种 API。 主要管理器： Activity Manager：管理应用生命周期和活动栈。 Window Manager：管理窗口和界面布局。 Content Providers：实现应用间的数据共享。 View System：构建用户界面的控件集（如 Button、TextView） Notification Manager：管理状态栏通知。 Package Manager：管理应用的安装、卸载和权限。 系统运行层 原生库 内容：用 C/C++ 编写，支撑 Android 系统运行的底层库。 关键库： WebKit/Chromium：浏览器内核。 OpenGL ES &amp; Vulkan：图形渲染库。 SQLite：轻量级关系型数据库。 Media...","categories": ["-Android"],
+        "excerpt":"简介 Android是一个开源的，基于Linux的移动设备操作系统，主要使用于移动设备，如智能手机和平板电脑。Android是由谷歌及其他公司带领的开放手机联盟开发的。 架构 Android 操作系统是一个软件组件的栈，在架构图中它大致可以分为五个部分和四个主要层。 分别为应用层、应用框架层、系统运行层（原生库和 Android 运行时）、Linux内核层 应用层： 核心作用：面向用户的最终产品。 组成： 系统应用：电话、联系人、短信、设置、浏览器等。 第三方应用：开发者利用框架层 API 开发的各类 App。 应用框架层：为开发者直接提供服务的基础框架。 核心作用：提供开发 Android 应用所需的各种 API。 主要管理器： Activity Manager：管理应用生命周期和活动栈。 Window Manager：管理窗口和界面布局。 Content Providers：实现应用间的数据共享。 View System：构建用户界面的控件集（如 Button、TextView） Notification Manager：管理状态栏通知。 Package Manager：管理应用的安装、卸载和权限。 系统运行层 原生库 内容：用 C/C++ 编写，支撑 Android 系统运行的底层库。 关键库： WebKit/Chromium：浏览器内核。 OpenGL ES &amp; Vulkan：图形渲染库。 SQLite：轻量级关系型数据库。 Media...","categories": ["Android"],
         "tags": [],
         "url": "/blog/Android%E5%AD%A6%E4%B9%A0/",
         "teaser": null
@@ -225,11 +225,5 @@ var store = [{
         "excerpt":"1. Mermaid 是什么 Mermaid 是一个基于文本的图表绘制工具。它允许你用类似 Markdown 的声明式语法描述流程图、时序图、类图、状态图、甘特图、饼图、用户旅程图、ER 图、Git 图、思维导图、时间线、象限图、架构图等，然后由 Mermaid 渲染成 SVG 图表。 Mermaid 的核心价值不是做精细设计稿，而是把“结构、流程、关系、状态、依赖”用可版本管理的文本表达出来。 Mermaid = 用文本描述图表结构，然后自动布局和渲染。 适合场景： 场景 Mermaid 是否适合 原因 技术文档里的流程说明 适合 文本可维护，代码评审友好 README、Wiki、博客图解 适合 GitHub、很多 Markdown 平台支持 Mermaid 架构关系草图 适合 快速表达模块、服务、依赖、方向 产品原型、视觉设计稿 不适合 Mermaid 控制力有限，不适合像素级布局 大型复杂拓扑图 谨慎 节点过多后可读性下降，布局不可完全控制 需要交互的数据可视化 不适合 应使用 ECharts、D3、Vega-Lite 等工具 2. Mermaid 的工作原理...","categories": ["其他"],
         "tags": [],
         "url": "/blog/Mermaid%E7%AC%94%E8%AE%B0/",
-        "teaser": null
-      },{
-        "title": "哈希值与哈希计算学习笔记",
-        "excerpt":"哈希值与哈希计算学习笔记 哈希 Hash 是计算机里非常基础但非常重要的概念。它广泛用于数据结构、文件校验、密码存储、数字签名、区块链、缓存、去重、分布式系统、数据库索引、负载均衡和安全认证。 一句话理解：哈希就是把任意长度的数据，通过一个确定的计算方法，转换成固定长度或相对固定长度的值。这个结果通常叫哈希值、散列值、摘要、指纹或 digest。 1. 什么是哈希值 哈希值是对原始数据计算得到的一段结果。 例如对字符串： 1 hello 使用 SHA-256 计算后，会得到类似这样的十六进制字符串： 1 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824 这个值就是 hello 的 SHA-256 哈希值。 哈希值常见特点： 输入可以很长，输出长度固定。 输入相同，输出一定相同。 输入只要改一点点，输出通常完全不同。 从哈希值通常无法反推出原文。 不同输入理论上可能得到相同哈希值，这叫碰撞。 2. 哈希函数是什么 哈希函数是把输入映射到哈希值的函数。 抽象表示： 1 h = H(x) 其中： x：输入数据。 H：哈希函数。 h：输出哈希值。 例如： 1 SHA256(\"hello\") = 2cf24d... 哈希函数可以用于两大方向： 普通哈希：用于哈希表、分桶、索引、负载均衡等，重点是速度和分布均匀。 密码学哈希：用于安全场景，重点是抗碰撞、抗篡改、难以逆推。 3. 哈希的核心特性...","categories": ["计算机基础"],
-        "tags": [],
-        "url": "/blog/%E5%93%88%E5%B8%8C%E5%80%BC%E4%B8%8E%E5%93%88%E5%B8%8C%E8%AE%A1%E7%AE%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
         "teaser": null
       }]
