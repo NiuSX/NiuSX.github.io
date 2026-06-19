@@ -187,10 +187,22 @@
                         <a href="/blog/categories/#%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a>
                       </li></ul></li></ul>
         
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">切换搜索</span>
-          <i class="fas fa-search"></i>
-        </button>
+        <form class="masthead-search" action="/blog/search/" method="get" role="search">
+          <label class="visually-hidden" for="masthead-search-input">
+            切换搜索
+          </label>
+          <input
+            id="masthead-search-input"
+            class="masthead-search__input"
+            type="search"
+            name="q"
+            placeholder="输入您要搜索的关键词..."
+          >
+          <button class="masthead-search__button" type="submit">
+            <span class="visually-hidden">切换搜索</span>
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">切换菜单</span>

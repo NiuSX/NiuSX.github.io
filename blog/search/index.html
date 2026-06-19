@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 
 
-<!-- begin _includes/seo.html --><title>一只捡星星的熊</title>
+<!-- begin _includes/seo.html --><title>搜索 - 一只捡星星的熊</title>
 <meta name="description" content="记录一些自己的学习笔记">
 
 
@@ -26,8 +26,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="一只捡星星的熊">
-<meta property="og:title" content="一只捡星星的熊">
-<meta property="og:url" content="https://niusx.github.io/blog/about/">
+<meta property="og:title" content="搜索">
+<meta property="og:url" content="https://niusx.github.io/blog/search/">
 
 
   <meta property="og:description" content="记录一些自己的学习笔记">
@@ -49,7 +49,7 @@
   
 
 
-<link rel="canonical" href="https://niusx.github.io/blog/about/">
+<link rel="canonical" href="https://niusx.github.io/blog/search/">
 
 
 
@@ -89,7 +89,7 @@
 
   </head>
 
-  <body class="layout--single wide landing">
+  <body class="layout--search">
     
 <nav class="skip-links" aria-label="Skip links">
   <ul>
@@ -212,80 +212,32 @@
 
 
 
-
-
 <div id="main" role="main">
   
 
 
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+  <div class="archive">
     
+      <h1 id="page-title" class="page__title">搜索</h1>
     
-    
-    
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          
-          
-
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-        <p>🌱 关于我：一名一直在路上的学徒</p>
-
-<p>你好呀！很高兴能在这里与你相遇。</p>
-
-<p>坦白说，站在技术的浩瀚海洋前，我更像一个刚刚拾起贝壳的孩子，既充满好奇，也偶尔会为浪潮的复杂而驻足。
-我并不是那种能闭着眼睛写出完美代码、或者对底层原理如数家珍的技术大牛——至少现在还不是（笑）。我的技能
-树可能才刚刚发芽，但我深信，每一个庞大的系统、每一个优雅的算法，都始于一个勇敢的“Hello, World”。</p>
-
-<p>我创建这个博客，不是为了展示我有多么精通，恰恰相反，是为了记录下作为一名技术小白的探索足迹。我会在这里
-分享我学习中的顿悟时刻，也会诚实地写下遇到的坑与困惑。如果你在我的文章里发现不准确的地方，或是有更好的
-思路，请一定告诉我！我渴望听到你的声音，因为我相信：技术之路，从来不是独行。</p>
-
-<p>所以，无论你是与我一样的初学者，还是已经行走多年的技术达人，我都衷心希望我们能在这里交流、碰撞、互相鼓
-励。也许我成长得慢一些，但每一步都踏实而认真。</p>
-
-<p>未来的日子，还请多多指教。我们一起学习，不断努力，成为更好的自己吧！</p>
-
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-  
-
-  
-
-
-        
-
-
-
-      </footer>
-
-      
-
-      
-
-
-    </div>
 
     
-  </article>
+<input type="search" id="search" name="q" class="search-input" placeholder="输入您要搜索的关键词..." />
+        <div id="results" class="results"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            window.setTimeout(function() {
+              var query = new URLSearchParams(window.location.search).get("q");
+              var searchInput = document.querySelector(".layout--search .archive > input#search");
 
-  
-  
+              if (query && searchInput) {
+                searchInput.value = query;
+                searchInput.dispatchEvent(new Event("keyup", { bubbles: true }));
+              }
+            }, 0);
+          });
+        </script></div>
 </div>
 
       
