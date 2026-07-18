@@ -72,9 +72,9 @@ var store = [{
         "teaser": null
       },{
         "title": "Kotlin学习",
-        "excerpt":"介绍 Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的Swift，由 JetBrains 设计开发并开源。 Kotlin 可以编译成Java字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。 在Google I/O 2017中，Google 宣布 Kotlin 成为 Android 官方开发语言。 优势： 简洁: 大大减少样板代码的数量。 安全: 避免空指针异常等整个类的错误。 互操作性: 充分利用 JVM、Android 和浏览器的现有库。 工具友好: 可用任何 Java IDE 或者使用命令行构建。 基础语法 包声明 package com.example.main 默认导入 otlin.* kotlin.annotation.* kotlin.collections.* kotlin.comparisons.* kotlin.io.* kotlin.ranges.* kotlin.sequences.* kotlin.text.* 函数定义...","categories": [],
+        "excerpt":"Kotlin 学习笔记 1. Kotlin 概览 Kotlin 是 JetBrains 设计并开源的静态类型编程语言。它最早以 JVM 语言的身份进入开发者视野，目标不是完全替代 Java 生态，而是在保持互操作能力的前提下，提供更现代、更安全、更简洁的语法和标准库。Android 官方在 2017 年宣布支持 Kotlin，现代 Android 开发中 Kotlin 已经是主流语言；在服务端、桌面、多平台共享代码、脚本和构建配置中也能看到 Kotlin 的广泛使用。 学习 Kotlin 时，不要只把它理解为“语法更短的 Java”。Kotlin 的重要价值在于：它把很多工程中经常靠约定、注释和代码审查保证的事情放进了类型系统和语言机制里，例如空安全、只读集合接口、密封类型、协程结构化并发、默认不可继承等。这些设计会改变代码组织方式，也会改变你建模业务状态和处理异步任务的习惯。 1.1 Kotlin 能运行在哪里 Kotlin 不是只能写 Android。它是一门多目标语言，常见目标平台包括： Kotlin/JVM：编译成 JVM 字节码，可运行在 Java 虚拟机上，适合 Android、Spring Boot、Ktor、桌面工具、命令行程序等。 Kotlin/Android：本质上属于 JVM/Android 目标，是 Android 官方推荐语言之一，常与 Jetpack、Compose、Room、ViewModel、协程等一起使用。 Kotlin/JS：编译到 JavaScript，适合 Web...","categories": [],
         "tags": ["kotlin"],
-        "url": "/blog/Kotlin%E5%AD%A6%E4%B9%A0/",
+        "url": "/blog/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
         "teaser": null
       },{
         "title": "java学习(未完待续)",
