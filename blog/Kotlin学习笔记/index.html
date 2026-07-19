@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 
 
-<!-- begin _includes/seo.html --><title>Kotlin学习 - 一只捡星星的熊</title>
+<!-- begin _includes/seo.html --><title>Kotlin学习笔记 - 一只捡星星的熊</title>
 <meta name="description" content="系统整理 Kotlin 从基础语法到工程实践的学习笔记，涵盖类型系统、函数、类与对象、集合、泛型、协程与 Flow、Java 互操作、Android 开发、Kotlin 多平台以及常用编码习惯。">
 
 
@@ -28,7 +28,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="一只捡星星的熊">
-<meta property="og:title" content="Kotlin学习">
+<meta property="og:title" content="Kotlin学习笔记">
 <meta property="og:url" content="https://niusx.github.io/blog/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
@@ -339,7 +339,7 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Kotlin学习">
+    <meta itemprop="headline" content="Kotlin学习笔记">
     <meta itemprop="description" content="系统整理 Kotlin 从基础语法到工程实践的学习笔记，涵盖类型系统、函数、类与对象、集合、泛型、协程与 Flow、Java 互操作、Android 开发、Kotlin 多平台以及常用编码习惯。">
     <meta itemprop="datePublished" content="2026-01-20T00:00:00+00:00">
     
@@ -348,7 +348,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://niusx.github.io/blog/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">Kotlin学习
+            <a href="https://niusx.github.io/blog/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">Kotlin学习笔记
 </a>
           </h1>
           
@@ -375,19 +375,17 @@
                   </button>
                 </div>
               </header>
-              <ul class="toc__menu"><li><a href="#kotlin-学习笔记">Kotlin 学习笔记</a><ul><li><a href="#1-kotlin-概览">1. Kotlin 概览</a><ul><li><a href="#11-kotlin-能运行在哪里">1.1 Kotlin 能运行在哪里</a></li><li><a href="#12-kotlin-的设计目标">1.2 Kotlin 的设计目标</a></li><li><a href="#13-kotlin-的核心特点">1.3 Kotlin 的核心特点</a></li><li><a href="#14-kotlin-与-java-的关系">1.4 Kotlin 与 Java 的关系</a></li><li><a href="#15-kotlin-适合哪些场景">1.5 Kotlin 适合哪些场景</a></li><li><a href="#16-kotlin-的学习重点">1.6 Kotlin 的学习重点</a></li><li><a href="#17-kotlin-的心智模型">1.7 Kotlin 的心智模型</a></li><li><a href="#18-版本选择">1.8 版本选择</a></li></ul></li><li><a href="#2-环境与项目结构">2. 环境与项目结构</a><ul><li><a href="#21-开发环境组成">2.1 开发环境组成</a></li><li><a href="#22-jdk-与版本选择">2.2 JDK 与版本选择</a></li><li><a href="#23-ide-选择">2.3 IDE 选择</a></li><li><a href="#24-gradle-wrapper">2.4 Gradle Wrapper</a></li><li><a href="#25-gradle-kotlin-dsl">2.5 Gradle Kotlin DSL</a></li><li><a href="#26-版本目录">2.6 版本目录</a></li><li><a href="#27-gradle-jvm-项目示例">2.7 Gradle JVM 项目示例</a></li><li><a href="#28-jvm-库项目结构">2.8 JVM 库项目结构</a></li><li><a href="#29-android-项目结构">2.9 Android 项目结构</a></li><li><a href="#210-kotlin-multiplatform-项目结构">2.10 Kotlin Multiplatform 项目结构</a></li><li><a href="#211-kotlin-脚本">2.11 Kotlin 脚本</a></li><li><a href="#212-包声明与导入">2.12 包声明与导入</a></li><li><a href="#213-源码集与测试目录">2.13 源码集与测试目录</a></li><li><a href="#214-多模块项目建议">2.14 多模块项目建议</a></li><li><a href="#215-常用-gradleproperties-配置">2.15 常用 gradle.properties 配置</a></li><li><a href="#216-编译运行与测试">2.16 编译、运行与测试</a></li><li><a href="#217-常见环境问题">2.17 常见环境问题</a></li><li><a href="#218-工程约定建议">2.18 工程约定建议</a></li></ul></li><li><a href="#3-基础语法">3. 基础语法</a><ul><li><a href="#31-kotlin-文件的基本结构">3.1 Kotlin 文件的基本结构</a></li><li><a href="#32-程序入口-main">3.2 程序入口 main</a></li><li><a href="#33-包声明与导入补充">3.3 包声明与导入补充</a></li><li><a href="#34-标识符与命名约定">3.4 标识符与命名约定</a></li><li><a href="#35-关键字">3.5 关键字</a></li><li><a href="#36-变量val-与-var">3.6 变量：val 与 var</a></li><li><a href="#37-类型标注与类型推断">3.7 类型标注与类型推断</a></li><li><a href="#38-初始化规则">3.8 初始化规则</a></li><li><a href="#39-顶层声明">3.9 顶层声明</a></li><li><a href="#310-注释与-kdoc">3.10 注释与 KDoc</a></li><li><a href="#311-语句与表达式">3.11 语句与表达式</a></li><li><a href="#312-代码块与作用域">3.12 代码块与作用域</a></li><li><a href="#313-分号与换行">3.13 分号与换行</a></li><li><a href="#314-基础输入输出">3.14 基础输入输出</a></li><li><a href="#315-字符串模板基础">3.15 字符串模板基础</a></li><li><a href="#316-操作符基础">3.16 操作符基础</a></li><li><a href="#317-相等性基础">3.17 相等性基础</a></li><li><a href="#318-类型检查与强制转换基础">3.18 类型检查与强制转换基础</a></li><li><a href="#319-基础代码风格">3.19 基础代码风格</a></li><li><a href="#320-基础语法常见错误">3.20 基础语法常见错误</a></li><li><a href="#321-本章小结">3.21 本章小结</a></li></ul></li><li><a href="#4-基本类型字符串与数组">4. 基本类型、字符串与数组</a><ul><li><a href="#41-数字类型">4.1 数字类型</a></li><li><a href="#42-数字范围与溢出">4.2 数字范围与溢出</a></li><li><a href="#43-显式类型转换">4.3 显式类型转换</a></li><li><a href="#44-除法与取模">4.4 除法与取模</a></li><li><a href="#45-无符号整数">4.5 无符号整数</a></li><li><a href="#46-位运算">4.6 位运算</a></li><li><a href="#47-boolean">4.7 Boolean</a></li><li><a href="#48-char">4.8 Char</a></li><li><a href="#49-string-基础">4.9 String 基础</a></li><li><a href="#410-字符串模板">4.10 字符串模板</a></li><li><a href="#411-转义字符串与原始字符串">4.11 转义字符串与原始字符串</a></li><li><a href="#412-字符串比较与判空">4.12 字符串比较与判空</a></li><li><a href="#413-字符串转数字">4.13 字符串转数字</a></li><li><a href="#414-正则表达式基础">4.14 正则表达式基础</a></li><li><a href="#415-array-基础">4.15 Array 基础</a></li><li><a href="#416-基本类型数组">4.16 基本类型数组</a></li><li><a href="#417-数组与集合的区别">4.17 数组与集合的区别</a></li><li><a href="#418-数组常用操作">4.18 数组常用操作</a></li><li><a href="#419-anyunitnothing">4.19 Any、Unit、Nothing</a></li><li><a href="#420-pair-与-triple">4.20 Pair 与 Triple</a></li><li><a href="#421-类型别名-typealias">4.21 类型别名 typealias</a></li><li><a href="#422-装箱与引用相等">4.22 装箱与引用相等</a></li><li><a href="#423-基本类型常见错误">4.23 基本类型常见错误</a></li><li><a href="#424-本章小结">4.24 本章小结</a></li></ul></li><li><a href="#5-空安全">5. 空安全</a><ul><li><a href="#51-非空类型与可空类型">5.1 非空类型与可空类型</a></li><li><a href="#52-可空类型的使用边界">5.2 可空类型的使用边界</a></li><li><a href="#53-安全调用-">5.3 安全调用 ?.</a></li><li><a href="#54-elvis-操作符-">5.4 Elvis 操作符 ?:</a></li><li><a href="#55-智能转换">5.5 智能转换</a></li><li><a href="#56-let-处理非空值">5.6 let 处理非空值</a></li><li><a href="#57-非空断言-">5.7 非空断言 !!</a></li><li><a href="#58-requirenotnull-与-checknotnull">5.8 requireNotNull 与 checkNotNull</a></li><li><a href="#59-安全转换-as">5.9 安全转换 as?</a></li><li><a href="#510-可空集合与集合中的可空元素">5.10 可空集合与集合中的可空元素</a></li><li><a href="#511-可空函数类型">5.11 可空函数类型</a></li><li><a href="#512-可空接收者扩展">5.12 可空接收者扩展</a></li><li><a href="#513-lateinit-与空安全">5.13 lateinit 与空安全</a></li><li><a href="#514-平台类型与-java-互操作">5.14 平台类型与 Java 互操作</a></li><li><a href="#515-android-中的空安全边界">5.15 Android 中的空安全边界</a></li><li><a href="#516-json数据库与网络模型">5.16 JSON、数据库与网络模型</a></li><li><a href="#517-optionalresult-与-null-的选择">5.17 Optional、Result 与 null 的选择</a></li><li><a href="#518-空字符串与-null">5.18 空字符串与 null</a></li><li><a href="#519-常用空安全函数">5.19 常用空安全函数</a></li><li><a href="#520-空安全代码风格">5.20 空安全代码风格</a></li><li><a href="#521-常见错误">5.21 常见错误</a></li><li><a href="#522-本章小结">5.22 本章小结</a></li></ul></li><li><a href="#6-控制流">6. 控制流</a><ul><li><a href="#61-if-是表达式">6.1 if 是表达式</a></li><li><a href="#62-if-的类型推断">6.2 if 的类型推断</a></li><li><a href="#63-when-基础">6.3 when 基础</a></li><li><a href="#64-when-不带参数">6.4 when 不带参数</a></li><li><a href="#65-when-的穷尽性">6.5 when 的穷尽性</a></li><li><a href="#66-when-分支中的代码块">6.6 when 分支中的代码块</a></li><li><a href="#67-区间与进度">6.7 区间与进度</a></li><li><a href="#68-until-的区别">6.8 ..、..&lt;、until 的区别</a></li><li><a href="#69-for-循环">6.9 for 循环</a></li><li><a href="#610-while-与-do-while">6.10 while 与 do while</a></li><li><a href="#611-break-与-continue">6.11 break 与 continue</a></li><li><a href="#612-标签">6.12 标签</a></li><li><a href="#613-return">6.13 return</a></li><li><a href="#614-throw-与-try-表达式">6.14 throw 与 try 表达式</a></li><li><a href="#615-repeat">6.15 repeat</a></li><li><a href="#616-控制流与空安全结合">6.16 控制流与空安全结合</a></li><li><a href="#617-控制流与集合函数">6.17 控制流与集合函数</a></li><li><a href="#618-状态机建模">6.18 状态机建模</a></li><li><a href="#619-常见错误">6.19 常见错误</a></li><li><a href="#620-本章小结">6.20 本章小结</a></li></ul></li><li><a href="#7-函数与-lambda">7. 函数与 Lambda</a><ul><li><a href="#71-函数声明">7.1 函数声明</a></li><li><a href="#72-unit-与无返回值函数">7.2 Unit 与无返回值函数</a></li><li><a href="#73-nothing-与不会正常返回的函数">7.3 Nothing 与不会正常返回的函数</a></li><li><a href="#74-表达式函数体与块函数体">7.4 表达式函数体与块函数体</a></li><li><a href="#75-默认参数">7.5 默认参数</a></li><li><a href="#76-命名参数">7.6 命名参数</a></li><li><a href="#77-可变参数-vararg">7.7 可变参数 vararg</a></li><li><a href="#78-局部函数">7.8 局部函数</a></li><li><a href="#79-成员函数顶层函数与扩展函数">7.9 成员函数、顶层函数与扩展函数</a></li><li><a href="#710-单表达式函数与-return">7.10 单表达式函数与 return</a></li><li><a href="#711-中缀函数-infix">7.11 中缀函数 infix</a></li><li><a href="#712-尾递归-tailrec">7.12 尾递归 tailrec</a></li><li><a href="#713-lambda-基础">7.13 Lambda 基础</a></li><li><a href="#714-lambda-尾随语法">7.14 Lambda 尾随语法</a></li><li><a href="#715-匿名函数">7.15 匿名函数</a></li><li><a href="#716-函数类型">7.16 函数类型</a></li><li><a href="#717-带接收者的函数类型">7.17 带接收者的函数类型</a></li><li><a href="#718-高阶函数">7.18 高阶函数</a></li><li><a href="#719-闭包">7.19 闭包</a></li><li><a href="#720-函数引用">7.20 函数引用</a></li><li><a href="#721-内联函数-inline">7.21 内联函数 inline</a></li><li><a href="#722-noinline-与-crossinline">7.22 noinline 与 crossinline</a></li><li><a href="#723-reified-类型参数">7.23 reified 类型参数</a></li><li><a href="#724-非局部返回">7.24 非局部返回</a></li><li><a href="#725-作用域函数概览">7.25 作用域函数概览</a></li><li><a href="#726-let">7.26 let</a></li><li><a href="#727-run">7.27 run</a></li><li><a href="#728-with">7.28 with</a></li><li><a href="#729-apply">7.29 apply</a></li><li><a href="#730-also">7.30 also</a></li><li><a href="#731-takeif-与-takeunless">7.31 takeIf 与 takeUnless</a></li><li><a href="#732-repeat">7.32 repeat</a></li><li><a href="#733-java-sam-转换">7.33 Java SAM 转换</a></li><li><a href="#734-suspend-函数简介">7.34 suspend 函数简介</a></li><li><a href="#735-函数设计建议">7.35 函数设计建议</a></li><li><a href="#736-常见错误">7.36 常见错误</a></li><li><a href="#737-本章小结">7.37 本章小结</a></li></ul></li><li><a href="#8-类对象与继承">8. 类、对象与继承</a><ul><li><a href="#81-类与实例">8.1 类与实例</a></li><li><a href="#82-主构造器">8.2 主构造器</a></li><li><a href="#83-init-初始化块">8.3 init 初始化块</a></li><li><a href="#84-次构造器">8.4 次构造器</a></li><li><a href="#85-属性基础">8.5 属性基础</a></li><li><a href="#86-gettersetter-与幕后字段">8.6 getter、setter 与幕后字段</a></li><li><a href="#87-幕后属性">8.7 幕后属性</a></li><li><a href="#88-lateinit-与-lazy">8.8 lateinit 与 lazy</a></li><li><a href="#89-可见性与类成员">8.9 可见性与类成员</a></li><li><a href="#810-继承基础">8.10 继承基础</a></li><li><a href="#811-重写函数与属性">8.11 重写函数与属性</a></li><li><a href="#812-super-与多父类型冲突">8.12 super 与多父类型冲突</a></li><li><a href="#813-抽象类">8.13 抽象类</a></li><li><a href="#814-类修饰符">8.14 类修饰符</a></li><li><a href="#815-嵌套类">8.15 嵌套类</a></li><li><a href="#816-内部类">8.16 内部类</a></li><li><a href="#817-匿名对象对象表达式">8.17 匿名对象：对象表达式</a></li><li><a href="#818-单例对象声明">8.18 单例：对象声明</a></li><li><a href="#819-伴生对象">8.19 伴生对象</a></li><li><a href="#820-对象表达式对象声明伴生对象对比">8.20 对象表达式、对象声明、伴生对象对比</a></li><li><a href="#821-类与文件组织">8.21 类与文件组织</a></li><li><a href="#822-类设计建议">8.22 类设计建议</a></li><li><a href="#823-常见错误">8.23 常见错误</a></li><li><a href="#824-本章小结">8.24 本章小结</a></li></ul></li><li><a href="#9-接口抽象类与可见性">9. 接口、抽象类与可见性</a><ul><li><a href="#91-接口">9.1 接口</a></li><li><a href="#92-多接口冲突">9.2 多接口冲突</a></li><li><a href="#93-可见性修饰符">9.3 可见性修饰符</a></li><li><a href="#94-接口默认实现">9.4 接口默认实现</a></li><li><a href="#95-接口属性补充">9.5 接口属性补充</a></li><li><a href="#96-接口继承">9.6 接口继承</a></li><li><a href="#97-函数式接口-fun-interface">9.7 函数式接口 fun interface</a></li><li><a href="#98-抽象类">9.8 抽象类</a></li><li><a href="#99-接口与抽象类怎么选">9.9 接口与抽象类怎么选</a></li><li><a href="#910-openfinalabstractoverride">9.10 open、final、abstract、override</a></li><li><a href="#911-属性覆盖">9.11 属性覆盖</a></li><li><a href="#912-可见性修饰符细节">9.12 可见性修饰符细节</a></li><li><a href="#913-构造器可见性">9.13 构造器可见性</a></li><li><a href="#914-成员可见性与属性-setter">9.14 成员可见性与属性 setter</a></li><li><a href="#915-嵌套类内部类与可见性">9.15 嵌套类、内部类与可见性</a></li><li><a href="#916-sealedenum-与接口的关系">9.16 sealed、enum 与接口的关系</a></li><li><a href="#917-api-边界设计">9.17 API 边界设计</a></li><li><a href="#918-internal-与测试">9.18 internal 与测试</a></li><li><a href="#919-android-中的接口与可见性">9.19 Android 中的接口与可见性</a></li><li><a href="#920-服务端项目中的接口与可见性">9.20 服务端项目中的接口与可见性</a></li><li><a href="#921-常见错误">9.21 常见错误</a></li><li><a href="#922-本章小结">9.22 本章小结</a></li></ul></li><li><a href="#10-数据类枚举密封类型与值类">10. 数据类、枚举、密封类型与值类</a><ul><li><a href="#101-数据类的基本用法">10.1 数据类的基本用法</a></li><li><a href="#102-数据类的生成函数">10.2 数据类的生成函数</a></li><li><a href="#103-数据类的声明规则">10.3 数据类的声明规则</a></li><li><a href="#104-主构造器属性与类体属性">10.4 主构造器属性与类体属性</a></li><li><a href="#105-copy-是浅拷贝">10.5 copy 是浅拷贝</a></li><li><a href="#106-数据类与可变性">10.6 数据类与可变性</a></li><li><a href="#107-解构声明">10.7 解构声明</a></li><li><a href="#108-数据类适合与不适合的场景">10.8 数据类适合与不适合的场景</a></li><li><a href="#109-枚举类基础">10.9 枚举类基础</a></li><li><a href="#1010-枚举类属性与方法">10.10 枚举类属性与方法</a></li><li><a href="#1011-枚举常量的匿名类体">10.11 枚举常量的匿名类体</a></li><li><a href="#1012-枚举与-when">10.12 枚举与 when</a></li><li><a href="#1013-枚举适合与不适合的场景">10.13 枚举适合与不适合的场景</a></li><li><a href="#1014-密封类与密封接口基础">10.14 密封类与密封接口基础</a></li><li><a href="#1015-sealed-class-与-sealed-interface">10.15 sealed class 与 sealed interface</a></li><li><a href="#1016-密封类型与-when-穷尽检查">10.16 密封类型与 when 穷尽检查</a></li><li><a href="#1017-用密封类型建模-ui-状态">10.17 用密封类型建模 UI 状态</a></li><li><a href="#1018-用密封类型建模网络结果">10.18 用密封类型建模网络结果</a></li><li><a href="#1019-data-object">10.19 data object</a></li><li><a href="#1020-objectdata-objectcompanion-object-对比">10.20 object、data object、companion object 对比</a></li><li><a href="#1021-值类基础">10.21 值类基础</a></li><li><a href="#1022-值类的限制">10.22 值类的限制</a></li><li><a href="#1023-值类与-typealias-的区别">10.23 值类与 typealias 的区别</a></li><li><a href="#1024-值类适合的场景">10.24 值类适合的场景</a></li><li><a href="#1025-数据类枚举密封类型值类对比">10.25 数据类、枚举、密封类型、值类对比</a></li><li><a href="#1026-建模案例登录流程">10.26 建模案例：登录流程</a></li><li><a href="#1027-建模案例订单状态">10.27 建模案例：订单状态</a></li><li><a href="#1028-序列化与外部协议注意事项">10.28 序列化与外部协议注意事项</a></li><li><a href="#1029-java-互操作注意事项">10.29 Java 互操作注意事项</a></li><li><a href="#1030-常见错误">10.30 常见错误</a></li><li><a href="#1031-本章小结">10.31 本章小结</a></li></ul></li><li><a href="#11-泛型与型变">11. 泛型与型变</a><ul><li><a href="#111-为什么需要泛型">11.1 为什么需要泛型</a></li><li><a href="#112-泛型类">11.2 泛型类</a></li><li><a href="#113-泛型接口">11.3 泛型接口</a></li><li><a href="#114-泛型函数">11.4 泛型函数</a></li><li><a href="#115-泛型属性与扩展">11.5 泛型属性与扩展</a></li><li><a href="#116-泛型约束">11.6 泛型约束</a></li><li><a href="#117-可空上界与非空上界">11.7 可空上界与非空上界</a></li><li><a href="#118-多个上界-where">11.8 多个上界 where</a></li><li><a href="#119-泛型与类型推断">11.9 泛型与类型推断</a></li><li><a href="#1110-不型变-invariant">11.10 不型变 invariant</a></li><li><a href="#1111-协变-out">11.11 协变 out</a></li><li><a href="#1112-逆变-in">11.12 逆变 in</a></li><li><a href="#1113-生产者-out消费者-in">11.13 生产者 out，消费者 in</a></li><li><a href="#1114-使用处类型投影">11.14 使用处类型投影</a></li><li><a href="#1115-星号投影">11.15 星号投影</a></li><li><a href="#1116-泛型与可空">11.16 泛型与可空</a></li><li><a href="#1117-泛型与集合-api-设计">11.17 泛型与集合 API 设计</a></li><li><a href="#1118-泛型结果类型">11.18 泛型结果类型</a></li><li><a href="#1119-类型擦除">11.19 类型擦除</a></li><li><a href="#1120-inline-与-reified">11.20 inline 与 reified</a></li><li><a href="#1121-泛型和-classkclass">11.21 泛型和 Class/KClass</a></li><li><a href="#1122-泛型与-java-通配符对照">11.22 泛型与 Java 通配符对照</a></li><li><a href="#1123-泛型数组">11.23 泛型数组</a></li><li><a href="#1124-泛型-dsl-与构建器">11.24 泛型 DSL 与构建器</a></li><li><a href="#1125-泛型设计原则">11.25 泛型设计原则</a></li><li><a href="#1126-常见错误">11.26 常见错误</a></li><li><a href="#1127-本章小结">11.27 本章小结</a></li></ul></li><li><a href="#12-扩展">12. 扩展</a><ul><li><a href="#121-扩展函数基础">12.1 扩展函数基础</a></li><li><a href="#122-扩展函数的编译本质">12.2 扩展函数的编译本质</a></li><li><a href="#123-成员函数优先">12.3 成员函数优先</a></li><li><a href="#124-静态解析">12.4 静态解析</a></li><li><a href="#125-可空接收者">12.5 可空接收者</a></li><li><a href="#126-扩展属性">12.6 扩展属性</a></li><li><a href="#127-泛型扩展">12.7 泛型扩展</a></li><li><a href="#128-扩展函数类型">12.8 扩展函数类型</a></li><li><a href="#129-伴生对象扩展">12.9 伴生对象扩展</a></li><li><a href="#1210-成员扩展">12.10 成员扩展</a></li><li><a href="#1211-扩展的作用域与导入">12.11 扩展的作用域与导入</a></li><li><a href="#1212-扩展与命名空间">12.12 扩展与命名空间</a></li><li><a href="#1213-扩展与数据转换">12.13 扩展与数据转换</a></li><li><a href="#1214-扩展与集合-api">12.14 扩展与集合 API</a></li><li><a href="#1215-android-常见扩展">12.15 Android 常见扩展</a></li><li><a href="#1216-扩展与-dsl">12.16 扩展与 DSL</a></li><li><a href="#1217-扩展与操作符">12.17 扩展与操作符</a></li><li><a href="#1218-扩展与-java-互操作">12.18 扩展与 Java 互操作</a></li><li><a href="#1219-扩展的适用场景">12.19 扩展的适用场景</a></li><li><a href="#1220-常见错误">12.20 常见错误</a></li><li><a href="#1221-本章小结">12.21 本章小结</a></li></ul></li><li><a href="#13-委托">13. 委托</a><ul><li><a href="#131-类委托">13.1 类委托</a></li><li><a href="#132-属性委托">13.2 属性委托</a></li><li><a href="#133-lazy">13.3 lazy</a></li><li><a href="#134-observable-与-vetoable">13.4 observable 与 vetoable</a></li><li><a href="#135-map-委托">13.5 map 委托</a></li><li><a href="#136-类委托的覆盖规则">13.6 类委托的覆盖规则</a></li><li><a href="#137-多接口委托">13.7 多接口委托</a></li><li><a href="#138-类委托与装饰器模式">13.8 类委托与装饰器模式</a></li><li><a href="#139-属性委托的原理">13.9 属性委托的原理</a></li><li><a href="#1310-lazy-使用细节">13.10 lazy 使用细节</a></li><li><a href="#1311-lateinit-与-lazy-对比">13.11 lateinit 与 lazy 对比</a></li><li><a href="#1312-notnull-委托">13.12 notNull 委托</a></li><li><a href="#1313-map-委托细节">13.13 Map 委托细节</a></li><li><a href="#1314-自定义只读属性委托">13.14 自定义只读属性委托</a></li><li><a href="#1315-自定义可写属性委托">13.15 自定义可写属性委托</a></li><li><a href="#1316-readonlyproperty-与-readwriteproperty">13.16 ReadOnlyProperty 与 ReadWriteProperty</a></li><li><a href="#1317-委托给另一个属性">13.17 委托给另一个属性</a></li><li><a href="#1318-局部委托属性">13.18 局部委托属性</a></li><li><a href="#1319-providedelegate">13.19 provideDelegate</a></li><li><a href="#1320-android-常见委托场景">13.20 Android 常见委托场景</a></li><li><a href="#1321-compose-中的委托">13.21 Compose 中的委托</a></li><li><a href="#1322-线程安全与副作用">13.22 线程安全与副作用</a></li><li><a href="#1323-委托与继承的取舍">13.23 委托与继承的取舍</a></li><li><a href="#1324-常见错误">13.24 常见错误</a></li><li><a href="#1325-本章小结">13.25 本章小结</a></li></ul></li><li><a href="#14-集合与序列">14. 集合与序列</a><ul><li><a href="#141-集合类型总览">14.1 集合类型总览</a></li><li><a href="#142-只读集合与可变集合">14.2 只读集合与可变集合</a></li><li><a href="#143-val-与可变集合">14.3 val 与可变集合</a></li><li><a href="#144-常用创建方式">14.4 常用创建方式</a></li><li><a href="#145-list">14.5 List</a></li><li><a href="#146-mutablelist">14.6 MutableList</a></li><li><a href="#147-set">14.7 Set</a></li><li><a href="#148-map">14.8 Map</a></li><li><a href="#149-mutablemap">14.9 MutableMap</a></li><li><a href="#1410-遍历集合">14.10 遍历集合</a></li><li><a href="#1411-过滤-filter">14.11 过滤 filter</a></li><li><a href="#1412-映射-map">14.12 映射 map</a></li><li><a href="#1413-flatmap-与-flatten">14.13 flatMap 与 flatten</a></li><li><a href="#1414-查找元素">14.14 查找元素</a></li><li><a href="#1415-分组-groupby">14.15 分组 groupBy</a></li><li><a href="#1416-associate-系列">14.16 associate 系列</a></li><li><a href="#1417-排序">14.17 排序</a></li><li><a href="#1418-去重">14.18 去重</a></li><li><a href="#1419-聚合操作">14.19 聚合操作</a></li><li><a href="#1420-fold-与-reduce">14.20 fold 与 reduce</a></li><li><a href="#1421-分片与窗口">14.21 分片与窗口</a></li><li><a href="#1422-zip-与-unzip">14.22 zip 与 unzip</a></li><li><a href="#1423-jointostring">14.23 joinToString</a></li><li><a href="#1424-集合转换">14.24 集合转换</a></li><li><a href="#1425-可空集合处理">14.25 可空集合处理</a></li><li><a href="#1426-sequence">14.26 Sequence</a></li><li><a href="#1427-sequence-的执行顺序">14.27 Sequence 的执行顺序</a></li><li><a href="#1428-什么时候使用-sequence">14.28 什么时候使用 Sequence</a></li><li><a href="#1429-集合与-java-互操作">14.29 集合与 Java 互操作</a></li><li><a href="#1430-android-中的集合实践">14.30 Android 中的集合实践</a></li><li><a href="#1431-性能与内存注意点">14.31 性能与内存注意点</a></li><li><a href="#1432-常见错误">14.32 常见错误</a></li><li><a href="#1433-本章小结">14.33 本章小结</a></li></ul></li><li><a href="#15-异常与资源处理">15. 异常与资源处理</a><ul><li><a href="#151-异常的基本概念">15.1 异常的基本概念</a></li><li><a href="#152-trycatch-基础">15.2 try/catch 基础</a></li><li><a href="#153-try-是表达式">15.3 try 是表达式</a></li><li><a href="#154-finally">15.4 finally</a></li><li><a href="#155-throw-是表达式">15.5 throw 是表达式</a></li><li><a href="#156-nothingerror-与-todo">15.6 Nothing、error 与 TODO</a></li><li><a href="#157-requirecheck-与-assert">15.7 require、check 与 assert</a></li><li><a href="#158-kotlin-没有受检异常">15.8 Kotlin 没有受检异常</a></li><li><a href="#159-自定义异常">15.9 自定义异常</a></li><li><a href="#1510-异常-vs-null-vs-result-vs-密封类型">15.10 异常 vs null vs Result vs 密封类型</a></li><li><a href="#1511-runcatching">15.11 runCatching</a></li><li><a href="#1512-result-使用注意">15.12 Result 使用注意</a></li><li><a href="#1513-use-自动关闭资源">15.13 use 自动关闭资源</a></li><li><a href="#1514-文件与-io-异常处理">15.14 文件与 IO 异常处理</a></li><li><a href="#1515-异常链与上下文">15.15 异常链与上下文</a></li><li><a href="#1516-捕获异常的粒度">15.16 捕获异常的粒度</a></li><li><a href="#1517-不要吞异常">15.17 不要吞异常</a></li><li><a href="#1518-协程中的异常注意点">15.18 协程中的异常注意点</a></li><li><a href="#1519-android-中的异常处理">15.19 Android 中的异常处理</a></li><li><a href="#1520-服务端中的异常处理">15.20 服务端中的异常处理</a></li><li><a href="#1521-api-设计中的错误表达">15.21 API 设计中的错误表达</a></li><li><a href="#1522-常见错误">15.22 常见错误</a></li><li><a href="#1523-本章小结">15.23 本章小结</a></li></ul></li><li><a href="#16-协程与-flow">16. 协程与 Flow</a><ul><li><a href="#161-依赖与模块">16.1 依赖与模块</a></li><li><a href="#162-协程是什么">16.2 协程是什么</a></li><li><a href="#163-suspend-函数">16.3 suspend 函数</a></li><li><a href="#164-coroutinescope">16.4 CoroutineScope</a></li><li><a href="#165-job-与生命周期">16.5 Job 与生命周期</a></li><li><a href="#166-结构化并发">16.6 结构化并发</a></li><li><a href="#167-coroutinescope-与-supervisorscope">16.7 coroutineScope 与 supervisorScope</a></li><li><a href="#168-launch-与-async">16.8 launch 与 async</a></li><li><a href="#169-withcontext">16.9 withContext</a></li><li><a href="#1610-dispatcher">16.10 Dispatcher</a></li><li><a href="#1611-coroutinecontext">16.11 CoroutineContext</a></li><li><a href="#1612-取消机制">16.12 取消机制</a></li><li><a href="#1613-超时">16.13 超时</a></li><li><a href="#1614-noncancellable">16.14 NonCancellable</a></li><li><a href="#1615-异常传播">16.15 异常传播</a></li><li><a href="#1616-coroutineexceptionhandler">16.16 CoroutineExceptionHandler</a></li><li><a href="#1617-cancellationexception">16.17 CancellationException</a></li><li><a href="#1618-flow-基础">16.18 Flow 基础</a></li><li><a href="#1619-创建-flow">16.19 创建 Flow</a></li><li><a href="#1620-flow-常用操作符">16.20 Flow 常用操作符</a></li><li><a href="#1621-flow-上下文与-flowon">16.21 Flow 上下文与 flowOn</a></li><li><a href="#1622-flow-异常处理">16.22 Flow 异常处理</a></li><li><a href="#1623-flow-背压与-buffer">16.23 Flow 背压与 buffer</a></li><li><a href="#1624-stateflow">16.24 StateFlow</a></li><li><a href="#1625-sharedflow">16.25 SharedFlow</a></li><li><a href="#1626-channel">16.26 Channel</a></li><li><a href="#1627-android-中收集-flow">16.27 Android 中收集 Flow</a></li><li><a href="#1628-viewmodel-实践">16.28 ViewModel 实践</a></li><li><a href="#1629-服务端实践">16.29 服务端实践</a></li><li><a href="#1630-协程测试">16.30 协程测试</a></li><li><a href="#1631-flow-测试">16.31 Flow 测试</a></li><li><a href="#1632-常见错误">16.32 常见错误</a></li><li><a href="#1633-本章小结">16.33 本章小结</a></li></ul></li><li><a href="#17-java-互操作">17. Java 互操作</a><ul><li><a href="#171-kotlin-调用-java">17.1 Kotlin 调用 Java</a></li><li><a href="#172-平台类型">17.2 平台类型</a></li><li><a href="#173-java-空值注解">17.3 Java 空值注解</a></li><li><a href="#174-java-受检异常">17.4 Java 受检异常</a></li><li><a href="#175-java-调-kotlin文件类">17.5 Java 调 Kotlin：文件类</a></li><li><a href="#176-多文件类-jvmmultifileclass">17.6 多文件类 @JvmMultifileClass</a></li><li><a href="#177-kotlin-属性在-java-中的形态">17.7 Kotlin 属性在 Java 中的形态</a></li><li><a href="#178-jvmfield">17.8 @JvmField</a></li><li><a href="#179-const-val-与-java">17.9 const val 与 Java</a></li><li><a href="#1710-伴生对象与-jvmstatic">17.10 伴生对象与 @JvmStatic</a></li><li><a href="#1711-默认参数与-jvmoverloads">17.11 默认参数与 @JvmOverloads</a></li><li><a href="#1712-jvmname">17.12 @JvmName</a></li><li><a href="#1713-关键字冲突">17.13 关键字冲突</a></li><li><a href="#1714-sam-转换">17.14 SAM 转换</a></li><li><a href="#1715-kotlin-函数类型给-java-调用">17.15 Kotlin 函数类型给 Java 调用</a></li><li><a href="#1716-集合互操作">17.16 集合互操作</a></li><li><a href="#1717-数组与-varargs">17.17 数组与 varargs</a></li><li><a href="#1718-泛型互操作">17.18 泛型互操作</a></li><li><a href="#1719-object-与-java">17.19 object 与 Java</a></li><li><a href="#1720-data-class-与-java">17.20 data class 与 Java</a></li><li><a href="#1721-值类与-java">17.21 值类与 Java</a></li><li><a href="#1722-kotlin-可见性与-java">17.22 Kotlin 可见性与 Java</a></li><li><a href="#1723-注解使用">17.23 注解使用</a></li><li><a href="#1724-kotlin-关键注解速查">17.24 Kotlin 关键注解速查</a></li><li><a href="#1725-java-bean-与-kotlin-属性">17.25 Java Bean 与 Kotlin 属性</a></li><li><a href="#1726-java-反射与-kotlin-反射">17.26 Java 反射与 Kotlin 反射</a></li><li><a href="#1727-suspend-函数与-java">17.27 suspend 函数与 Java</a></li><li><a href="#1728-渐进式迁移策略">17.28 渐进式迁移策略</a></li><li><a href="#1729-kotlin-api-面向-java-的设计建议">17.29 Kotlin API 面向 Java 的设计建议</a></li><li><a href="#1730-常见错误">17.30 常见错误</a></li><li><a href="#1731-本章小结">17.31 本章小结</a></li></ul></li><li><a href="#18-android-开发要点">18. Android 开发要点</a><ul><li><a href="#181-kotlin-在-android-中的常见位置">18.1 Kotlin 在 Android 中的常见位置</a></li><li><a href="#182-viewmodel-中使用协程">18.2 ViewModel 中使用协程</a></li><li><a href="#183-repository-分层">18.3 Repository 分层</a></li><li><a href="#184-compose-状态收集">18.4 Compose 状态收集</a></li><li><a href="#185-android-中的空安全边界">18.5 Android 中的空安全边界</a></li><li><a href="#186-gradle-kotlin-dsl-基础">18.6 Gradle Kotlin DSL 基础</a></li><li><a href="#187-activity-与-compose-入口">18.7 Activity 与 Compose 入口</a></li><li><a href="#188-xml-view-与-compose-的取舍">18.8 XML View 与 Compose 的取舍</a></li><li><a href="#189-ui-state-建模">18.9 UI State 建模</a></li><li><a href="#1810-stateflow-暴露页面状态">18.10 StateFlow 暴露页面状态</a></li><li><a href="#1811-sharedflow-与一次性事件">18.11 SharedFlow 与一次性事件</a></li><li><a href="#1812-usecase-的作用">18.12 UseCase 的作用</a></li><li><a href="#1813-数据模型分层">18.13 数据模型分层</a></li><li><a href="#1814-compose-状态提升">18.14 Compose 状态提升</a></li><li><a href="#1815-compose-重组与性能">18.15 Compose 重组与性能</a></li><li><a href="#1816-side-effect-api">18.16 Side Effect API</a></li><li><a href="#1817-navigation-compose">18.17 Navigation Compose</a></li><li><a href="#1818-savedstatehandle">18.18 SavedStateHandle</a></li><li><a href="#1819-生命周期感知收集-flow">18.19 生命周期感知收集 Flow</a></li><li><a href="#1820-room-与-kotlin">18.20 Room 与 Kotlin</a></li><li><a href="#1821-datastore">18.21 DataStore</a></li><li><a href="#1822-网络请求与-retrofit">18.22 网络请求与 Retrofit</a></li><li><a href="#1823-网络错误建模">18.23 网络错误建模</a></li><li><a href="#1824-kotlinxserialization">18.24 kotlinx.serialization</a></li><li><a href="#1825-hilt-依赖注入">18.25 Hilt 依赖注入</a></li><li><a href="#1826-dispatcher-注入">18.26 Dispatcher 注入</a></li><li><a href="#1827-workmanager">18.27 WorkManager</a></li><li><a href="#1828-paging">18.28 Paging</a></li><li><a href="#1829-权限处理">18.29 权限处理</a></li><li><a href="#1830-android-资源与-kotlin">18.30 Android 资源与 Kotlin</a></li><li><a href="#1831-context-使用">18.31 Context 使用</a></li><li><a href="#1832-图片加载">18.32 图片加载</a></li><li><a href="#1833-kotlin-与-android-可访问性">18.33 Kotlin 与 Android 可访问性</a></li><li><a href="#1834-测试策略">18.34 测试策略</a></li><li><a href="#1835-日志与崩溃处理">18.35 日志与崩溃处理</a></li><li><a href="#1836-性能要点">18.36 性能要点</a></li><li><a href="#1837-安全与隐私">18.37 安全与隐私</a></li><li><a href="#1838-发布与构建变体">18.38 发布与构建变体</a></li><li><a href="#1839-常见错误">18.39 常见错误</a></li><li><a href="#1840-本章小结">18.40 本章小结</a></li></ul></li><li><a href="#19-kotlin-多平台简介">19. Kotlin 多平台简介</a><ul><li><a href="#191-kmp-解决什么问题">19.1 KMP 解决什么问题</a></li><li><a href="#192-适合共享与不适合共享的内容">19.2 适合共享与不适合共享的内容</a></li><li><a href="#193-source-set-基础">19.3 Source Set 基础</a></li><li><a href="#194-gradle-配置">19.4 Gradle 配置</a></li><li><a href="#195-expect-与-actual">19.5 expect 与 actual</a></li><li><a href="#196-接口注入替代-expectactual">19.6 接口注入替代 expect/actual</a></li><li><a href="#197-共享架构分层">19.7 共享架构分层</a></li><li><a href="#198-领域模型">19.8 领域模型</a></li><li><a href="#199-repository-与-usecase">19.9 Repository 与 UseCase</a></li><li><a href="#1910-ktor-client">19.10 Ktor Client</a></li><li><a href="#1911-kotlinxserialization">19.11 kotlinx.serialization</a></li><li><a href="#1912-本地存储方案">19.12 本地存储方案</a></li><li><a href="#1913-repository-实现">19.13 Repository 实现</a></li><li><a href="#1914-错误类型共享">19.14 错误类型共享</a></li><li><a href="#1915-时间与日期">19.15 时间与日期</a></li><li><a href="#1916-协程与-flow">19.16 协程与 Flow</a></li><li><a href="#1917-向-swift-暴露-api">19.17 向 Swift 暴露 API</a></li><li><a href="#1918-ios-异步调用边界">19.18 iOS 异步调用边界</a></li><li><a href="#1919-compose-multiplatform">19.19 Compose Multiplatform</a></li><li><a href="#1920-依赖注入">19.20 依赖注入</a></li><li><a href="#1921-平台能力封装">19.21 平台能力封装</a></li><li><a href="#1922-跨平台资源">19.22 跨平台资源</a></li><li><a href="#1923-测试">19.23 测试</a></li><li><a href="#1924-构建产物">19.24 构建产物</a></li><li><a href="#1925-版本与发布策略">19.25 版本与发布策略</a></li><li><a href="#1926-性能与体积">19.26 性能与体积</a></li><li><a href="#1927-常见坑">19.27 常见坑</a></li><li><a href="#1928-适合采用-kmp-的项目">19.28 适合采用 KMP 的项目</a></li><li><a href="#1929-一个完整调用链示例">19.29 一个完整调用链示例</a></li><li><a href="#1930-本章小结">19.30 本章小结</a></li></ul></li><li><a href="#20-常用编码习惯与易错点">20. 常用编码习惯与易错点</a><ul><li><a href="#201-优先不可变">20.1 优先不可变</a></li><li><a href="#202-避免滥用-">20.2 避免滥用 !!</a></li><li><a href="#203-区分--与-">20.3 区分 == 与 ===</a></li><li><a href="#204-注意集合只读不等于不可变">20.4 注意集合只读不等于不可变</a></li><li><a href="#205-少写聪明的作用域函数链">20.5 少写“聪明”的作用域函数链</a></li><li><a href="#206-data-class-不适合所有类">20.6 data class 不适合所有类</a></li><li><a href="#207-密封类型适合表达状态">20.7 密封类型适合表达状态</a></li><li><a href="#208-协程绑定生命周期">20.8 协程绑定生命周期</a></li><li><a href="#209-明确线程切换边界">20.9 明确线程切换边界</a></li><li><a href="#2010-suspend-函数不等于后台线程">20.10 suspend 函数不等于后台线程</a></li><li><a href="#2011-不要吞掉-cancellationexception">20.11 不要吞掉 CancellationException</a></li><li><a href="#2012-launch-与-async-不要混用语义">20.12 launch 与 async 不要混用语义</a></li><li><a href="#2013-flow-不要在错误位置收集">20.13 Flow 不要在错误位置收集</a></li><li><a href="#2014-公开-api-避免暴露可变状态">20.14 公开 API 避免暴露可变状态</a></li><li><a href="#2015-返回类型用接口还是具体类型">20.15 返回类型用接口还是具体类型</a></li><li><a href="#2016-参数设计要避免布尔陷阱">20.16 参数设计要避免布尔陷阱</a></li><li><a href="#2017-默认参数不要隐藏重要行为">20.17 默认参数不要隐藏重要行为</a></li><li><a href="#2018-扩展函数不要滥用">20.18 扩展函数不要滥用</a></li><li><a href="#2019-infix-与-operator-要克制">20.19 infix 与 operator 要克制</a></li><li><a href="#2020-lateinit-使用要谨慎">20.20 lateinit 使用要谨慎</a></li><li><a href="#2021-lazy-使用要注意线程与生命周期">20.21 lazy 使用要注意线程与生命周期</a></li><li><a href="#2022-equals-与-hashcode-的集合风险">20.22 equals 与 hashCode 的集合风险</a></li><li><a href="#2023-compareby-与排序稳定性">20.23 compareBy 与排序稳定性</a></li><li><a href="#2024-mapnotnull-与空值过滤">20.24 mapNotNull 与空值过滤</a></li><li><a href="#2025-takeif-与-takeunless-不要写反">20.25 takeIf 与 takeUnless 不要写反</a></li><li><a href="#2026-result-使用边界">20.26 Result 使用边界</a></li><li><a href="#2027-异常要带上下文">20.27 异常要带上下文</a></li><li><a href="#2028-日志不要泄漏敏感信息">20.28 日志不要泄漏敏感信息</a></li><li><a href="#2029-字符串拼接与格式化">20.29 字符串拼接与格式化</a></li><li><a href="#2030-数字金额与单位不要裸奔">20.30 数字、金额与单位不要裸奔</a></li><li><a href="#2031-命名与格式">20.31 命名与格式</a></li><li><a href="#2032-包结构要表达边界">20.32 包结构要表达边界</a></li><li><a href="#2033-文件大小与函数大小">20.33 文件大小与函数大小</a></li><li><a href="#2034-注释解释为什么不重复是什么">20.34 注释解释为什么，不重复是什么</a></li><li><a href="#2035-测试优先覆盖规则而不是实现">20.35 测试优先覆盖规则而不是实现</a></li><li><a href="#2036-代码审查常见检查点">20.36 代码审查常见检查点</a></li><li><a href="#2037-常见反模式速查">20.37 常见反模式速查</a></li><li><a href="#2038-何时使用顶层函数">20.38 何时使用顶层函数</a></li><li><a href="#2039-api-设计要让错误用法变难">20.39 API 设计要让错误用法变难</a></li><li><a href="#2040-本章小结">20.40 本章小结</a></li></ul></li><li><a href="#21-学习路线">21. 学习路线</a><ul><li><a href="#211-第一阶段语法入门">21.1 第一阶段：语法入门</a></li><li><a href="#212-第二阶段面向对象与类型系统">21.2 第二阶段：面向对象与类型系统</a></li><li><a href="#213-第三阶段函数式风格与标准库">21.3 第三阶段：函数式风格与标准库</a></li><li><a href="#214-第四阶段协程">21.4 第四阶段：协程</a></li><li><a href="#215-第五阶段工程实践">21.5 第五阶段：工程实践</a></li></ul></li><li><a href="#22-参考资料">22. 参考资料</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#1-kotlin-概览">1. Kotlin 概览</a></li><li><a href="#2-环境与项目结构">2. 环境与项目结构</a></li><li><a href="#3-基础语法">3. 基础语法</a><ul><li><a href="#321-本章小结">3.21 本章小结</a></li></ul></li><li><a href="#4-基本类型字符串与数组">4. 基本类型、字符串与数组</a><ul><li><a href="#41-数字类型">4.1 数字类型</a></li><li><a href="#42-数字范围与溢出">4.2 数字范围与溢出</a></li><li><a href="#43-显式类型转换">4.3 显式类型转换</a></li><li><a href="#44-除法与取模">4.4 除法与取模</a></li><li><a href="#45-无符号整数">4.5 无符号整数</a></li><li><a href="#46-位运算">4.6 位运算</a></li><li><a href="#47-boolean">4.7 Boolean</a></li><li><a href="#48-char">4.8 Char</a></li><li><a href="#49-string-基础">4.9 String 基础</a></li><li><a href="#410-字符串模板">4.10 字符串模板</a></li><li><a href="#411-转义字符串与原始字符串">4.11 转义字符串与原始字符串</a></li><li><a href="#412-字符串比较与判空">4.12 字符串比较与判空</a></li><li><a href="#413-字符串转数字">4.13 字符串转数字</a></li><li><a href="#414-正则表达式基础">4.14 正则表达式基础</a></li><li><a href="#415-array-基础">4.15 Array 基础</a></li><li><a href="#416-基本类型数组">4.16 基本类型数组</a></li><li><a href="#417-数组与集合的区别">4.17 数组与集合的区别</a></li><li><a href="#418-数组常用操作">4.18 数组常用操作</a></li><li><a href="#419-anyunitnothing">4.19 Any、Unit、Nothing</a></li><li><a href="#420-pair-与-triple">4.20 Pair 与 Triple</a></li><li><a href="#421-类型别名-typealias">4.21 类型别名 typealias</a></li><li><a href="#422-装箱与引用相等">4.22 装箱与引用相等</a></li><li><a href="#423-基本类型常见错误">4.23 基本类型常见错误</a></li><li><a href="#424-本章小结">4.24 本章小结</a></li></ul></li><li><a href="#5-空安全">5. 空安全</a><ul><li><a href="#51-非空类型与可空类型">5.1 非空类型与可空类型</a></li><li><a href="#52-可空类型的使用边界">5.2 可空类型的使用边界</a></li><li><a href="#53-安全调用-">5.3 安全调用 ?.</a></li><li><a href="#54-elvis-操作符-">5.4 Elvis 操作符 ?:</a></li><li><a href="#55-智能转换">5.5 智能转换</a></li><li><a href="#56-let-处理非空值">5.6 let 处理非空值</a></li><li><a href="#57-非空断言-">5.7 非空断言 !!</a></li><li><a href="#58-requirenotnull-与-checknotnull">5.8 requireNotNull 与 checkNotNull</a></li><li><a href="#59-安全转换-as">5.9 安全转换 as?</a></li><li><a href="#510-可空集合与集合中的可空元素">5.10 可空集合与集合中的可空元素</a></li><li><a href="#511-可空函数类型">5.11 可空函数类型</a></li><li><a href="#512-可空接收者扩展">5.12 可空接收者扩展</a></li><li><a href="#513-lateinit-与空安全">5.13 lateinit 与空安全</a></li><li><a href="#514-平台类型与-java-互操作">5.14 平台类型与 Java 互操作</a></li><li><a href="#515-android-中的空安全边界">5.15 Android 中的空安全边界</a></li><li><a href="#516-json数据库与网络模型">5.16 JSON、数据库与网络模型</a></li><li><a href="#517-optionalresult-与-null-的选择">5.17 Optional、Result 与 null 的选择</a></li><li><a href="#518-空字符串与-null">5.18 空字符串与 null</a></li><li><a href="#519-常用空安全函数">5.19 常用空安全函数</a></li><li><a href="#520-空安全代码风格">5.20 空安全代码风格</a></li><li><a href="#521-常见错误">5.21 常见错误</a></li><li><a href="#522-本章小结">5.22 本章小结</a></li></ul></li><li><a href="#6-控制流">6. 控制流</a><ul><li><a href="#61-if-是表达式">6.1 if 是表达式</a></li><li><a href="#62-if-的类型推断">6.2 if 的类型推断</a></li><li><a href="#63-when-基础">6.3 when 基础</a></li><li><a href="#64-when-不带参数">6.4 when 不带参数</a></li><li><a href="#65-when-的穷尽性">6.5 when 的穷尽性</a></li><li><a href="#66-when-分支中的代码块">6.6 when 分支中的代码块</a></li><li><a href="#67-区间与进度">6.7 区间与进度</a></li><li><a href="#68-until-的区别">6.8 ..、..&lt;、until 的区别</a></li><li><a href="#69-for-循环">6.9 for 循环</a></li><li><a href="#610-while-与-do-while">6.10 while 与 do while</a></li><li><a href="#611-break-与-continue">6.11 break 与 continue</a></li><li><a href="#612-标签">6.12 标签</a></li><li><a href="#613-return">6.13 return</a></li><li><a href="#614-throw-与-try-表达式">6.14 throw 与 try 表达式</a></li><li><a href="#615-repeat">6.15 repeat</a></li><li><a href="#616-控制流与空安全结合">6.16 控制流与空安全结合</a></li><li><a href="#617-控制流与集合函数">6.17 控制流与集合函数</a></li><li><a href="#618-状态机建模">6.18 状态机建模</a></li><li><a href="#619-常见错误">6.19 常见错误</a></li><li><a href="#620-本章小结">6.20 本章小结</a></li></ul></li><li><a href="#7-函数与-lambda">7. 函数与 Lambda</a><ul><li><a href="#71-函数声明">7.1 函数声明</a></li><li><a href="#72-unit-与无返回值函数">7.2 Unit 与无返回值函数</a></li><li><a href="#73-nothing-与不会正常返回的函数">7.3 Nothing 与不会正常返回的函数</a></li><li><a href="#74-表达式函数体与块函数体">7.4 表达式函数体与块函数体</a></li><li><a href="#75-默认参数">7.5 默认参数</a></li><li><a href="#76-命名参数">7.6 命名参数</a></li><li><a href="#77-可变参数-vararg">7.7 可变参数 vararg</a></li><li><a href="#78-局部函数">7.8 局部函数</a></li><li><a href="#79-成员函数顶层函数与扩展函数">7.9 成员函数、顶层函数与扩展函数</a></li><li><a href="#710-单表达式函数与-return">7.10 单表达式函数与 return</a></li><li><a href="#711-中缀函数-infix">7.11 中缀函数 infix</a></li><li><a href="#712-尾递归-tailrec">7.12 尾递归 tailrec</a></li><li><a href="#713-lambda-基础">7.13 Lambda 基础</a></li><li><a href="#714-lambda-尾随语法">7.14 Lambda 尾随语法</a></li><li><a href="#715-匿名函数">7.15 匿名函数</a></li><li><a href="#716-函数类型">7.16 函数类型</a></li><li><a href="#717-带接收者的函数类型">7.17 带接收者的函数类型</a></li><li><a href="#718-高阶函数">7.18 高阶函数</a></li><li><a href="#719-闭包">7.19 闭包</a></li><li><a href="#720-函数引用">7.20 函数引用</a></li><li><a href="#721-内联函数-inline">7.21 内联函数 inline</a></li><li><a href="#722-noinline-与-crossinline">7.22 noinline 与 crossinline</a></li><li><a href="#723-reified-类型参数">7.23 reified 类型参数</a></li><li><a href="#724-非局部返回">7.24 非局部返回</a></li><li><a href="#725-作用域函数概览">7.25 作用域函数概览</a></li><li><a href="#726-let">7.26 let</a></li><li><a href="#727-run">7.27 run</a></li><li><a href="#728-with">7.28 with</a></li><li><a href="#729-apply">7.29 apply</a></li><li><a href="#730-also">7.30 also</a></li><li><a href="#731-takeif-与-takeunless">7.31 takeIf 与 takeUnless</a></li><li><a href="#732-repeat">7.32 repeat</a></li><li><a href="#733-java-sam-转换">7.33 Java SAM 转换</a></li><li><a href="#734-suspend-函数简介">7.34 suspend 函数简介</a></li><li><a href="#735-函数设计建议">7.35 函数设计建议</a></li><li><a href="#736-常见错误">7.36 常见错误</a></li><li><a href="#737-本章小结">7.37 本章小结</a></li></ul></li><li><a href="#8-类对象与继承">8. 类、对象与继承</a><ul><li><a href="#81-类与实例">8.1 类与实例</a></li><li><a href="#82-主构造器">8.2 主构造器</a></li><li><a href="#83-init-初始化块">8.3 init 初始化块</a></li><li><a href="#84-次构造器">8.4 次构造器</a></li><li><a href="#85-属性基础">8.5 属性基础</a></li><li><a href="#86-gettersetter-与幕后字段">8.6 getter、setter 与幕后字段</a></li><li><a href="#87-幕后属性">8.7 幕后属性</a></li><li><a href="#88-lateinit-与-lazy">8.8 lateinit 与 lazy</a></li><li><a href="#89-可见性与类成员">8.9 可见性与类成员</a></li><li><a href="#810-继承基础">8.10 继承基础</a></li><li><a href="#811-重写函数与属性">8.11 重写函数与属性</a></li><li><a href="#812-super-与多父类型冲突">8.12 super 与多父类型冲突</a></li><li><a href="#813-抽象类">8.13 抽象类</a></li><li><a href="#814-类修饰符">8.14 类修饰符</a></li><li><a href="#815-嵌套类">8.15 嵌套类</a></li><li><a href="#816-内部类">8.16 内部类</a></li><li><a href="#817-匿名对象对象表达式">8.17 匿名对象：对象表达式</a></li><li><a href="#818-单例对象声明">8.18 单例：对象声明</a></li><li><a href="#819-伴生对象">8.19 伴生对象</a></li><li><a href="#820-对象表达式对象声明伴生对象对比">8.20 对象表达式、对象声明、伴生对象对比</a></li><li><a href="#821-类与文件组织">8.21 类与文件组织</a></li><li><a href="#822-类设计建议">8.22 类设计建议</a></li><li><a href="#823-常见错误">8.23 常见错误</a></li><li><a href="#824-本章小结">8.24 本章小结</a></li></ul></li><li><a href="#9-接口抽象类与可见性">9. 接口、抽象类与可见性</a><ul><li><a href="#91-接口">9.1 接口</a></li><li><a href="#92-多接口冲突">9.2 多接口冲突</a></li><li><a href="#93-可见性修饰符">9.3 可见性修饰符</a></li><li><a href="#94-接口默认实现">9.4 接口默认实现</a></li><li><a href="#95-接口属性补充">9.5 接口属性补充</a></li><li><a href="#96-接口继承">9.6 接口继承</a></li><li><a href="#97-函数式接口-fun-interface">9.7 函数式接口 fun interface</a></li><li><a href="#98-抽象类">9.8 抽象类</a></li><li><a href="#99-接口与抽象类怎么选">9.9 接口与抽象类怎么选</a></li><li><a href="#910-openfinalabstractoverride">9.10 open、final、abstract、override</a></li><li><a href="#911-属性覆盖">9.11 属性覆盖</a></li><li><a href="#912-可见性修饰符细节">9.12 可见性修饰符细节</a></li><li><a href="#913-构造器可见性">9.13 构造器可见性</a></li><li><a href="#914-成员可见性与属性-setter">9.14 成员可见性与属性 setter</a></li><li><a href="#915-嵌套类内部类与可见性">9.15 嵌套类、内部类与可见性</a></li><li><a href="#916-sealedenum-与接口的关系">9.16 sealed、enum 与接口的关系</a></li><li><a href="#917-api-边界设计">9.17 API 边界设计</a></li><li><a href="#918-internal-与测试">9.18 internal 与测试</a></li><li><a href="#919-android-中的接口与可见性">9.19 Android 中的接口与可见性</a></li><li><a href="#920-服务端项目中的接口与可见性">9.20 服务端项目中的接口与可见性</a></li><li><a href="#921-常见错误">9.21 常见错误</a></li><li><a href="#922-本章小结">9.22 本章小结</a></li></ul></li><li><a href="#10-数据类枚举密封类型与值类">10. 数据类、枚举、密封类型与值类</a><ul><li><a href="#101-数据类的基本用法">10.1 数据类的基本用法</a></li><li><a href="#102-数据类的生成函数">10.2 数据类的生成函数</a></li><li><a href="#103-数据类的声明规则">10.3 数据类的声明规则</a></li><li><a href="#104-主构造器属性与类体属性">10.4 主构造器属性与类体属性</a></li><li><a href="#105-copy-是浅拷贝">10.5 copy 是浅拷贝</a></li><li><a href="#106-数据类与可变性">10.6 数据类与可变性</a></li><li><a href="#107-解构声明">10.7 解构声明</a></li><li><a href="#108-数据类适合与不适合的场景">10.8 数据类适合与不适合的场景</a></li><li><a href="#109-枚举类基础">10.9 枚举类基础</a></li><li><a href="#1010-枚举类属性与方法">10.10 枚举类属性与方法</a></li><li><a href="#1011-枚举常量的匿名类体">10.11 枚举常量的匿名类体</a></li><li><a href="#1012-枚举与-when">10.12 枚举与 when</a></li><li><a href="#1013-枚举适合与不适合的场景">10.13 枚举适合与不适合的场景</a></li><li><a href="#1014-密封类与密封接口基础">10.14 密封类与密封接口基础</a></li><li><a href="#1015-sealed-class-与-sealed-interface">10.15 sealed class 与 sealed interface</a></li><li><a href="#1016-密封类型与-when-穷尽检查">10.16 密封类型与 when 穷尽检查</a></li><li><a href="#1017-用密封类型建模-ui-状态">10.17 用密封类型建模 UI 状态</a></li><li><a href="#1018-用密封类型建模网络结果">10.18 用密封类型建模网络结果</a></li><li><a href="#1019-data-object">10.19 data object</a></li><li><a href="#1020-objectdata-objectcompanion-object-对比">10.20 object、data object、companion object 对比</a></li><li><a href="#1021-值类基础">10.21 值类基础</a></li><li><a href="#1022-值类的限制">10.22 值类的限制</a></li><li><a href="#1023-值类与-typealias-的区别">10.23 值类与 typealias 的区别</a></li><li><a href="#1024-值类适合的场景">10.24 值类适合的场景</a></li><li><a href="#1025-数据类枚举密封类型值类对比">10.25 数据类、枚举、密封类型、值类对比</a></li><li><a href="#1026-建模案例登录流程">10.26 建模案例：登录流程</a></li><li><a href="#1027-建模案例订单状态">10.27 建模案例：订单状态</a></li><li><a href="#1028-序列化与外部协议注意事项">10.28 序列化与外部协议注意事项</a></li><li><a href="#1029-java-互操作注意事项">10.29 Java 互操作注意事项</a></li><li><a href="#1030-常见错误">10.30 常见错误</a></li><li><a href="#1031-本章小结">10.31 本章小结</a></li></ul></li><li><a href="#11-泛型与型变">11. 泛型与型变</a><ul><li><a href="#111-为什么需要泛型">11.1 为什么需要泛型</a></li><li><a href="#112-泛型类">11.2 泛型类</a></li><li><a href="#113-泛型接口">11.3 泛型接口</a></li><li><a href="#114-泛型函数">11.4 泛型函数</a></li><li><a href="#115-泛型属性与扩展">11.5 泛型属性与扩展</a></li><li><a href="#116-泛型约束">11.6 泛型约束</a></li><li><a href="#117-可空上界与非空上界">11.7 可空上界与非空上界</a></li><li><a href="#118-多个上界-where">11.8 多个上界 where</a></li><li><a href="#119-泛型与类型推断">11.9 泛型与类型推断</a></li><li><a href="#1110-不型变-invariant">11.10 不型变 invariant</a></li><li><a href="#1111-协变-out">11.11 协变 out</a></li><li><a href="#1112-逆变-in">11.12 逆变 in</a></li><li><a href="#1113-生产者-out消费者-in">11.13 生产者 out，消费者 in</a></li><li><a href="#1114-使用处类型投影">11.14 使用处类型投影</a></li><li><a href="#1115-星号投影">11.15 星号投影</a></li><li><a href="#1116-泛型与可空">11.16 泛型与可空</a></li><li><a href="#1117-泛型与集合-api-设计">11.17 泛型与集合 API 设计</a></li><li><a href="#1118-泛型结果类型">11.18 泛型结果类型</a></li><li><a href="#1119-类型擦除">11.19 类型擦除</a></li><li><a href="#1120-inline-与-reified">11.20 inline 与 reified</a></li><li><a href="#1121-泛型和-classkclass">11.21 泛型和 Class/KClass</a></li><li><a href="#1122-泛型与-java-通配符对照">11.22 泛型与 Java 通配符对照</a></li><li><a href="#1123-泛型数组">11.23 泛型数组</a></li><li><a href="#1124-泛型-dsl-与构建器">11.24 泛型 DSL 与构建器</a></li><li><a href="#1125-泛型设计原则">11.25 泛型设计原则</a></li><li><a href="#1126-常见错误">11.26 常见错误</a></li><li><a href="#1127-本章小结">11.27 本章小结</a></li></ul></li><li><a href="#12-扩展">12. 扩展</a><ul><li><a href="#121-扩展函数基础">12.1 扩展函数基础</a></li><li><a href="#122-扩展函数的编译本质">12.2 扩展函数的编译本质</a></li><li><a href="#123-成员函数优先">12.3 成员函数优先</a></li><li><a href="#124-静态解析">12.4 静态解析</a></li><li><a href="#125-可空接收者">12.5 可空接收者</a></li><li><a href="#126-扩展属性">12.6 扩展属性</a></li><li><a href="#127-泛型扩展">12.7 泛型扩展</a></li><li><a href="#128-扩展函数类型">12.8 扩展函数类型</a></li><li><a href="#129-伴生对象扩展">12.9 伴生对象扩展</a></li><li><a href="#1210-成员扩展">12.10 成员扩展</a></li><li><a href="#1211-扩展的作用域与导入">12.11 扩展的作用域与导入</a></li><li><a href="#1212-扩展与命名空间">12.12 扩展与命名空间</a></li><li><a href="#1213-扩展与数据转换">12.13 扩展与数据转换</a></li><li><a href="#1214-扩展与集合-api">12.14 扩展与集合 API</a></li><li><a href="#1215-android-常见扩展">12.15 Android 常见扩展</a></li><li><a href="#1216-扩展与-dsl">12.16 扩展与 DSL</a></li><li><a href="#1217-扩展与操作符">12.17 扩展与操作符</a></li><li><a href="#1218-扩展与-java-互操作">12.18 扩展与 Java 互操作</a></li><li><a href="#1219-扩展的适用场景">12.19 扩展的适用场景</a></li><li><a href="#1220-常见错误">12.20 常见错误</a></li><li><a href="#1221-本章小结">12.21 本章小结</a></li></ul></li><li><a href="#13-委托">13. 委托</a><ul><li><a href="#131-类委托">13.1 类委托</a></li><li><a href="#132-属性委托">13.2 属性委托</a></li><li><a href="#133-lazy">13.3 lazy</a></li><li><a href="#134-observable-与-vetoable">13.4 observable 与 vetoable</a></li><li><a href="#135-map-委托">13.5 map 委托</a></li><li><a href="#136-类委托的覆盖规则">13.6 类委托的覆盖规则</a></li><li><a href="#137-多接口委托">13.7 多接口委托</a></li><li><a href="#138-类委托与装饰器模式">13.8 类委托与装饰器模式</a></li><li><a href="#139-属性委托的原理">13.9 属性委托的原理</a></li><li><a href="#1310-lazy-使用细节">13.10 lazy 使用细节</a></li><li><a href="#1311-lateinit-与-lazy-对比">13.11 lateinit 与 lazy 对比</a></li><li><a href="#1312-notnull-委托">13.12 notNull 委托</a></li><li><a href="#1313-map-委托细节">13.13 Map 委托细节</a></li><li><a href="#1314-自定义只读属性委托">13.14 自定义只读属性委托</a></li><li><a href="#1315-自定义可写属性委托">13.15 自定义可写属性委托</a></li><li><a href="#1316-readonlyproperty-与-readwriteproperty">13.16 ReadOnlyProperty 与 ReadWriteProperty</a></li><li><a href="#1317-委托给另一个属性">13.17 委托给另一个属性</a></li><li><a href="#1318-局部委托属性">13.18 局部委托属性</a></li><li><a href="#1319-providedelegate">13.19 provideDelegate</a></li><li><a href="#1320-android-常见委托场景">13.20 Android 常见委托场景</a></li><li><a href="#1321-compose-中的委托">13.21 Compose 中的委托</a></li><li><a href="#1322-线程安全与副作用">13.22 线程安全与副作用</a></li><li><a href="#1323-委托与继承的取舍">13.23 委托与继承的取舍</a></li><li><a href="#1324-常见错误">13.24 常见错误</a></li><li><a href="#1325-本章小结">13.25 本章小结</a></li></ul></li><li><a href="#14-集合与序列">14. 集合与序列</a><ul><li><a href="#141-集合类型总览">14.1 集合类型总览</a></li><li><a href="#142-只读集合与可变集合">14.2 只读集合与可变集合</a></li><li><a href="#143-val-与可变集合">14.3 val 与可变集合</a></li><li><a href="#144-常用创建方式">14.4 常用创建方式</a></li><li><a href="#145-list">14.5 List</a></li><li><a href="#146-mutablelist">14.6 MutableList</a></li><li><a href="#147-set">14.7 Set</a></li><li><a href="#148-map">14.8 Map</a></li><li><a href="#149-mutablemap">14.9 MutableMap</a></li><li><a href="#1410-遍历集合">14.10 遍历集合</a></li><li><a href="#1411-过滤-filter">14.11 过滤 filter</a></li><li><a href="#1412-映射-map">14.12 映射 map</a></li><li><a href="#1413-flatmap-与-flatten">14.13 flatMap 与 flatten</a></li><li><a href="#1414-查找元素">14.14 查找元素</a></li><li><a href="#1415-分组-groupby">14.15 分组 groupBy</a></li><li><a href="#1416-associate-系列">14.16 associate 系列</a></li><li><a href="#1417-排序">14.17 排序</a></li><li><a href="#1418-去重">14.18 去重</a></li><li><a href="#1419-聚合操作">14.19 聚合操作</a></li><li><a href="#1420-fold-与-reduce">14.20 fold 与 reduce</a></li><li><a href="#1421-分片与窗口">14.21 分片与窗口</a></li><li><a href="#1422-zip-与-unzip">14.22 zip 与 unzip</a></li><li><a href="#1423-jointostring">14.23 joinToString</a></li><li><a href="#1424-集合转换">14.24 集合转换</a></li><li><a href="#1425-可空集合处理">14.25 可空集合处理</a></li><li><a href="#1426-sequence">14.26 Sequence</a></li><li><a href="#1427-sequence-的执行顺序">14.27 Sequence 的执行顺序</a></li><li><a href="#1428-什么时候使用-sequence">14.28 什么时候使用 Sequence</a></li><li><a href="#1429-集合与-java-互操作">14.29 集合与 Java 互操作</a></li><li><a href="#1430-android-中的集合实践">14.30 Android 中的集合实践</a></li><li><a href="#1431-性能与内存注意点">14.31 性能与内存注意点</a></li><li><a href="#1432-常见错误">14.32 常见错误</a></li><li><a href="#1433-本章小结">14.33 本章小结</a></li></ul></li><li><a href="#15-异常与资源处理">15. 异常与资源处理</a><ul><li><a href="#151-异常的基本概念">15.1 异常的基本概念</a></li><li><a href="#152-trycatch-基础">15.2 try/catch 基础</a></li><li><a href="#153-try-是表达式">15.3 try 是表达式</a></li><li><a href="#154-finally">15.4 finally</a></li><li><a href="#155-throw-是表达式">15.5 throw 是表达式</a></li><li><a href="#156-nothingerror-与-todo">15.6 Nothing、error 与 TODO</a></li><li><a href="#157-requirecheck-与-assert">15.7 require、check 与 assert</a></li><li><a href="#158-kotlin-没有受检异常">15.8 Kotlin 没有受检异常</a></li><li><a href="#159-自定义异常">15.9 自定义异常</a></li><li><a href="#1510-异常-vs-null-vs-result-vs-密封类型">15.10 异常 vs null vs Result vs 密封类型</a></li><li><a href="#1511-runcatching">15.11 runCatching</a></li><li><a href="#1512-result-使用注意">15.12 Result 使用注意</a></li><li><a href="#1513-use-自动关闭资源">15.13 use 自动关闭资源</a></li><li><a href="#1514-文件与-io-异常处理">15.14 文件与 IO 异常处理</a></li><li><a href="#1515-异常链与上下文">15.15 异常链与上下文</a></li><li><a href="#1516-捕获异常的粒度">15.16 捕获异常的粒度</a></li><li><a href="#1517-不要吞异常">15.17 不要吞异常</a></li><li><a href="#1518-协程中的异常注意点">15.18 协程中的异常注意点</a></li><li><a href="#1519-android-中的异常处理">15.19 Android 中的异常处理</a></li><li><a href="#1520-服务端中的异常处理">15.20 服务端中的异常处理</a></li><li><a href="#1521-api-设计中的错误表达">15.21 API 设计中的错误表达</a></li><li><a href="#1522-常见错误">15.22 常见错误</a></li><li><a href="#1523-本章小结">15.23 本章小结</a></li></ul></li><li><a href="#16-协程与-flow">16. 协程与 Flow</a><ul><li><a href="#161-依赖与模块">16.1 依赖与模块</a></li><li><a href="#162-协程是什么">16.2 协程是什么</a></li><li><a href="#163-suspend-函数">16.3 suspend 函数</a></li><li><a href="#164-coroutinescope">16.4 CoroutineScope</a></li><li><a href="#165-job-与生命周期">16.5 Job 与生命周期</a></li><li><a href="#166-结构化并发">16.6 结构化并发</a></li><li><a href="#167-coroutinescope-与-supervisorscope">16.7 coroutineScope 与 supervisorScope</a></li><li><a href="#168-launch-与-async">16.8 launch 与 async</a></li><li><a href="#169-withcontext">16.9 withContext</a></li><li><a href="#1610-dispatcher">16.10 Dispatcher</a></li><li><a href="#1611-coroutinecontext">16.11 CoroutineContext</a></li><li><a href="#1612-取消机制">16.12 取消机制</a></li><li><a href="#1613-超时">16.13 超时</a></li><li><a href="#1614-noncancellable">16.14 NonCancellable</a></li><li><a href="#1615-异常传播">16.15 异常传播</a></li><li><a href="#1616-coroutineexceptionhandler">16.16 CoroutineExceptionHandler</a></li><li><a href="#1617-cancellationexception">16.17 CancellationException</a></li><li><a href="#1618-flow-基础">16.18 Flow 基础</a></li><li><a href="#1619-创建-flow">16.19 创建 Flow</a></li><li><a href="#1620-flow-常用操作符">16.20 Flow 常用操作符</a></li><li><a href="#1621-flow-上下文与-flowon">16.21 Flow 上下文与 flowOn</a></li><li><a href="#1622-flow-异常处理">16.22 Flow 异常处理</a></li><li><a href="#1623-flow-背压与-buffer">16.23 Flow 背压与 buffer</a></li><li><a href="#1624-stateflow">16.24 StateFlow</a></li><li><a href="#1625-sharedflow">16.25 SharedFlow</a></li><li><a href="#1626-channel">16.26 Channel</a></li><li><a href="#1627-android-中收集-flow">16.27 Android 中收集 Flow</a></li><li><a href="#1628-viewmodel-实践">16.28 ViewModel 实践</a></li><li><a href="#1629-服务端实践">16.29 服务端实践</a></li><li><a href="#1630-协程测试">16.30 协程测试</a></li><li><a href="#1631-flow-测试">16.31 Flow 测试</a></li><li><a href="#1632-常见错误">16.32 常见错误</a></li><li><a href="#1633-本章小结">16.33 本章小结</a></li></ul></li><li><a href="#17-java-互操作">17. Java 互操作</a><ul><li><a href="#171-kotlin-调用-java">17.1 Kotlin 调用 Java</a></li><li><a href="#172-平台类型">17.2 平台类型</a></li><li><a href="#173-java-空值注解">17.3 Java 空值注解</a></li><li><a href="#174-java-受检异常">17.4 Java 受检异常</a></li><li><a href="#175-java-调-kotlin文件类">17.5 Java 调 Kotlin：文件类</a></li><li><a href="#176-多文件类-jvmmultifileclass">17.6 多文件类 @JvmMultifileClass</a></li><li><a href="#177-kotlin-属性在-java-中的形态">17.7 Kotlin 属性在 Java 中的形态</a></li><li><a href="#178-jvmfield">17.8 @JvmField</a></li><li><a href="#179-const-val-与-java">17.9 const val 与 Java</a></li><li><a href="#1710-伴生对象与-jvmstatic">17.10 伴生对象与 @JvmStatic</a></li><li><a href="#1711-默认参数与-jvmoverloads">17.11 默认参数与 @JvmOverloads</a></li><li><a href="#1712-jvmname">17.12 @JvmName</a></li><li><a href="#1713-关键字冲突">17.13 关键字冲突</a></li><li><a href="#1714-sam-转换">17.14 SAM 转换</a></li><li><a href="#1715-kotlin-函数类型给-java-调用">17.15 Kotlin 函数类型给 Java 调用</a></li><li><a href="#1716-集合互操作">17.16 集合互操作</a></li><li><a href="#1717-数组与-varargs">17.17 数组与 varargs</a></li><li><a href="#1718-泛型互操作">17.18 泛型互操作</a></li><li><a href="#1719-object-与-java">17.19 object 与 Java</a></li><li><a href="#1720-data-class-与-java">17.20 data class 与 Java</a></li><li><a href="#1721-值类与-java">17.21 值类与 Java</a></li><li><a href="#1722-kotlin-可见性与-java">17.22 Kotlin 可见性与 Java</a></li><li><a href="#1723-注解使用">17.23 注解使用</a></li><li><a href="#1724-kotlin-关键注解速查">17.24 Kotlin 关键注解速查</a></li><li><a href="#1725-java-bean-与-kotlin-属性">17.25 Java Bean 与 Kotlin 属性</a></li><li><a href="#1726-java-反射与-kotlin-反射">17.26 Java 反射与 Kotlin 反射</a></li><li><a href="#1727-suspend-函数与-java">17.27 suspend 函数与 Java</a></li><li><a href="#1728-渐进式迁移策略">17.28 渐进式迁移策略</a></li><li><a href="#1729-kotlin-api-面向-java-的设计建议">17.29 Kotlin API 面向 Java 的设计建议</a></li><li><a href="#1730-常见错误">17.30 常见错误</a></li><li><a href="#1731-本章小结">17.31 本章小结</a></li></ul></li><li><a href="#18-android-开发要点">18. Android 开发要点</a><ul><li><a href="#181-kotlin-在-android-中的常见位置">18.1 Kotlin 在 Android 中的常见位置</a></li><li><a href="#182-viewmodel-中使用协程">18.2 ViewModel 中使用协程</a></li><li><a href="#183-repository-分层">18.3 Repository 分层</a></li><li><a href="#184-compose-状态收集">18.4 Compose 状态收集</a></li><li><a href="#185-android-中的空安全边界">18.5 Android 中的空安全边界</a></li><li><a href="#186-gradle-kotlin-dsl-基础">18.6 Gradle Kotlin DSL 基础</a></li><li><a href="#187-activity-与-compose-入口">18.7 Activity 与 Compose 入口</a></li><li><a href="#188-xml-view-与-compose-的取舍">18.8 XML View 与 Compose 的取舍</a></li><li><a href="#189-ui-state-建模">18.9 UI State 建模</a></li><li><a href="#1810-stateflow-暴露页面状态">18.10 StateFlow 暴露页面状态</a></li><li><a href="#1811-sharedflow-与一次性事件">18.11 SharedFlow 与一次性事件</a></li><li><a href="#1812-usecase-的作用">18.12 UseCase 的作用</a></li><li><a href="#1813-数据模型分层">18.13 数据模型分层</a></li><li><a href="#1814-compose-状态提升">18.14 Compose 状态提升</a></li><li><a href="#1815-compose-重组与性能">18.15 Compose 重组与性能</a></li><li><a href="#1816-side-effect-api">18.16 Side Effect API</a></li><li><a href="#1817-navigation-compose">18.17 Navigation Compose</a></li><li><a href="#1818-savedstatehandle">18.18 SavedStateHandle</a></li><li><a href="#1819-生命周期感知收集-flow">18.19 生命周期感知收集 Flow</a></li><li><a href="#1820-room-与-kotlin">18.20 Room 与 Kotlin</a></li><li><a href="#1821-datastore">18.21 DataStore</a></li><li><a href="#1822-网络请求与-retrofit">18.22 网络请求与 Retrofit</a></li><li><a href="#1823-网络错误建模">18.23 网络错误建模</a></li><li><a href="#1824-kotlinxserialization">18.24 kotlinx.serialization</a></li><li><a href="#1825-hilt-依赖注入">18.25 Hilt 依赖注入</a></li><li><a href="#1826-dispatcher-注入">18.26 Dispatcher 注入</a></li><li><a href="#1827-workmanager">18.27 WorkManager</a></li><li><a href="#1828-paging">18.28 Paging</a></li><li><a href="#1829-权限处理">18.29 权限处理</a></li><li><a href="#1830-android-资源与-kotlin">18.30 Android 资源与 Kotlin</a></li><li><a href="#1831-context-使用">18.31 Context 使用</a></li><li><a href="#1832-图片加载">18.32 图片加载</a></li><li><a href="#1833-kotlin-与-android-可访问性">18.33 Kotlin 与 Android 可访问性</a></li><li><a href="#1834-测试策略">18.34 测试策略</a></li><li><a href="#1835-日志与崩溃处理">18.35 日志与崩溃处理</a></li><li><a href="#1836-性能要点">18.36 性能要点</a></li><li><a href="#1837-安全与隐私">18.37 安全与隐私</a></li><li><a href="#1838-发布与构建变体">18.38 发布与构建变体</a></li><li><a href="#1839-常见错误">18.39 常见错误</a></li><li><a href="#1840-本章小结">18.40 本章小结</a></li></ul></li><li><a href="#19-kotlin-多平台简介">19. Kotlin 多平台简介</a><ul><li><a href="#191-kmp-解决什么问题">19.1 KMP 解决什么问题</a></li><li><a href="#192-适合共享与不适合共享的内容">19.2 适合共享与不适合共享的内容</a></li><li><a href="#193-source-set-基础">19.3 Source Set 基础</a></li><li><a href="#194-gradle-配置">19.4 Gradle 配置</a></li><li><a href="#195-expect-与-actual">19.5 expect 与 actual</a></li><li><a href="#196-接口注入替代-expectactual">19.6 接口注入替代 expect/actual</a></li><li><a href="#197-共享架构分层">19.7 共享架构分层</a></li><li><a href="#198-领域模型">19.8 领域模型</a></li><li><a href="#199-repository-与-usecase">19.9 Repository 与 UseCase</a></li><li><a href="#1910-ktor-client">19.10 Ktor Client</a></li><li><a href="#1911-kotlinxserialization">19.11 kotlinx.serialization</a></li><li><a href="#1912-本地存储方案">19.12 本地存储方案</a></li><li><a href="#1913-repository-实现">19.13 Repository 实现</a></li><li><a href="#1914-错误类型共享">19.14 错误类型共享</a></li><li><a href="#1915-时间与日期">19.15 时间与日期</a></li><li><a href="#1916-协程与-flow">19.16 协程与 Flow</a></li><li><a href="#1917-向-swift-暴露-api">19.17 向 Swift 暴露 API</a></li><li><a href="#1918-ios-异步调用边界">19.18 iOS 异步调用边界</a></li><li><a href="#1919-compose-multiplatform">19.19 Compose Multiplatform</a></li><li><a href="#1920-依赖注入">19.20 依赖注入</a></li><li><a href="#1921-平台能力封装">19.21 平台能力封装</a></li><li><a href="#1922-跨平台资源">19.22 跨平台资源</a></li><li><a href="#1923-测试">19.23 测试</a></li><li><a href="#1924-构建产物">19.24 构建产物</a></li><li><a href="#1925-版本与发布策略">19.25 版本与发布策略</a></li><li><a href="#1926-性能与体积">19.26 性能与体积</a></li><li><a href="#1927-常见坑">19.27 常见坑</a></li><li><a href="#1928-适合采用-kmp-的项目">19.28 适合采用 KMP 的项目</a></li><li><a href="#1929-一个完整调用链示例">19.29 一个完整调用链示例</a></li><li><a href="#1930-本章小结">19.30 本章小结</a></li></ul></li><li><a href="#20-常用编码习惯与易错点">20. 常用编码习惯与易错点</a><ul><li><a href="#201-优先不可变">20.1 优先不可变</a></li><li><a href="#202-避免滥用-">20.2 避免滥用 !!</a></li><li><a href="#203-区分--与-">20.3 区分 == 与 ===</a></li><li><a href="#204-注意集合只读不等于不可变">20.4 注意集合只读不等于不可变</a></li><li><a href="#205-少写聪明的作用域函数链">20.5 少写“聪明”的作用域函数链</a></li><li><a href="#206-data-class-不适合所有类">20.6 data class 不适合所有类</a></li><li><a href="#207-密封类型适合表达状态">20.7 密封类型适合表达状态</a></li><li><a href="#208-协程绑定生命周期">20.8 协程绑定生命周期</a></li><li><a href="#209-明确线程切换边界">20.9 明确线程切换边界</a></li><li><a href="#2010-suspend-函数不等于后台线程">20.10 suspend 函数不等于后台线程</a></li><li><a href="#2011-不要吞掉-cancellationexception">20.11 不要吞掉 CancellationException</a></li><li><a href="#2012-launch-与-async-不要混用语义">20.12 launch 与 async 不要混用语义</a></li><li><a href="#2013-flow-不要在错误位置收集">20.13 Flow 不要在错误位置收集</a></li><li><a href="#2014-公开-api-避免暴露可变状态">20.14 公开 API 避免暴露可变状态</a></li><li><a href="#2015-返回类型用接口还是具体类型">20.15 返回类型用接口还是具体类型</a></li><li><a href="#2016-参数设计要避免布尔陷阱">20.16 参数设计要避免布尔陷阱</a></li><li><a href="#2017-默认参数不要隐藏重要行为">20.17 默认参数不要隐藏重要行为</a></li><li><a href="#2018-扩展函数不要滥用">20.18 扩展函数不要滥用</a></li><li><a href="#2019-infix-与-operator-要克制">20.19 infix 与 operator 要克制</a></li><li><a href="#2020-lateinit-使用要谨慎">20.20 lateinit 使用要谨慎</a></li><li><a href="#2021-lazy-使用要注意线程与生命周期">20.21 lazy 使用要注意线程与生命周期</a></li><li><a href="#2022-equals-与-hashcode-的集合风险">20.22 equals 与 hashCode 的集合风险</a></li><li><a href="#2023-compareby-与排序稳定性">20.23 compareBy 与排序稳定性</a></li><li><a href="#2024-mapnotnull-与空值过滤">20.24 mapNotNull 与空值过滤</a></li><li><a href="#2025-takeif-与-takeunless-不要写反">20.25 takeIf 与 takeUnless 不要写反</a></li><li><a href="#2026-result-使用边界">20.26 Result 使用边界</a></li><li><a href="#2027-异常要带上下文">20.27 异常要带上下文</a></li><li><a href="#2028-日志不要泄漏敏感信息">20.28 日志不要泄漏敏感信息</a></li><li><a href="#2029-字符串拼接与格式化">20.29 字符串拼接与格式化</a></li><li><a href="#2030-数字金额与单位不要裸奔">20.30 数字、金额与单位不要裸奔</a></li><li><a href="#2031-命名与格式">20.31 命名与格式</a></li><li><a href="#2032-包结构要表达边界">20.32 包结构要表达边界</a></li><li><a href="#2033-文件大小与函数大小">20.33 文件大小与函数大小</a></li><li><a href="#2034-注释解释为什么不重复是什么">20.34 注释解释为什么，不重复是什么</a></li><li><a href="#2035-测试优先覆盖规则而不是实现">20.35 测试优先覆盖规则而不是实现</a></li><li><a href="#2036-代码审查常见检查点">20.36 代码审查常见检查点</a></li><li><a href="#2037-常见反模式速查">20.37 常见反模式速查</a></li><li><a href="#2038-何时使用顶层函数">20.38 何时使用顶层函数</a></li><li><a href="#2039-api-设计要让错误用法变难">20.39 API 设计要让错误用法变难</a></li><li><a href="#2040-本章小结">20.40 本章小结</a></li></ul></li><li><a href="#21-学习路线">21. 学习路线</a><ul><li><a href="#211-第一阶段语法入门">21.1 第一阶段：语法入门</a></li><li><a href="#212-第二阶段面向对象与类型系统">21.2 第二阶段：面向对象与类型系统</a></li><li><a href="#213-第三阶段函数式风格与标准库">21.3 第三阶段：函数式风格与标准库</a></li><li><a href="#214-第四阶段协程">21.4 第四阶段：协程</a></li><li><a href="#215-第五阶段工程实践">21.5 第五阶段：工程实践</a></li></ul></li><li><a href="#22-参考资料">22. 参考资料</a></li></ul>
             </nav>
           </aside>
         
-        <h1 id="kotlin-学习笔记">Kotlin 学习笔记</h1>
-
-<h2 id="1-kotlin-概览">1. Kotlin 概览</h2>
+        <h2 id="1-kotlin-概览">1. Kotlin 概览</h2>
 
 <p>Kotlin 是 JetBrains 设计并开源的静态类型编程语言。它最早以 JVM 语言的身份进入开发者视野，目标不是完全替代 Java 生态，而是在保持互操作能力的前提下，提供更现代、更安全、更简洁的语法和标准库。Android 官方在 2017 年宣布支持 Kotlin，现代 Android 开发中 Kotlin 已经是主流语言；在服务端、桌面、多平台共享代码、脚本和构建配置中也能看到 Kotlin 的广泛使用。</p>
 
 <p>学习 Kotlin 时，不要只把它理解为“语法更短的 Java”。Kotlin 的重要价值在于：它把很多工程中经常靠约定、注释和代码审查保证的事情放进了类型系统和语言机制里，例如空安全、只读集合接口、密封类型、协程结构化并发、默认不可继承等。这些设计会改变代码组织方式，也会改变你建模业务状态和处理异步任务的习惯。</p>
 
-<h3 id="11-kotlin-能运行在哪里">1.1 Kotlin 能运行在哪里</h3>
+<p><strong>Kotlin 能运行在哪里</strong></p>
 
 <p>Kotlin 不是只能写 Android。它是一门多目标语言，常见目标平台包括：</p>
 
@@ -402,7 +400,7 @@
 
 <p>实际项目中最常见的是 Kotlin/JVM 和 Kotlin/Android。初学者建议先掌握 JVM/Android 方向，再根据需要学习 KMP、JS、Native 或 Wasm。</p>
 
-<h3 id="12-kotlin-的设计目标">1.2 Kotlin 的设计目标</h3>
+<p><strong>Kotlin 的设计目标</strong></p>
 
 <p>Kotlin 的设计目标可以概括为几个关键词：</p>
 
@@ -417,9 +415,9 @@
 
 <p>Kotlin 的很多语法都围绕这些目标展开。例如，数据类解决 Java Bean 样板代码；空安全减少 NPE；扩展函数让 API 更顺手；密封类型让状态建模更严谨；协程让异步代码更接近同步写法。</p>
 
-<h3 id="13-kotlin-的核心特点">1.3 Kotlin 的核心特点</h3>
+<p><strong>Kotlin 的核心特点</strong></p>
 
-<p><strong>空安全</strong></p>
+<p><strong>1. 空安全</strong></p>
 
 <p>Kotlin 的类型系统区分可空和非空：</p>
 
@@ -437,7 +435,7 @@
 
 <p>这不是简单的语法糖，而是 Kotlin 编码风格的基础。好的 Kotlin 代码通常会尽早消除不确定的 <code class="language-plaintext highlighter-rouge">null</code>，让核心业务逻辑尽量面对非空模型。</p>
 
-<p><strong>简洁表达</strong></p>
+<p><strong>2. 简洁表达</strong></p>
 
 <p>Kotlin 用属性、默认参数、命名参数、表达式函数体、数据类等语法减少样板代码：</p>
 
@@ -455,7 +453,7 @@
 
 <p>这段代码会自动生成 <code class="language-plaintext highlighter-rouge">equals()</code>、<code class="language-plaintext highlighter-rouge">hashCode()</code>、<code class="language-plaintext highlighter-rouge">toString()</code>、<code class="language-plaintext highlighter-rouge">copy()</code> 和解构相关函数。相比 Java 中手写或生成 getter、setter、构造器、<code class="language-plaintext highlighter-rouge">equals</code>、<code class="language-plaintext highlighter-rouge">hashCode</code>，Kotlin 更关注数据模型本身。</p>
 
-<p><strong>与 Java 互操作</strong></p>
+<p><strong>3. 与 Java 互操作</strong></p>
 
 <p>Kotlin 可以调用 Java 类库，Java 也可以调用 Kotlin 代码：</p>
 
@@ -467,7 +465,7 @@
 
 <p>这使得 Kotlin 特别适合已有 Java/JVM 项目的渐进式迁移。你可以先把测试、工具类、新业务模块或 Android 新页面改为 Kotlin，而不是一次性重写整个系统。</p>
 
-<p><strong>表达力强</strong></p>
+<p><strong>4. 表达力强</strong></p>
 
 <p>Kotlin 的 <code class="language-plaintext highlighter-rouge">when</code>、密封类型、扩展函数、作用域函数、Lambda、协程和 DSL 能让代码更贴近问题域：</p>
 
@@ -501,7 +499,7 @@
 
 <p>这种写法比多个布尔值组合更安全，也更容易维护。</p>
 
-<p><strong>默认保守</strong></p>
+<p><strong>5. 默认保守</strong></p>
 
 <p>Kotlin 的类、方法和属性默认都是 <code class="language-plaintext highlighter-rouge">final</code>，不能被继承或重写。需要开放时必须显式加 <code class="language-plaintext highlighter-rouge">open</code>：</p>
 
@@ -531,7 +529,7 @@
 
 <p>这和 Java 默认可继承的设计不同。Kotlin 鼓励你先通过组合、接口和明确抽象来组织代码，只有确实需要继承扩展时才开放。</p>
 
-<h3 id="14-kotlin-与-java-的关系">1.4 Kotlin 与 Java 的关系</h3>
+<p><strong>Kotlin 与 Java 的关系</strong></p>
 
 <p>Kotlin 和 Java 的关系非常紧密，尤其在 JVM 平台上：</p>
 
@@ -556,9 +554,7 @@
 
 <p>如果你有 Java 基础，学习 Kotlin 的关键不是背所有语法，而是接受 Kotlin 更强调类型建模、空值边界、不可变优先和表达式风格。</p>
 
-<h3 id="15-kotlin-适合哪些场景">1.5 Kotlin 适合哪些场景</h3>
-
-<p>Kotlin 常见适用场景：</p>
+<p><strong>Kotlin 常见适用场景：</strong></p>
 
 <ul>
   <li><strong>Android 应用开发</strong>：与 Jetpack、Compose、ViewModel、Room、协程、Flow 配合成熟。</li>
@@ -580,23 +576,7 @@
 
 <p>选择语言时要看生态、团队经验、部署环境和维护周期。Kotlin 的优势在中长期维护、类型安全和 JVM/Android 生态复用上更明显。</p>
 
-<h3 id="16-kotlin-的学习重点">1.6 Kotlin 的学习重点</h3>
-
-<p>初学 Kotlin 可以按下面的优先级学习：</p>
-
-<ol>
-  <li><strong>基础语法</strong>：<code class="language-plaintext highlighter-rouge">val</code>、<code class="language-plaintext highlighter-rouge">var</code>、函数、字符串模板、<code class="language-plaintext highlighter-rouge">if</code>、<code class="language-plaintext highlighter-rouge">when</code>、循环。</li>
-  <li><strong>空安全</strong>：<code class="language-plaintext highlighter-rouge">?</code>、<code class="language-plaintext highlighter-rouge">?.</code>、<code class="language-plaintext highlighter-rouge">?:</code>、<code class="language-plaintext highlighter-rouge">let</code>、<code class="language-plaintext highlighter-rouge">requireNotNull</code>，以及如何减少核心逻辑中的可空类型。</li>
-  <li><strong>类与对象</strong>：主构造器、属性、数据类、接口、继承、伴生对象。</li>
-  <li><strong>集合与 Lambda</strong>：<code class="language-plaintext highlighter-rouge">map</code>、<code class="language-plaintext highlighter-rouge">filter</code>、<code class="language-plaintext highlighter-rouge">fold</code>、<code class="language-plaintext highlighter-rouge">groupBy</code>、高阶函数、作用域函数。</li>
-  <li><strong>类型建模</strong>：枚举、密封类、密封接口、泛型、型变。</li>
-  <li><strong>协程</strong>：<code class="language-plaintext highlighter-rouge">suspend</code>、<code class="language-plaintext highlighter-rouge">coroutineScope</code>、<code class="language-plaintext highlighter-rouge">launch</code>、<code class="language-plaintext highlighter-rouge">async</code>、<code class="language-plaintext highlighter-rouge">withContext</code>、Flow。</li>
-  <li><strong>工程实践</strong>：Gradle、测试、Java 互操作、Android/KMP/服务端框架。</li>
-</ol>
-
-<p>一个有效的学习策略是：先用 Kotlin 写小程序和单元测试，熟悉语法；再读项目里的真实 Kotlin 代码，理解 API 设计方式；最后学习协程、Flow 和框架集成。</p>
-
-<h3 id="17-kotlin-的心智模型">1.7 Kotlin 的心智模型</h3>
+<p><strong>Kotlin 的心智模型</strong></p>
 
 <p>写 Kotlin 时可以牢记几个心智模型：</p>
 
@@ -611,7 +591,7 @@
 
 <p>这些习惯会让 Kotlin 代码更短，但更重要的是更稳定、更容易推理。</p>
 
-<h3 id="18-版本选择">1.8 版本选择</h3>
+<p><strong>版本选择</strong></p>
 
 <p>实际项目中的 Kotlin 版本应以团队 Gradle 配置、Android Gradle Plugin、Kotlin Multiplatform 插件和依赖兼容性为准。新项目建议先查看官方发布页，再结合以下因素决定：</p>
 
@@ -629,7 +609,7 @@
 
 <p>学习 Kotlin 不只是安装一个编译器。实际项目通常由 JDK、IDE、Gradle、Kotlin 插件、测试框架和平台插件共同组成。环境搭得清楚，后面学习语法、协程、Android 或服务端框架时会少很多无关问题。</p>
 
-<h3 id="21-开发环境组成">2.1 开发环境组成</h3>
+<p><strong>开发环境组成</strong></p>
 
 <p>常见 Kotlin 开发环境包括：</p>
 
@@ -681,7 +661,7 @@
   </tbody>
 </table>
 
-<h3 id="22-jdk-与版本选择">2.2 JDK 与版本选择</h3>
+<p><strong>JDK 与版本选择</strong></p>
 
 <p>JDK 是 Kotlin/JVM 项目的基础。选择版本时不要只看“越新越好”，而要看兼容矩阵：</p>
 
@@ -729,7 +709,7 @@
 
 <p>注意：<code class="language-plaintext highlighter-rouge">jvmToolchain</code> 控制编译使用的 JDK，不等于应用运行时一定就是这个 JDK。服务端部署、Android 设备运行时、Docker 镜像里的 JRE 都需要单独确认。</p>
 
-<h3 id="23-ide-选择">2.3 IDE 选择</h3>
+<p><strong>IDE 选择</strong></p>
 
 <p><strong>IntelliJ IDEA</strong></p>
 
@@ -756,7 +736,7 @@
 
 <p>IDE 的 Kotlin 插件通常与 IDE 版本绑定。项目中 Kotlin 插件版本、IDE 内置支持版本、Compose Compiler/KSP 等工具版本不一致时，可能出现代码能编译但 IDE 报红，或 IDE 正常但 CI 失败。遇到这类问题先检查版本兼容性。</p>
 
-<h3 id="24-gradle-wrapper">2.4 Gradle Wrapper</h3>
+<p><strong>Gradle Wrapper</strong></p>
 
 <p>团队项目应优先使用 Gradle Wrapper，而不是依赖每个人机器上全局安装的 Gradle：</p>
 
@@ -820,7 +800,7 @@ gradle/
 ./gradlew connectedDebugAndroidTest <span class="c"># 运行设备/模拟器测试</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="25-gradle-kotlin-dsl">2.5 Gradle Kotlin DSL</h3>
+<p><strong>Gradle Kotlin DSL</strong></p>
 
 <p>Kotlin 项目推荐使用 Gradle Kotlin DSL，也就是 <code class="language-plaintext highlighter-rouge">.gradle.kts</code> 文件。它比 Groovy DSL 有更好的类型提示和重构支持。</p>
 
@@ -906,7 +886,7 @@ gradle/
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="26-版本目录">2.6 版本目录</h3>
+<p><strong>版本目录</strong></p>
 
 <p>现代 Gradle 项目常用 Version Catalog 管理依赖版本，文件通常是 <code class="language-plaintext highlighter-rouge">gradle/libs.versions.toml</code>：</p>
 
@@ -966,7 +946,7 @@ gradle/
   <li>升级时更容易检查影响范围。</li>
 </ul>
 
-<h3 id="27-gradle-jvm-项目示例">2.7 Gradle JVM 项目示例</h3>
+<p><strong>Gradle JVM 项目示例</strong></p>
 
 <p>一个最小 Kotlin/JVM 应用模块的 <code class="language-plaintext highlighter-rouge">build.gradle.kts</code>：</p>
 
@@ -1058,7 +1038,7 @@ gradle/
 
 <p><code class="language-plaintext highlighter-rouge">MainKt</code> 是 Kotlin 顶层函数在 JVM 上编译后的默认文件类名。也可以通过 <code class="language-plaintext highlighter-rouge">@file:JvmName</code> 改变生成名。</p>
 
-<h3 id="28-jvm-库项目结构">2.8 JVM 库项目结构</h3>
+<p><strong>JVM 库项目结构</strong></p>
 
 <p>如果项目产物是库，而不是可执行程序，可以不使用 <code class="language-plaintext highlighter-rouge">application</code> 插件：</p>
 
@@ -1116,7 +1096,7 @@ gradle/
   <li>只在内部实现中使用时，用 <code class="language-plaintext highlighter-rouge">implementation</code>。</li>
 </ul>
 
-<h3 id="29-android-项目结构">2.9 Android 项目结构</h3>
+<p><strong>Android 项目结构</strong></p>
 
 <p>Android Kotlin 项目通常包含：</p>
 
@@ -1228,7 +1208,7 @@ app/
 
 <p>很多 Android 项目会同时存在 <code class="language-plaintext highlighter-rouge">java/</code> 和 <code class="language-plaintext highlighter-rouge">kotlin/</code> 目录。Kotlin 文件可以放在 <code class="language-plaintext highlighter-rouge">java/</code> 下，也能正常编译；但为了清晰，新项目通常使用 <code class="language-plaintext highlighter-rouge">kotlin/</code>。</p>
 
-<h3 id="210-kotlin-multiplatform-项目结构">2.10 Kotlin Multiplatform 项目结构</h3>
+<p><strong>Kotlin Multiplatform 项目结构</strong></p>
 
 <p>KMP 项目核心是 source set。典型结构：</p>
 
@@ -1330,7 +1310,7 @@ app/
   <li>不要为了“共享”强行把 UI、生命周期、权限等平台强相关逻辑塞进 common 层。</li>
 </ul>
 
-<h3 id="211-kotlin-脚本">2.11 Kotlin 脚本</h3>
+<p><strong>Kotlin 脚本</strong></p>
 
 <p>Kotlin 脚本文件通常使用 <code class="language-plaintext highlighter-rouge">.kts</code> 后缀。常见场景：</p>
 
@@ -1352,7 +1332,7 @@ app/
 
 <p>脚本适合简单自动化。如果脚本开始出现复杂依赖、测试需求、多人维护，建议改成标准 Gradle 项目。</p>
 
-<h3 id="212-包声明与导入">2.12 包声明与导入</h3>
+<p><strong>包声明与导入</strong></p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -1390,7 +1370,7 @@ app/
 
 <p>不推荐滥用星号导入。团队可以通过 IDE formatter 或 ktlint 统一导入风格。</p>
 
-<h3 id="213-源码集与测试目录">2.13 源码集与测试目录</h3>
+<p><strong>源码集与测试目录</strong></p>
 
 <p>JVM 项目常见源码集：</p>
 
@@ -1438,7 +1418,7 @@ src/test/resources   # 测试资源
   <li><code class="language-plaintext highlighter-rouge">testFixtures</code>：测试夹具，适合多模块共享测试辅助代码。</li>
 </ul>
 
-<h3 id="214-多模块项目建议">2.14 多模块项目建议</h3>
+<p><strong>多模块项目建议</strong></p>
 
 <p>随着项目变大，可以拆成多个模块：</p>
 
@@ -1486,7 +1466,7 @@ feature/
   <li>团队没有维护多模块构建的经验。</li>
 </ul>
 
-<h3 id="215-常用-gradleproperties-配置">2.15 常用 gradle.properties 配置</h3>
+<p><strong>常用 gradle.properties 配置</strong></p>
 
 <p><code class="language-plaintext highlighter-rouge">gradle.properties</code> 可以放 Gradle、Kotlin 和 Android 构建配置：</p>
 
@@ -1516,7 +1496,7 @@ feature/
   <li>团队应统一 <code class="language-plaintext highlighter-rouge">kotlin.code.style=official</code>，减少格式差异。</li>
 </ul>
 
-<h3 id="216-编译运行与测试">2.16 编译、运行与测试</h3>
+<p><strong>编译、运行与测试</strong></p>
 
 <p>JVM 应用：</p>
 
@@ -1560,60 +1540,7 @@ feature/
 </pre></td><td class="rouge-code"><pre>./gradlew :core:test
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="217-常见环境问题">2.17 常见环境问题</h3>
-
-<p><strong>IDE 报红但命令行能编译</strong></p>
-
-<p>常见原因：</p>
-
-<ul>
-  <li>IDE Kotlin 插件或 Android Studio 版本不匹配。</li>
-  <li>Gradle 项目没有重新同步。</li>
-  <li>IDE 使用的 JDK 与 Gradle toolchain 不一致。</li>
-  <li>KSP、Compose、AGP 等插件版本不兼容。</li>
-</ul>
-
-<p>处理顺序：</p>
-
-<ol>
-  <li>用命令行确认 <code class="language-plaintext highlighter-rouge">./gradlew build</code> 是否成功。</li>
-  <li>检查 IDE 使用的 Gradle JDK。</li>
-  <li>重新 Sync Gradle。</li>
-  <li>检查 Kotlin、AGP、KSP、Compose Compiler 版本兼容。</li>
-  <li>必要时清理 IDE 缓存。</li>
-</ol>
-
-<p><strong>命令行失败但 IDE 能运行</strong></p>
-
-<p>常见原因：</p>
-
-<ul>
-  <li>IDE 使用了本地特殊配置。</li>
-  <li>环境变量、JDK、Android SDK 路径在终端中不同。</li>
-  <li>CI 或终端没有接受 Android SDK license。</li>
-  <li>依赖仓库访问受网络或代理影响。</li>
-</ul>
-
-<p>处理方式：</p>
-
-<ul>
-  <li>优先让命令行构建成为事实标准。</li>
-  <li>通过 Gradle Wrapper 执行任务。</li>
-  <li>把必要配置写入项目文档或 CI 配置，不依赖个人 IDE。</li>
-</ul>
-
-<p><strong>中文或路径乱码</strong></p>
-
-<p>建议：</p>
-
-<ul>
-  <li>源文件统一使用 UTF-8。</li>
-  <li>Gradle JVM 参数中设置 <code class="language-plaintext highlighter-rouge">-Dfile.encoding=UTF-8</code>。</li>
-  <li>Windows 终端显示乱码时，先确认文件编码和终端编码，不要直接改文件内容。</li>
-  <li>仓库路径尽量避免过长路径和特殊符号，尤其是老工具链或 Android 构建链路。</li>
-</ul>
-
-<h3 id="218-工程约定建议">2.18 工程约定建议</h3>
+<p><strong>工程约定建议</strong></p>
 
 <p>新 Kotlin 项目建议尽早统一这些约定：</p>
 
@@ -1634,7 +1561,7 @@ feature/
 
 <p>本章只讨论 Kotlin 的“读写代码入口”：一个 <code class="language-plaintext highlighter-rouge">.kt</code> 文件怎样组织、程序从哪里开始执行、变量怎样声明、类型怎样写、表达式怎样求值、注释和命名怎样约定。更深入的类型、空安全、控制流、函数、类和集合会在后续章节展开。</p>
 
-<h3 id="31-kotlin-文件的基本结构">3.1 Kotlin 文件的基本结构</h3>
+<p><strong>Kotlin 文件的基本结构</strong></p>
 
 <p>Kotlin 源文件通常以 <code class="language-plaintext highlighter-rouge">.kt</code> 结尾。一个 Kotlin 文件可以包含包声明、导入语句、顶层常量、顶层属性、顶层函数、类、接口、对象、枚举和密封类型等声明。</p>
 
@@ -1668,7 +1595,7 @@ feature/
 
 <p>和 Java 不同，Kotlin 不要求每个文件必须有一个同名 <code class="language-plaintext highlighter-rouge">public class</code>。顶层函数和顶层属性是 Kotlin 中很常见的写法，适合放工具函数、入口函数、模块级常量等。</p>
 
-<h3 id="32-程序入口-main">3.2 程序入口 main</h3>
+<p><strong>程序入口 main</strong></p>
 
 <p>最简单的入口函数：</p>
 
@@ -1692,7 +1619,7 @@ feature/
 
 <p>现代 Kotlin 中更常用无参 <code class="language-plaintext highlighter-rouge">main()</code>。只有写命令行工具、脚本或需要读取启动参数时，才需要 <code class="language-plaintext highlighter-rouge">args</code>。</p>
 
-<h3 id="33-包声明与导入补充">3.3 包声明与导入补充</h3>
+<p><strong>包声明与导入补充</strong></p>
 
 <p>包声明用于组织命名空间，一般放在文件第一行：</p>
 
@@ -1722,7 +1649,7 @@ feature/
 
 <p>显式导入通常比星号导入更利于阅读和维护。测试、小脚本或团队约定允许的场景可以适度使用星号导入。</p>
 
-<h3 id="34-标识符与命名约定">3.4 标识符与命名约定</h3>
+<p><strong>标识符与命名约定</strong></p>
 
 <p>常规标识符由字母、数字和下划线组成，但不能以数字开头：</p>
 
@@ -1751,7 +1678,7 @@ feature/
   <li>包名：全小写，如 <code class="language-plaintext highlighter-rouge">com.example.feature.login</code>。</li>
 </ul>
 
-<h3 id="35-关键字">3.5 关键字</h3>
+<p><strong>关键字</strong></p>
 
 <p>Kotlin 有一组保留关键字，不能作为普通标识符使用，例如：</p>
 
@@ -1773,7 +1700,7 @@ actual, expect, value
 
 <p>理解关键字不需要死记硬背。遇到编译器提示时，先判断这个词是否被语言占用；确实需要使用该名字时，可以用反引号包起来，但普通业务代码应避免这样做。</p>
 
-<h3 id="36-变量val-与-var">3.6 变量：val 与 var</h3>
+<p><strong>变量：val 与 var</strong></p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -1829,7 +1756,7 @@ actual, expect, value
 <span class="n">retryCount</span> <span class="p">+=</span> <span class="mi">1</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="37-类型标注与类型推断">3.7 类型标注与类型推断</h3>
+<p><strong>类型标注与类型推断</strong></p>
 
 <p>Kotlin 通常可以根据初始化表达式推断类型：</p>
 
@@ -1879,7 +1806,7 @@ actual, expect, value
 
 <p>原因是公开 API 的返回类型是模块契约的一部分。显式写出来可以避免内部实现变化意外改变外部调用方看到的类型。</p>
 
-<h3 id="38-初始化规则">3.8 初始化规则</h3>
+<p><strong>初始化规则</strong></p>
 
 <p>局部变量可以先声明后赋值，但必须在读取前完成赋值：</p>
 
@@ -1923,7 +1850,7 @@ actual, expect, value
 
 <p>类属性的初始化规则更严格。非空属性通常需要声明时初始化、在构造器中初始化、使用 <code class="language-plaintext highlighter-rouge">lateinit var</code>，或使用 <code class="language-plaintext highlighter-rouge">by lazy</code> 这类委托。</p>
 
-<h3 id="39-顶层声明">3.9 顶层声明</h3>
+<p><strong>顶层声明</strong></p>
 
 <p>Kotlin 支持顶层函数、属性和常量，不强制所有代码都放进类：</p>
 
@@ -1979,7 +1906,7 @@ actual, expect, value
 <span class="kd">val</span> <span class="py">startedAt</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nf">currentTimeMillis</span><span class="p">()</span> <span class="c1">// 不是编译期常量，不能用 const</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="310-注释与-kdoc">3.10 注释与 KDoc</h3>
+<p><strong>注释与 KDoc</strong></p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -2033,7 +1960,7 @@ actual, expect, value
   <li>已经过时的注释比没有注释更危险，修改代码时要同步更新注释。</li>
 </ul>
 
-<h3 id="311-语句与表达式">3.11 语句与表达式</h3>
+<p><strong>语句与表达式</strong></p>
 
 <p>Kotlin 中很多结构都是表达式，可以产生值。比如 <code class="language-plaintext highlighter-rouge">if</code>：</p>
 
@@ -2071,7 +1998,7 @@ actual, expect, value
 
 <p>表达式风格能减少临时变量和分散赋值，但不要为了“写成一行”牺牲可读性。</p>
 
-<h3 id="312-代码块与作用域">3.12 代码块与作用域</h3>
+<p><strong>代码块与作用域</strong></p>
 
 <p>大括号 <code class="language-plaintext highlighter-rouge">{}</code> 创建代码块。代码块内部声明的变量，只在该块内可见：</p>
 
@@ -2109,7 +2036,7 @@ actual, expect, value
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="313-分号与换行">3.13 分号与换行</h3>
+<p><strong>分号与换行</strong></p>
 
 <p>Kotlin 大多数情况下不需要分号：</p>
 
@@ -2137,7 +2064,7 @@ actual, expect, value
     <span class="p">.</span><span class="nf">sorted</span><span class="p">()</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="314-基础输入输出">3.14 基础输入输出</h3>
+<p><strong>基础输入输出</strong></p>
 
 <p>输出：</p>
 
@@ -2167,7 +2094,7 @@ actual, expect, value
 
 <p>在生产项目中，输入可能来自 UI、网络、数据库、文件或命令行。无论来源是什么，进入核心业务逻辑前都应该完成格式校验和类型转换。</p>
 
-<h3 id="315-字符串模板基础">3.15 字符串模板基础</h3>
+<p><strong>字符串模板基础</strong></p>
 
 <p>字符串模板用 <code class="language-plaintext highlighter-rouge">$</code> 插入变量，用 <code class="language-plaintext highlighter-rouge">${}</code> 插入表达式：</p>
 
@@ -2193,7 +2120,7 @@ actual, expect, value
 
 <p>字符串和原始字符串会在第四章详细讲。</p>
 
-<h3 id="316-操作符基础">3.16 操作符基础</h3>
+<p><strong>操作符基础</strong></p>
 
 <p>常见算术操作：</p>
 
@@ -2259,7 +2186,7 @@ actual, expect, value
 
 <p>更系统的数字、字符串和区间内容在第四章、第五章和第六章展开。</p>
 
-<h3 id="317-相等性基础">3.17 相等性基础</h3>
+<p>** 相等性基础**</p>
 
 <p>Kotlin 有两类相等性：</p>
 
@@ -2286,7 +2213,7 @@ actual, expect, value
 
 <p>大多数业务代码使用 <code class="language-plaintext highlighter-rouge">==</code>。只有确实需要判断对象身份时才使用 <code class="language-plaintext highlighter-rouge">===</code>。</p>
 
-<h3 id="318-类型检查与强制转换基础">3.18 类型检查与强制转换基础</h3>
+<p><strong>类型检查与强制转换基础</strong></p>
 
 <p>使用 <code class="language-plaintext highlighter-rouge">is</code> 检查类型：</p>
 
@@ -2330,7 +2257,7 @@ actual, expect, value
 
 <p><code class="language-plaintext highlighter-rouge">as</code> 转换失败会抛 <code class="language-plaintext highlighter-rouge">ClassCastException</code>，<code class="language-plaintext highlighter-rouge">as?</code> 转换失败返回 <code class="language-plaintext highlighter-rouge">null</code>。日常代码优先使用 <code class="language-plaintext highlighter-rouge">is</code> 智能转换或 <code class="language-plaintext highlighter-rouge">as?</code>。</p>
 
-<h3 id="319-基础代码风格">3.19 基础代码风格</h3>
+<p><strong>基础代码风格</strong></p>
 
 <p>Kotlin 官方风格通常建议：</p>
 
@@ -2372,7 +2299,7 @@ actual, expect, value
     <span class="p">.</span><span class="nf">sorted</span><span class="p">()</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<h3 id="320-基础语法常见错误">3.20 基础语法常见错误</h3>
+<p><strong>基础语法常见错误</strong></p>
 
 <p><strong>把 val 理解成对象不可变</strong></p>
 

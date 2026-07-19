@@ -71,8 +71,8 @@ var store = [{
         "url": "/blog/docker%E5%91%BD%E4%BB%A4/",
         "teaser": null
       },{
-        "title": "Kotlin学习",
-        "excerpt":"Kotlin 学习笔记 1. Kotlin 概览 Kotlin 是 JetBrains 设计并开源的静态类型编程语言。它最早以 JVM 语言的身份进入开发者视野，目标不是完全替代 Java 生态，而是在保持互操作能力的前提下，提供更现代、更安全、更简洁的语法和标准库。Android 官方在 2017 年宣布支持 Kotlin，现代 Android 开发中 Kotlin 已经是主流语言；在服务端、桌面、多平台共享代码、脚本和构建配置中也能看到 Kotlin 的广泛使用。 学习 Kotlin 时，不要只把它理解为“语法更短的 Java”。Kotlin 的重要价值在于：它把很多工程中经常靠约定、注释和代码审查保证的事情放进了类型系统和语言机制里，例如空安全、只读集合接口、密封类型、协程结构化并发、默认不可继承等。这些设计会改变代码组织方式，也会改变你建模业务状态和处理异步任务的习惯。 1.1 Kotlin 能运行在哪里 Kotlin 不是只能写 Android。它是一门多目标语言，常见目标平台包括： Kotlin/JVM：编译成 JVM 字节码，可运行在 Java 虚拟机上，适合 Android、Spring Boot、Ktor、桌面工具、命令行程序等。 Kotlin/Android：本质上属于 JVM/Android 目标，是 Android 官方推荐语言之一，常与 Jetpack、Compose、Room、ViewModel、协程等一起使用。 Kotlin/JS：编译到 JavaScript，适合 Web...","categories": [],
+        "title": "Kotlin学习笔记",
+        "excerpt":"1. Kotlin 概览 Kotlin 是 JetBrains 设计并开源的静态类型编程语言。它最早以 JVM 语言的身份进入开发者视野，目标不是完全替代 Java 生态，而是在保持互操作能力的前提下，提供更现代、更安全、更简洁的语法和标准库。Android 官方在 2017 年宣布支持 Kotlin，现代 Android 开发中 Kotlin 已经是主流语言；在服务端、桌面、多平台共享代码、脚本和构建配置中也能看到 Kotlin 的广泛使用。 学习 Kotlin 时，不要只把它理解为“语法更短的 Java”。Kotlin 的重要价值在于：它把很多工程中经常靠约定、注释和代码审查保证的事情放进了类型系统和语言机制里，例如空安全、只读集合接口、密封类型、协程结构化并发、默认不可继承等。这些设计会改变代码组织方式，也会改变你建模业务状态和处理异步任务的习惯。 Kotlin 能运行在哪里 Kotlin 不是只能写 Android。它是一门多目标语言，常见目标平台包括： Kotlin/JVM：编译成 JVM 字节码，可运行在 Java 虚拟机上，适合 Android、Spring Boot、Ktor、桌面工具、命令行程序等。 Kotlin/Android：本质上属于 JVM/Android 目标，是 Android 官方推荐语言之一，常与 Jetpack、Compose、Room、ViewModel、协程等一起使用。 Kotlin/JS：编译到 JavaScript，适合 Web 前端、Node.js 或与现有 JS...","categories": [],
         "tags": ["kotlin"],
         "url": "/blog/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
         "teaser": null
