@@ -362,19 +362,7 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header class="toc__header">
-                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
-                <div class="toc__controls" aria-label="Table of contents controls">
-                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
-                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
-                    <span class="sr-only">Expand all sections</span>
-                  </button>
-                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
-                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
-                    <span class="sr-only">Collapse all sections</span>
-                  </button>
-                </div>
-              </header>
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
               <ul class="toc__menu"><li><a href="#1-设计七大原则-solid-lc">1. 设计七大原则 （SOLID LC）</a><ul><li><a href="#1-单一职责原则-s">1. 单一职责原则 (S)</a></li><li><a href="#2-接口隔离原则-i">2. 接口隔离原则 （I）</a></li><li><a href="#3-依赖倒转倒置原则d">3. 依赖倒转（倒置）原则（D）</a></li><li><a href="#4-里氏替换原则l">4. 里氏替换原则（L）</a></li><li><a href="#5-开闭原则o">5. 开闭原则（O）</a></li><li><a href="#6-迪米特最少知道原则l">6. 迪米特最少知道原则（L）</a></li><li><a href="#7-合成复用原则c">7. 合成复用原则（C）</a></li></ul></li><li><a href="#2-uml类图">2. UML类图</a><ul><li><a href="#21--类的表示方式">2.1  类的表示方式</a></li><li><a href="#22--类与类之间关系的表示方式">2.2  类与类之间关系的表示方式</a><ul><li><a href="#221--关联关系">2.2.1  关联关系</a></li><li><a href="#222--聚合关系">2.2.2  聚合关系</a></li><li><a href="#223--组合关系">2.2.3  组合关系</a></li><li><a href="#224-依赖关系">2.2.4 依赖关系</a></li><li><a href="#225-继承关系">2.2.5 继承关系</a></li><li><a href="#226-实现关系">2.2.6 实现关系</a></li></ul></li></ul></li><li><a href="#3-设计模式介绍">3. 设计模式介绍</a><ul><li><a href="#31-分类">3.1 分类</a></li><li><a href="#32-使用场景">3.2 使用场景</a></li></ul></li><li><a href="#4-创建型设计模式">4. 创建型设计模式</a><ul><li><a href="#41-单例模式">4.1 单例模式</a><ul><li><a href="#推荐的方式1懒汉式">推荐的方式1(懒汉式）</a></li><li><a href="#推荐的方式2饿汉式">推荐的方式2（饿汉式)</a></li></ul></li></ul></li><li><a href="#42-工厂模式">4.2 工厂模式</a><ul><li><a href="#简单工厂">简单工厂</a></li><li><a href="#静态工厂">静态工厂</a></li><li><a href="#工厂方法模式">工厂方法模式</a></li><li><a href="#抽象工厂模式">抽象工厂模式</a></li></ul></li><li><a href="#43-抽象工厂模式">4.3 抽象工厂模式</a></li><li><a href="#44-原型模式">4.4 原型模式</a></li><li><a href="#45-建造者模式">4.5 建造者模式</a></li><li><a href="#51-代理模式">5.1 代理模式</a><ul><li><a href="#静态代理">静态代理</a></li><li><a href="#jdk动态代理">JDK动态代理</a></li><li><a href="#cglib动态代理">CGLIB动态代理</a></li></ul></li></ul></li><li><a href="#52-适配器模式">5.2 适配器模式</a><ul><li><a href="#类适配器模式">类适配器模式</a></li><li><a href="#对象适配器模式">对象适配器模式</a></li></ul></li></ul></li><li><a href="#53-桥接模式">5.3 桥接模式</a></li><li><a href="#54-装饰者模式">5.4 装饰者模式</a></li><li><a href="#55-外观模式">5.5 外观模式</a></li><li><a href="#56-享元模式">5.6 享元模式</a></li><li><a href="#57-组合模式">5.7 组合模式</a></li></ul></li><li><a href="#6-行为型模式">6. 行为型模式</a><ul><li><a href="#61-模板方法模式">6.1 模板方法模式</a></li><li><a href="#62-策略模式">6.2 策略模式</a></li><li><a href="#63-命令模式">6.3 命令模式</a></li><li><a href="#64-职责链模式">6.4 职责链模式</a></li><li><a href="#65-状态模式">6.5 状态模式</a></li><li><a href="#66-观察者模式">6.6 观察者模式</a></li><li><a href="#67-中介者模式">6.7 中介者模式</a></li><li><a href="#68-迭代器模式">6.8 迭代器模式</a></li><li><a href="#69-访问者模式">6.9 访问者模式</a></li><li><a href="#610-备忘录模式">6.10 备忘录模式</a><ul><li><a href="#白箱备忘录模式">“白箱”备忘录模式</a></li><li><a href="#黑箱备忘录模式">“黑箱”备忘录模式</a></li></ul></li></ul></li><li><a href="#611-解释器模式">6.11 解释器模式</a></li></ul></li></ul>
             </nav>
           </aside>
