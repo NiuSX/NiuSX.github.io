@@ -128,7 +128,7 @@
                   
                   
                 >归档</a></li><li class="masthead__menu-item masthead__menu-item--has-children"><button class="masthead__menu-toggle" type="button" aria-haspopup="true">
-                  笔记
+                  分类
                 </button>
                 <ul class="masthead__submenu">
                   <li>
@@ -183,7 +183,17 @@
                         <a href="/blog/categories/#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80">编程语言</a>
                       </li><li>
                         <a href="/blog/categories/#%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a>
-                      </li></ul></li></ul>
+                      </li></ul></li><li class="masthead__menu-item masthead__menu-item--has-children"><button class="masthead__menu-toggle" type="button" aria-haspopup="true">
+                  标签
+                </button>
+                <ul class="masthead__submenu">
+                  <li>
+                    <a href="/blog/tags/">全部笔记</a>
+                  </li></ul></li><li class="masthead__menu-item"><a
+                  href="/blog/search/"
+                  
+                  
+                >搜索</a></li></ul>
         
         <form class="masthead-search" action="/blog/search/" method="get" role="search">
           <label class="visually-hidden" for="masthead-search-input">
@@ -354,6 +364,21 @@
           
 
 
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-03-01T00:00:00+00:00">March 1, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
 
         </header>
       
@@ -361,7 +386,7 @@
       <section class="page__content e-content" itemprop="text">
         
           <aside class="sidebar__right sticky">
-            <nav class="toc" aria-label="Table of contents">
+            <nav class="toc" aria-label="文章目录">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
               <ul class="toc__menu"><li><a href="#概要">概要</a><ul><li><a href="#结构组成">结构组成</a></li><li><a href="#运行方式">运行方式：</a></li></ul></li><li><a href="#简介">简介</a><ul><li><a href="#核心组件">核心组件</a></li><li><a href="#主流大语言模型">主流大语言模型</a></li><li><a href="#提示词工程">提示词工程</a></li></ul></li><li><a href="#大模型基础">大模型基础</a><ul><li><a href="#大模型术语">大模型术语</a><ul><li><a href="#大模型工作流程">大模型工作流程</a></li><li><a href="#模型参数类型">模型参数类型</a><ul><li><a href="#稠密模型dense-model">稠密模型（Dense Model）</a></li><li><a href="#稀疏模型sparse-model">稀疏模型（Sparse Model）</a></li><li><a href="#moe-模型mixture-of-experts">MoE 模型（Mixture of Experts）</a></li></ul></li><li><a href="#模型压缩加速">模型压缩加速</a><ul><li><a href="#蒸馏模型model-distillation">蒸馏模型（Model Distillation）</a></li><li><a href="#量化模型model-quantization">量化模型（Model Quantization）</a></li></ul></li><li><a href="#模型训练">模型训练</a><ul><li><a href="#大模型预训练">大模型预训练</a></li><li><a href="#大模型后训练">大模型后训练</a></li></ul></li><li><a href="#大模型微调">大模型微调</a><ul><li><a href="#全量微调">全量微调</a></li><li><a href="#参数高效微调">参数高效微调</a></li><li><a href="#强化学习微调">强化学习微调</a></li><li><a href="#提示调优">提示调优</a></li><li><a href="#深度提示调优">深度提示调优</a></li><li><a href="#动态低秩适应">动态低秩适应</a></li><li><a href="#自适应低秩适应">自适应低秩适应</a></li><li><a href="#量化低秩适应">量化低秩适应</a></li></ul></li><li><a href="#大模型推理">大模型推理</a></li><li><a href="#大模型部署">大模型部署</a><ul><li><a href="#单机-tp-模式">单机 TP 模式</a></li><li><a href="#单机-ep-模式">单机 EP 模式</a></li><li><a href="#多机-tp-模式">多机 TP 模式</a></li><li><a href="#多机-ep-模式">多机 EP 模式</a></li><li><a href="#pd-分离模式">PD 分离模式</a></li><li><a href="#多-pd-master-模式">多 PD Master 模式</a></li><li><a href="#总结对比">总结对比</a></li></ul></li><li><a href="#大模型精度">大模型精度</a></li><li><a href="#混合精度">混合精度</a></li></ul></li></ul></li></ul>
             </nav>
@@ -1442,7 +1467,7 @@
 
       
 
-  <nav class="pagination" aria-label="Post pagination">
+  <nav class="pagination" aria-label="文章翻页">
     
       <a href="/blog/PPDL%E8%A7%84%E5%88%92%E8%AF%AD%E8%A8%80/" class="pagination--pager" title="PDDL规划语言">上一页</a>
     
@@ -1484,6 +1509,21 @@
     
 
 
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-22T00:00:00+00:00">June 22, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
 
     <p class="archive__item-excerpt p-summary" itemprop="description">DESIGN.md 学习笔记，整理设计规范文档的作用、结构、写法、约束内容和 AI 协作方式。
 </p>
@@ -1508,6 +1548,21 @@
     </h2>
     
 
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-18T00:00:00+00:00">June 18, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
 
 
     <p class="archive__item-excerpt p-summary" itemprop="description">Material 3 学习笔记，整理设计原则、动态颜色、组件规范、状态层和 Android Compose 实践。
@@ -1534,6 +1589,21 @@
     
 
 
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-08T00:00:00+00:00">June 8, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
 
     <p class="archive__item-excerpt p-summary" itemprop="description">Mermaid 学习笔记，整理文本绘图语法、流程图、时序图、架构图、适用场景和常见示例。
 </p>
@@ -1558,6 +1628,21 @@
     </h2>
     
 
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-05T00:00:00+00:00">June 5, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
 
 
     <p class="archive__item-excerpt p-summary" itemprop="description">AI UI 设计工具笔记，整理 Claude Design、Open Design、Google Stitch 的能力、费用和使用场景。
