@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#1支持功能">1.支持功能</a></li><li><a href="#2安装">2.安装</a></li><li><a href="#3使用">3.使用</a><ul><li><a href="#1命令">1.命令</a></li><li><a href="#2管理依赖">2.管理依赖</a><ul><li><a href="#1安装卸载包add-remove">1.安装卸载包(add remove)</a></li><li><a href="#2同步sync">2.同步(sync)</a></li><li><a href="#3锁定lock">3.锁定(lock)</a></li><li><a href="#4依赖关系tree">4.依赖关系(tree)</a></li></ul></li><li><a href="#3管理python环境">3.管理python环境</a><ul><li><a href="#1基本命令">1.基本命令</a></li><li><a href="#2区分开发和生产环境">2.区分开发和生产环境</a></li></ul></li></ul></li></ul>
             </nav>
           </aside>

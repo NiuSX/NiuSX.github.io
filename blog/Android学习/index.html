@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#简介">简介</a><ul><li><a href="#架构">架构</a></li><li><a href="#应用程序组件">应用程序组件</a></li><li><a href="#ui界面">UI界面</a></li></ul></li><li><a href="#android项目文件">Android项目文件</a></li><li><a href="#android-资源访问">Android 资源访问</a></li><li><a href="#activity活动">Activity（活动）</a></li><li><a href="#service-服务">Service （服务）</a></li><li><a href="#broadcast-receivers广播接收器">Broadcast Receivers(广播接收器）</a></li><li><a href="#content-provider-内容提供者">Content Provider (内容提供者）</a></li><li><a href="#fragment碎片化">Fragment(碎片化)</a></li><li><a href="#android-意图">Android 意图</a><ul><li><a href="#意图对象">意图对象</a></li><li><a href="#意图类型">意图类型</a></li><li><a href="#意图过滤器">意图过滤器</a></li></ul></li><li><a href="#android-意图动作等参考手册">Android 意图动作等参考手册</a><ul><li><a href="#动作列表">动作列表</a></li></ul></li><li><a href="#android签名">Android签名</a></li></ul>
             </nav>
           </aside>

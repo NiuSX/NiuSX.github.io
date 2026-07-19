@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#概述">概述</a></li><li><a href="#1基本框架">1.基本框架：</a></li><li><a href="#2requirements-需求声明">2.requirements 需求声明：</a></li><li><a href="#3types-类型定义">3.Types 类型定义</a></li><li><a href="#4constants-常量定义">4.constants 常量定义</a></li><li><a href="#5predicates谓词">5.Predicates（谓词）</a></li><li><a href="#6functions函数">6.Functions（函数）</a></li><li><a href="#7actions动作定义">7.Actions（动作定义）</a><ul><li><a href="#71-普通动作瞬时动作">7.1 普通动作（瞬时动作）</a></li><li><a href="#72-持续动作带时间">7.2 持续动作（带时间）</a></li><li><a href="#基本框架">基本框架</a></li></ul></li><li><a href="#domain示例">domain示例：</a></li><li><a href="#problem示例">problem示例</a></li></ul>
             </nav>
           </aside>

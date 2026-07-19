@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#简介">简介</a></li><li><a href="#css-基础">CSS 基础</a><ul><li><a href="#选择器">选择器</a></li><li><a href="#css创建">CSS创建</a></li><li><a href="#css-背景">CSS 背景</a></li><li><a href="#css文本">CSS文本</a></li><li><a href="#css字体">CSS字体</a></li><li><a href="#css链接未完待续">CSS链接（未完待续）</a></li></ul></li><li><a href="#sass-内容">SASS 内容</a><ul><li><a href="#sass变量">sass变量</a></li><li><a href="#sass嵌套规则与属性">SASS嵌套规则与属性</a></li><li><a href="#import-和-partials">@import 和 Partials</a></li><li><a href="#sass-minin-与-include">SASS @minin 与 @include</a></li><li><a href="#sass-extend-与继承">SASS @extend 与继承</a></li><li><a href="#sass-函数">SASS 函数</a></li></ul></li></ul>
             </nav>
           </aside>

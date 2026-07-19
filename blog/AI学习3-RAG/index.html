@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#1rag入门">1.RAG入门</a></li><li><a href="#2embedding文本向量化">2.Embedding文本向量化</a></li><li><a href="#3向量数据库存储与检索">3.向量数据库存储与检索</a><ul><li><a href="#向量数据库">向量数据库</a><ul><li><a href="#核心概念">核心概念</a></li><li><a href="#与传统数据库的区别">与传统数据库的区别</a></li><li><a href="#常用向量数据库">常用向量数据库</a></li></ul></li><li><a href="#向量检索">向量检索</a><ul><li><a href="#核心概念-1">核心概念</a></li><li><a href="#应用场景">应用场景</a></li></ul></li></ul></li></ul>
             </nav>
           </aside>

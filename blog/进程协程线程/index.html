@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#进程">进程</a><ul><li><a href="#进程的组成">进程的组成</a></li><li><a href="#进程的特点">进程的特点</a></li><li><a href="#进程的优点和代价">进程的优点和代价</a></li></ul></li><li><a href="#线程">线程</a><ul><li><a href="#线程和进程的关系">线程和进程的关系</a></li><li><a href="#多线程的好处">多线程的好处</a></li><li><a href="#多线程的问题">多线程的问题</a></li></ul></li><li><a href="#协程">协程</a><ul><li><a href="#协程的特点">协程的特点</a></li><li><a href="#协程要注意的点">协程要注意的点</a></li></ul></li><li><a href="#任务调度">任务调度</a></li><li><a href="#并发和并行">并发和并行</a></li><li><a href="#总结">总结</a></li></ul>
             </nav>
           </aside>

@@ -362,7 +362,19 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4></header>
+              <header class="toc__header">
+                <h4 class="nav__title"><i class="fas fa-file-alt"></i> 文章目录</h4>
+                <div class="toc__controls" aria-label="Table of contents controls">
+                  <button type="button" class="toc__control" data-toc-action="expand" title="Expand all sections" aria-label="Expand all sections">
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                    <span class="sr-only">Expand all sections</span>
+                  </button>
+                  <button type="button" class="toc__control" data-toc-action="collapse" title="Collapse all sections" aria-label="Collapse all sections">
+                    <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Collapse all sections</span>
+                  </button>
+                </div>
+              </header>
               <ul class="toc__menu"><li><a href="#mcp入门">MCP入门</a><ul><li><a href="#mcp的特点">MCP的特点</a></li><li><a href="#mcp典型使用场景">MCP典型使用场景</a></li><li><a href="#mcp-vs-function-calling-vs-tool">MCP vs Function Calling vs Tool</a></li><li><a href="#工作原理">工作原理</a></li><li><a href="#通信原理">通信原理</a></li><li><a href="#工作流程">工作流程</a></li></ul></li><li><a href="#mcp服务器">MCP服务器</a><ul><li><a href="#服务器种类">服务器种类</a></li><li><a href="#mcp服务器开发">MCP服务器开发</a></li><li><a href="#mcp-客户端">MCP 客户端</a></li></ul></li></ul>
             </nav>
           </aside>
