@@ -126,9 +126,7 @@
 					class="password-input"
 			bind:value={password}
 			onkeydown={handleKeydown}
-			<!-- 解密中禁用输入 -->
 			disabled={isLoading}
-			<!-- 禁用浏览器自动填充（避免密码被记住） -->
 			autocomplete="off"
 			/>
 			<button
@@ -137,14 +135,12 @@
 					type="submit"
 					disabled={isLoading}
 			>
-				<!-- 文案随加载态切换："解密中..." / "解锁" -->
 				{isLoading
 						? i18n(I18nKey.passwordUnlocking)
 						: i18n(I18nKey.passwordUnlock)}
 			</button>
 		</form>
 
-		<!-- 错误信息：仅在有错误时显示 -->
 		{#if errorMessage}
 			<p class="error-message">{errorMessage}</p>
 		{/if}
