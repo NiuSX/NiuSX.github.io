@@ -717,7 +717,7 @@ HTML5`<canvas>` 元素用于图形的绘制，通过脚本 (通常是JavaScript)
 
 **创建一个画布**
 示例：
-```HTML
+```html
 <canvas id="myCanvas" width="200" height="100"
 style="border:1px solid #000000;">
 </canvas>
@@ -749,7 +749,7 @@ SVG 定义为可缩放矢量图形。HTML5 支持内联 SVG。HTML `<svg>` 元�
 
 示例：SVG圆形
 
-```HTML
+```html
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
    <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
 </svg>
@@ -771,7 +771,7 @@ MathML 是数学标记语言，是一种基于XML（标准通用标记语言的�
 
 示例：
 
-```HTML
+```html
  <math xmlns="http://www.w3.org/1998/Math/MathML">
                
          <mrow>
@@ -797,7 +797,7 @@ MathML 是数学标记语言，是一种基于XML（标准通用标记语言的�
 
 **拖动事件**
 
-```HTML
+```html
 <img id="drag1" src="/images/logo.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
 ```
 
@@ -813,7 +813,7 @@ function drag(ev)
 
 **放置地点**
 
-```HTML
+```html
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 ```
 ondragover 事件规定在何处放置被拖动的数据。
@@ -823,7 +823,7 @@ ondragover 事件规定在何处放置被拖动的数据。
 
 **进行放置** - onfrop
 
-```HTML
+```html
 function drop(ev)
 {
     ev.preventDefault();

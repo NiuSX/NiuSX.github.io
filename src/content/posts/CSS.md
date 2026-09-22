@@ -261,7 +261,7 @@ background-position:right top; 改变图像位置
 
 **文本颜色**
 
-```CSS
+```css
 body {color:red;}
 h1 {color:#00ff00;}
 h2 {color:rgb(255,0,0);}

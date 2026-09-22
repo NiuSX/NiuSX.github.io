@@ -42,7 +42,7 @@ tags: [ollama,本地部署]
 使用`ollama pull qwen3:8b` 拉取模型   
 
 若是连接报错，需要使用镜像源或者代理拉取
-```CMD
+```cmd
 set OLLAMA_REGISTRY=https://mirrors.tuna.tsinghua.edu.cn/ollama
 ollama run qwen3:8b
 ```

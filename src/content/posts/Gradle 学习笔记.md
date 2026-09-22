@@ -1077,7 +1077,7 @@ Gradle User Home 可能包含：
 
 项目目录中的 `.gradle/` 是项目级缓存，`build/` 是项目构建输出。它们通常不应提交到版本控制：
 
-```gitignore
+```
 .gradle/
 build/
 ```
@@ -2211,7 +2211,7 @@ sourceSets {
 
 推荐 `.gitignore`：
 
-```gitignore
+```text
 .gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -17637,7 +17637,7 @@ tasks.withType<Test>().configureEach {
 
 ### 33.7 `.gitignore`
 
-```gitignore
+```text
 .gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar

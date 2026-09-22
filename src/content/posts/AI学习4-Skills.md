@@ -159,7 +159,7 @@ When user greets you, respond with a warm, personalized greeting.
 3. 添加脚本和参考文档（进阶）
 完整skill结构：
 
-```Markdown
+```markdown
 	my-skill/
 	
 	├── SKILL.md                 # 核心指令

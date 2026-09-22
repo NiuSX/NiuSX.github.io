@@ -2562,7 +2562,7 @@ git commit -m "chore: import existing project"
 
 常见初始 `.gitignore`：
 
-```gitignore
+```text
 # build outputs
 build/
 dist/
@@ -7858,7 +7858,7 @@ v[0-9]+.[0-9]+.[0-9]+
 
 常见内容：
 
-```gitignore
+```text
 # dependencies
 node_modules/
 
@@ -7915,14 +7915,14 @@ project/
 
 忽略某类文件：
 
-```gitignore
+```text
 *.tmp
 *.log
 ```
 
 忽略目录：
 
-```gitignore
+```text
 build/
 dist/
 node_modules/
@@ -7930,13 +7930,13 @@ node_modules/
 
 忽略根目录下的文件：
 
-```gitignore
+```text
 /local.properties
 ```
 
 忽略任意目录下的文件：
 
-```gitignore
+```text
 local.properties
 ```
 
@@ -7955,14 +7955,14 @@ local.properties   匹配任意层级
 
 例如忽略所有 `.log`，但保留一个示例文件：
 
-```gitignore
+```text
 *.log
 !example.log
 ```
 
 常见用途：
 
-```gitignore
+```text
 .env
 !.env.example
 ```
@@ -8045,7 +8045,7 @@ git config --global core.excludesfile ~/.gitignore_global
 
 然后编辑：
 
-```gitignore
+```text
 .DS_Store
 Thumbs.db
 *.swp
@@ -8090,7 +8090,7 @@ Thumbs.db
 
 应该忽略：
 
-```gitignore
+```text
 .env
 *.key
 *.pem
@@ -8099,7 +8099,7 @@ secrets.*
 
 但应该提交示例：
 
-```gitignore
+```text
 !.env.example
 ```
 
@@ -8128,14 +8128,14 @@ secrets.*
 
 例子：
 
-```gitignore
+```text
 build/
 *.log
 ```
 
 表示忽略文件。
 
-```gitattributes
+```text
 *.sh text eol=lf
 *.bat text eol=crlf
 ```
