@@ -25,7 +25,6 @@ const { album } = Astro.props as AlbumCardProps;
 >
 	<!-- 封面区：固定 4:3 宽高比 -->
 	<div class="aspect-4/3 relative overflow-hidden">
-		<!-- 有封面图：渲染 img，悬停时轻微放大 -->
 		{
 			album.cover ? (
 				<img
