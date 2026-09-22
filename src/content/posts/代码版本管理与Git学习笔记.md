@@ -2113,7 +2113,7 @@ git config --global core.autocrlf input
 
 也可以更推荐在项目中用 `.gitattributes` 统一：
 
-```gitattributes
+```text
 * text=auto
 *.sh text eol=lf
 *.bat text eol=crlf
@@ -8269,7 +8269,7 @@ git lfs track "*.mp4"
 
 例如：
 
-```gitattributes
+```text
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.onnx filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
