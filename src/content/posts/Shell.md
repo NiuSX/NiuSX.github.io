@@ -91,7 +91,7 @@ for skill in Ada Coffe Action Java; do
 done
 ```
 
-如果不给skill变量加花括号，写成echo "I am good at $skillScript"，解释器就会把$skillScript当成一个变量（其值为空）
+如果不给skill变量加花括号，写成`echo "I am good at $skillScript"`，解释器就会把`$skillScript`当成一个变量（其值为空）
 >建议： 推荐给所有变量加上花括号
 
 已定义的变量，可以被重新定义，如：
