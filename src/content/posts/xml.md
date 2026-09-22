@@ -367,31 +367,31 @@ DTD文件：.dtd
 
 **声明元素**
 
-```dtd
+```
 <!ELEMENT element-name category>
 或
 <!ELEMENT element-name (element-content)>
 ```
 **空元素**
-```dtd
+```
 <!ELEMENT element-name EMPTY>
 ```
 **只有PCDATA元素**
-```dtd
+```
 <!ELEMENT element-name (#PCDATA)>
 ```
 **带任何内容元素**
-```dtd
+```
 <!ELEMENT element-name ANY>
 ```
 **带子元素（序列）的元素**
-```dtd
+```
 <!ELEMENT element-name (child1)>
 或
 <!ELEMENT element-name (child1,child2,...)>
 ```
 当子元素按照由逗号分隔开的序列进行声明时，这些子元素必须按照相同的顺序出现在文档中。
-```dtd
+```
 <!ELEMENT note (to,from,heading,body)>
 <!ELEMENT to (#PCDATA)>
 <!ELEMENT from (#PCDATA)>
@@ -399,27 +399,27 @@ DTD文件：.dtd
 <!ELEMENT body (#PCDATA)>
 ```
 ** 声明只出现一次的元素**
-```dtd
+```
 <!ELEMENT element-name (child-name)>
 ```
 ** 声明最少出现一次的元素** 使用**+**号
-```dtd
+```
 <!ELEMENT element-name (child-name+)>
 ```
 **声明出现零次或多次的元素**
-```dtd
+```
 <!ELEMENT element-name (child-name*)>
 ```
 **声明出现零次或一次的元素**
-```dtd
+```
 <!ELEMENT element-name (child-name?)>
 ```
 **声明“非...即...”类型的内容
-```dtd
+```
 <!ELEMENT note (to,from,header,(message|body))>
 ```
 **声明混合型的内容
-```dtd
+```
 <!ELEMENT note (#PCDATA|to|from|header|message)*>
 ```
 
@@ -427,7 +427,7 @@ DTD文件：.dtd
 在 DTD 中，属性通过 ATTLIST 声明来进行声明。
 
 **声明属性**
-```dtd
+```
 <!ATTLIST element-name attribute-name attribute-type attribute-value>
 ```
 
@@ -456,25 +456,25 @@ DTD文件：.dtd
 
 
 ** 默认属性值**
-```dtd
+```
 <!ELEMENT square EMPTY>
 <!ATTLIST square width CDATA "0">
 ```
 **#REQUIRED** 必需的
-```dtd
+```
 <!ATTLIST element-name attribute-name attribute-type #REQUIRED>
 ```
 **#IMPLIED** 不是必需的
-```dtd
+```
 <!ATTLIST element-name attribute-name attribute-type #IMPLIED>
 ```
 **FIXED** 固定的
-```dtd
+```
 <!ATTLIST element-name attribute-name attribute-type #FIXED "value">
 ```
 
 **列举属性值**
-```dtd
+```
 <!ATTLIST element-name attribute-name (en1|en2|..) default-value>
 ```
 
@@ -485,12 +485,12 @@ DTD文件：.dtd
 实体可在内部或外部进行声明。
 
 **内部实体声明**
-```dtd
+```
 <!ENTITY entity-name "entity-value">
 ```
 
 **外部实体声明**
-```dtd
+```
 <!ENTITY entity-name SYSTEM "URI/URL">
 ```
 
