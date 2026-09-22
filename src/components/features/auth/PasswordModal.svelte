@@ -124,7 +124,6 @@
 					id="password-input"
 					placeholder={i18n(I18nKey.passwordPlaceholder)}
 					class="password-input"
-			<!-- 双向绑定：输入值与 password 状态同步 -->
 			bind:value={password}
 			onkeydown={handleKeydown}
 			<!-- 解密中禁用输入 -->
