@@ -53,13 +53,13 @@ XML 文档必须包含根元素；该元素是所有其他元素的父元素；�
 
 **XML 声明**
 XML 声明文件的可选部分，如果存在需要放在文档的第一行
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 ```
 
 **XML根元素**
 XML 必须包含根元素，它是所有其他元素的父元素
-```XML
+```xml
 <root>
   <child>
     <subchild>.....</subchild>
@@ -70,22 +70,22 @@ XML文档由元素构成，每个元素包括开始标签、结束标签和元�
 
 **属性**
 元素可以包含属性，属性提供有关元素的附加信息。属性位于开始标签中。
-```XML
+```xml
 <person age="30" gender="male">John Doe</person>
 ```
 **单标签**
 所有的 XML 元素一般都有一个关闭标签，但也允许单标签的使用的
-```XML
+```xml
 <elementName attribute="value" />
 ```
 单标签是指在一个标签中同时包含了开始和结束标签，形式类似于 HTML 中的空元素标签。   
 在XML中，你可以使用以下两种方式表示单标签：   
 使用空元素标签：   
-```XML
+```xml
 <exampleTag />
 ```
 使用开始和结束标签，但是不包含任何内容：
-```XML
+```xml
 <exampleTag></exampleTag>
 ```
 **XML 标签对大小写敏感**。标签 `<Letter>` 与标签` <letter>` 是不同的。必须使用相同的大小写来编写打开标签和关闭标签
@@ -204,7 +204,7 @@ XML 文档中的所有文本均会被解析器解析。只有 CDATA 区段中的
 
 DATA 部分由 "<![CDATA[" 开始，由 "]]>" 结束
 
-```XML
+```xml
 <script>
 <![CDATA[
 function matchwo(a,b)
@@ -235,7 +235,7 @@ PCDATA 与 CDATA对比：
 
 示例对比：
 
-```XML
+```xml
 <element>
     <!-- PCDATA：&lt; 会被解析为 < -->
     5 &lt; 10
@@ -255,7 +255,7 @@ PCDATA 与 CDATA对比：
 命名空间声明的语法如下。`xmlns:前缀="URI"`。
 
 ** 分散声明**：
-```XML
+```xml
 <root>
 
 <h:table xmlns:h="http://www.w3.org/TR/html4/">
@@ -274,7 +274,7 @@ PCDATA 与 CDATA对比：
 </root>
 ```
 **集中声明**
-```XML
+```xml
 <root xmlns:h="http://www.w3.org/TR/html4/"
 xmlns:f="http://www.w3cschool.cc/furniture">
 
@@ -314,7 +314,7 @@ DTD 有两种方式使用：内部声明和外部引用
 **内部声明**
 语法： ```<!DOCTYPE root-element [element-declarations]>```
 示例：
-```XML
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE note [
 <!ELEMENT note (to,from,heading,body)>
@@ -342,7 +342,7 @@ DTD 有两种方式使用：内部声明和外部引用
 语法：```<!DOCTYPE root-element SYSTEM "filename">```
 示例：
 xml文件：.xml
-```XML
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE note SYSTEM "note.dtd">
 <note>
@@ -353,7 +353,7 @@ xml文件：.xml
 </note>
 ```
 DTD文件：.dtd
-```dtd
+```
 <!ELEMENT note (to,from,heading,body)>
 <!ELEMENT to (#PCDATA)>
 <!ELEMENT from (#PCDATA)>
